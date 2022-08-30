@@ -1,0 +1,32 @@
+
+<%= form_with model: @user, local: true do |f|%>
+<br>
+<%= f.label :name, 'Name' %>
+<br>
+<%= f.text_field :name %>
+<br>
+<%= f.label :dob, 'Date of Birth' %>
+<br>
+<%= f.date_field :dob %>
+<br>
+<br>
+<%= f.label :profile_picture, 'Profile Picture' %>
+<br>
+<%= f.text_field :profile_picture, placeholder: 'URL' %>
+<br>
+<%= f.label :email, 'Email' %>
+<br>
+<%= f.text_field :email %>
+<br>
+<%= f.label :password, 'Password' %>
+<br>
+<%= f.password_field :password %>
+<br>
+<%= f.label :password_confirmation, 'Confirm Password' %>
+<br>
+<%= f.password_field :password_confirmation %>
+<br>
+<%= f.submit %>
+<br>
+<% end %>
+<br>

@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  artist: MyString
+  token_id: 1
+  blockchain: MyString
+  price: 1
+  currency: MyString
+  picture: MyText
+  user_id: 1
+  property_id: 1
+
+two:
+  name: MyString
+  description: MyText
+  artist: MyString
+  token_id: 1
+  blockchain: MyString
+  price: 1
+  currency: MyString
+  picture: MyText
+  user_id: 1
+  property_id: 1

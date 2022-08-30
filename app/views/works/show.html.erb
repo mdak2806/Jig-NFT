@@ -1,0 +1,103 @@
+<h2>
+    <em><%= @work.name %></em>,
+  </h2>
+
+  <h3>
+    by 
+    <%= @work.artist%>
+    <br>
+    <% if flash[:bid_message].present? %>
+      <%= flash[:bid_message] %>
+     <br>
+    <% end %>
+        <br>
+    <% if flash[:currency_message].present? %>
+      <%= flash[:currency_message] %>
+     <br>
+    <% end %>
+    <% if flash[:win_message].present? %>
+      <%= flash[:win_message] %>
+     <br>
+    <% end %>
+   
+    <strong>Owner</strong>
+    <%= link_to @work.user.name, user_path(@work.user.id) %>
+    <%# Link to artists here %>
+  </h3>
+  
+  <% if @current_user.present? && @current_user.id == @work.user_id %>
+  <%= link_to 'Edit', edit_work_path(@work.id) %>
+  |
+  <%= link_to 'Delete', work_path(@work.id), method: 'delete' %>
+  <% end %>
+  
+  <p>
+    <strong>Description:</strong>
+    <%= @work.description %>
+  </p>
+  
+  <p>
+    <strong>Token Number:</strong>
+    <%= @work.token_id %>
+  </p>
+  <p>
+    <strong>Blockchain:</strong>
+    <%= @work.blockchain %>
+  </p>
+   <p>
+    <strong>Pice:</strong>
+    <%= @work.price %>  <%= @work.currency %>
+  </p>
+  <strong> Genres:</strong>
+  <p>
+    <% @work.genres.each do |genre| %>
+   <%= link_to genre.name, genre_path(genre.id) %>
+  <% end %>
+  </p>
+  <p>
+    <strong>Properties:</strong>
+    <br>
+    <% @work.properties.each do |property| %>
+          <strong>Trait:</strong> 
+          <%= property.trait %>
+          <br>
+          <strong>Description:</strong>
+          <%= property.trait_value %>
+          <b  r>
+          <strong>Uniqueness Value:</strong>
+         <strong><%= property.percentage %>%</strong>
+         <br>
+      <% end %>
+
+  </p>
+<div>
+  <strong>Bids</strong>
+  <br>
+  <% @work.bids.last(5).each do |i| %>
+  <%="Bid: #{i.price}" %> |
+  <%="Blockchain: #{i.blockchain}" %> |
+  <%="User: #{i.user_id}" %> 
+  <br>
+  <% end %>
+
+  <% if @current_user.present? %>
+      <%= form_with model: @bid, local: true  do |f| %>
+      <%= f.label :price, "Add" %>
+      <%= f.text_field :price %>
+      <br>
+      <%= f.label :currency %>
+      <%= f.text_field :currency %>
+      <br>
+      <%= f.hidden_field :work_id, value: @work.id %>
+      <%= f.hidden_field :user_id, value: @current_user.id %>
+
+      <%= f.submit %>
+
+      <% end %>
+      <br>
+  <% end %>
+
+</div>
+  
+  <%= image_tag @work.picture, alt: @work.name, class: 'NFT' %>
+    

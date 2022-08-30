@@ -1,0 +1,16 @@
+<h1>Index of All NFTs</h1>
+
+<ul>
+<% @work.each do |work| %>
+  <li>
+    <%= link_to work.name, work_path(work.id) %>
+    <br>
+     <%= work.artist %>
+     <br>
+    <%= image_tag work.picture, alt:work.name, class:'NFT' %>
+  </li>
+<% end %>
+</ul>
+
+
+<%# Add pictures here %>
