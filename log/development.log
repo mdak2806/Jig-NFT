@@ -38355,3 +38355,3325 @@ Completed 404 Not Found in 15ms (ActiveRecord: 8.8ms)
 ActiveRecord::RecordNotFound (Couldn't find Work with 'id'=275):
   
 app/controllers/works_controller.rb:52:in `show'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 15:33:49 +1000
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 172ms (Views: 153.9ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2022-08-30 15:41:26 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 23.4ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2022-08-30 15:47:47 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 7.7ms)
+
+
+  
+NameError (uninitialized constant SearchController::Post):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 15:49:17 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.8ms)
+
+
+  
+NameError (uninitialized constant SearchController::Post):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 15:49:46 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/_form.html.erb (0.4ms)
+  Rendered search/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 15.2ms)
+
+
+  
+SyntaxError (/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/views/search/_form.html.erb:3: syntax error, unexpected tLABEL, expecting `do' or '{' or '('
+...query, url: search_path method: :get, class:'d-flex') do |f|...
+...                        ^~~~~~~
+/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/views/search/_form.html.erb:3: syntax error, unexpected ')', expecting `end'
+...h method: :get, class:'d-flex') do |f| @output_buffer.safe_a...
+...                              ^
+/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/views/search/_form.html.erb:8: syntax error, unexpected `ensure', expecting end-of-input
+          ensure
+          ^~~~~~
+):
+  
+app/views/search/_form.html.erb:3: syntax error, unexpected tLABEL, expecting `do' or '{' or '('
+app/views/search/_form.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/search/_form.html.erb:8: syntax error, unexpected `ensure', expecting end-of-input
+app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb___1843750608998028405_37140'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 15:51:05 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 11.6ms)
+
+
+  
+NameError (uninitialized constant SearchController::Post):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 15:51:15 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+
+
+  
+NameError (uninitialized constant SearchController::Post):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 15:51:20 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 3.6ms)
+
+
+  
+NoMethodError (undefined method `ransack' for #<SearchController:0x000000011b52eb00>):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 15:51:34 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 5.1ms)
+
+
+  
+NameError (uninitialized constant SearchController::Post):
+  
+app/controllers/search_controller.rb:3:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2012592396158801520)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2012592396158801520)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mWork Load (0.7ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (2.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 293]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.4ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 293]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 294]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 294]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 295]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 295]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 292]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 292]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 284]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 284]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 286]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 286]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 285]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 285]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 287]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 287]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 288]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 288]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 289]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 289]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 290]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 290]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 291]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 291]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mWork Create (1.0ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Infected Mob #1"], ["description", "A collection of deranged and savage mobsters spreading across Solana"], ["artist", "Sophie"], ["token_id", 8283], ["blockchain", "Solana"], ["price", 18], ["currency", "Sol"], ["picture", "sophie1.png"], ["created_at", "2022-08-30 05:52:43.849123"], ["updated_at", "2022-08-30 05:52:43.849123"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mWork Create (0.2ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Infected Mob #2"], ["description", "A collection of deranged and savage mobsters spreading across Solana."], ["artist", "Sophie"], ["token_id", 2873], ["blockchain", "Solana"], ["price", 10], ["currency", "Sol"], ["picture", "sophie2.png"], ["created_at", "2022-08-30 05:52:43.850849"], ["updated_at", "2022-08-30 05:52:43.850849"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mWork Create (0.2ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Infected Mob #3"], ["description", "A collection of deranged and savage mobsters spreading across Solana."], ["artist", "Sophie"], ["token_id", 3887], ["blockchain", "Solana"], ["price", 3], ["currency", "Sol"], ["picture", "sophie3.png"], ["created_at", "2022-08-30 05:52:43.851659"], ["updated_at", "2022-08-30 05:52:43.851659"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mWork Create (0.1ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Steezy Ape #1"], ["description", "Collection of street apes swagged out and dripped out"], ["artist", "Pop"], ["token_id", 3778], ["blockchain", "Ethereum"], ["price", 100], ["currency", "Eth"], ["picture", "ape1.png"], ["created_at", "2022-08-30 05:52:43.852397"], ["updated_at", "2022-08-30 05:52:43.852397"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mWork Create (0.2ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Steezy Ape #2"], ["description", "Collection of street apes swagged out and dripped out"], ["artist", "Pop"], ["token_id", 3778], ["blockchain", "Ethereum"], ["price", 78], ["currency", "Eth"], ["picture", "ape2.png"], ["created_at", "2022-08-30 05:52:43.853087"], ["updated_at", "2022-08-30 05:52:43.853087"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:67
+  [1m[36mWork Create (0.2ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Steezy Ape #3"], ["description", "Collection of street apes swagged out and dripped out"], ["artist", "Pop"], ["token_id", 3774], ["blockchain", "Ethereum"], ["price", 30], ["currency", "Eth"], ["picture", "ape3.png"], ["created_at", "2022-08-30 05:52:43.853849"], ["updated_at", "2022-08-30 05:52:43.853849"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[36mWork Create (0.1ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Solider of Fortune"], ["description", "This collection is an exploration of other-worldly cityscapes and dark fantasies in the visual aesthetic of BEEBLE distinct style with abstract digital paint in psychedelic colors."], ["artist", "Beeble"], ["token_id", 2929], ["blockchain", "Ethereum"], ["price", 200], ["currency", "Eth"], ["picture", "sold1.png"], ["created_at", "2022-08-30 05:52:43.854556"], ["updated_at", "2022-08-30 05:52:43.854556"]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:89
+  [1m[36mWork Create (0.2ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Peace in this life"], ["description", "This collection is an exploration of other-worldly cityscapes and dark fantasies in the visual aesthetic of BEEBLE distinct style with abstract digital paint in psychedelic colors."], ["artist", "Beeble"], ["token_id", 2929], ["blockchain", "Ethereum"], ["price", 223], ["currency", "Eth"], ["picture", "sold2.png"], ["created_at", "2022-08-30 05:52:43.855444"], ["updated_at", "2022-08-30 05:52:43.855444"]]
+  ↳ db/seeds.rb:89
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:89
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:99
+  [1m[36mWork Create (0.1ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Never get rich"], ["description", "This collection is an exploration of other-worldly cityscapes and dark fantasies in the visual aesthetic of BEEBLE distinct style with abstract digital paint in psychedelic colors."], ["artist", "Beeble"], ["token_id", 2929], ["blockchain", "Ethereum"], ["price", 100], ["currency", "Eth"], ["picture", "sold3.png"], ["created_at", "2022-08-30 05:52:43.856231"], ["updated_at", "2022-08-30 05:52:43.856231"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mWork Create (2.8ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "The Snap"], ["description", "Collection of Gifapes reflecting pop culture in the 21st Century"], ["artist", "Gifapes"], ["token_id", 2442], ["blockchain", "Ethereum"], ["price", 4], ["currency", "Eth"], ["picture", "gifape1.gif"], ["created_at", "2022-08-30 05:52:43.857021"], ["updated_at", "2022-08-30 05:52:43.857021"]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:122
+  [1m[36mWork Create (0.5ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Magnificent Magic"], ["description", "Collection of Gifapes reflecting pop culture in the 21st Century"], ["artist", "Gifapes"], ["token_id", 2442], ["blockchain", "Ethereum"], ["price", 6], ["currency", "Eth"], ["picture", "GifAp2.gif"], ["created_at", "2022-08-30 05:52:43.860796"], ["updated_at", "2022-08-30 05:52:43.860796"]]
+  ↳ db/seeds.rb:122
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:122
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:133
+  [1m[36mWork Create (0.2ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Western Showdown"], ["description", "Collection of Gifapes reflecting pop culture in the 21st Century"], ["artist", "Gifapes"], ["token_id", 2442], ["blockchain", "Ethereum"], ["price", 3], ["currency", "Eth"], ["picture", "gifApe3.gif"], ["created_at", "2022-08-30 05:52:43.861911"], ["updated_at", "2022-08-30 05:52:43.861911"]]
+  ↳ db/seeds.rb:133
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:133
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "works"[0m
+  ↳ db/seeds.rb:144
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "works"."name" FROM "works"[0m
+  ↳ db/seeds.rb:145
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:148
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:148
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 78]]
+  ↳ db/seeds.rb:148
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:148
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:148
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 79]]
+  ↳ db/seeds.rb:148
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:148
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:148
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 80]]
+  ↳ db/seeds.rb:148
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:148
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:148
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 81]]
+  ↳ db/seeds.rb:148
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:148
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:150
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ann@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:150
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "dob", "email", "password_digest", "profile_picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Ann Kuchna"], ["dob", "1980-10-29"], ["email", "ann@gmail.com"], ["password_digest", "$2a$12$opRSwIMKUyL72F8xxmI9/OxWzlWOwtvDfr/jWfP28ZVOpkWJw9yhy"], ["profile_picture", "u1.png"], ["created_at", "2022-08-30 05:52:44.117592"], ["updated_at", "2022-08-30 05:52:44.117592"]]
+  ↳ db/seeds.rb:150
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:150
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:157
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dark.v@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:157
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "dob", "email", "password_digest", "profile_picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Dark Vador"], ["dob", "1975-01-11"], ["email", "dark.v@gmail.com"], ["password_digest", "$2a$12$MKoPOMsKJigGE9tzq5FEreobhcqt2khTz7y/9XXOtHxayugGzv0/u"], ["profile_picture", "u2.png"], ["created_at", "2022-08-30 05:52:44.363058"], ["updated_at", "2022-08-30 05:52:44.363058"]]
+  ↳ db/seeds.rb:157
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:157
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:164
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "bart@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:164
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "dob", "email", "password_digest", "profile_picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Bart Simpson"], ["dob", "1994-12-12"], ["email", "bart@gmail.com"], ["password_digest", "$2a$12$wR7BVthIjIoPdkeXrkp34.wq7.jSmEnEnmbaDYgvAxmQXpEBoACWi"], ["profile_picture", "u3.png"], ["created_at", "2022-08-30 05:52:44.607374"], ["updated_at", "2022-08-30 05:52:44.607374"]]
+  ↳ db/seeds.rb:164
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:164
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:171
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "monkey@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:171
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "dob", "email", "password_digest", "profile_picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Monkey Boo"], ["dob", "2000-01-12"], ["email", "monkey@gmail.com"], ["password_digest", "$2a$12$xdo90hb5q4ZuSr2PmbtDq.ef2.6JlQmMSEmvT2OZpwPQ0aFZmwtTK"], ["profile_picture", "u4.png"], ["created_at", "2022-08-30 05:52:44.852332"], ["updated_at", "2022-08-30 05:52:44.852332"]]
+  ↳ db/seeds.rb:171
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:171
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:179
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."name" FROM "users"[0m
+  ↳ db/seeds.rb:180
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:181
+  [1m[36mWork Update (0.2ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 82], ["updated_at", "2022-08-30 05:52:44.855958"], ["id", 296]]
+  ↳ db/seeds.rb:181
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:181
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:181
+  [1m[36mWork Update (0.2ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 82], ["updated_at", "2022-08-30 05:52:44.856853"], ["id", 297]]
+  ↳ db/seeds.rb:181
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:181
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:181
+  [1m[36mWork Update (0.2ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 82], ["updated_at", "2022-08-30 05:52:44.857636"], ["id", 298]]
+  ↳ db/seeds.rb:181
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:181
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:182
+  [1m[36mWork Update (0.3ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 83], ["updated_at", "2022-08-30 05:52:44.858437"], ["id", 299]]
+  ↳ db/seeds.rb:182
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:182
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:182
+  [1m[36mWork Update (0.2ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 83], ["updated_at", "2022-08-30 05:52:44.859295"], ["id", 300]]
+  ↳ db/seeds.rb:182
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:182
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:182
+  [1m[36mWork Update (0.2ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 83], ["updated_at", "2022-08-30 05:52:44.860063"], ["id", 301]]
+  ↳ db/seeds.rb:182
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:182
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:183
+  [1m[36mWork Update (0.2ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 84], ["updated_at", "2022-08-30 05:52:44.860789"], ["id", 302]]
+  ↳ db/seeds.rb:183
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:183
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:183
+  [1m[36mWork Update (0.1ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 84], ["updated_at", "2022-08-30 05:52:44.861526"], ["id", 303]]
+  ↳ db/seeds.rb:183
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:183
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:183
+  [1m[36mWork Update (0.1ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 84], ["updated_at", "2022-08-30 05:52:44.862161"], ["id", 304]]
+  ↳ db/seeds.rb:183
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:183
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:184
+  [1m[36mWork Update (0.1ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 85], ["updated_at", "2022-08-30 05:52:44.862848"], ["id", 305]]
+  ↳ db/seeds.rb:184
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:184
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:184
+  [1m[36mWork Update (0.2ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 85], ["updated_at", "2022-08-30 05:52:44.863476"], ["id", 306]]
+  ↳ db/seeds.rb:184
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:184
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:184
+  [1m[36mWork Update (0.1ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 85], ["updated_at", "2022-08-30 05:52:44.864247"], ["id", 307]]
+  ↳ db/seeds.rb:184
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:184
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "works"."name" FROM "works" WHERE "works"."user_id" = $1[0m  [["user_id", 82]]
+  ↳ db/seeds.rb:186
+  [1m[36mProperty Load (1.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.3ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 342]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.2ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 343]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.2ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 344]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 345]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 346]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 323]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 324]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 325]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 326]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 327]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 328]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 329]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 330]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 331]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 332]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 333]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 334]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 335]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 336]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 337]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 338]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 339]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 340]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 341]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:193
+  [1m[36mProperty Create (0.8ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Robotic Ice Suite"], ["percentage", 5.0], ["created_at", "2022-08-30 05:52:44.884015"], ["updated_at", "2022-08-30 05:52:44.884015"]]
+  ↳ db/seeds.rb:193
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:193
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:198
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Robotic Toxic Mars Mask"], ["percentage", 0.1], ["created_at", "2022-08-30 05:52:44.885386"], ["updated_at", "2022-08-30 05:52:44.885386"]]
+  ↳ db/seeds.rb:198
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:198
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:203
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Alien Space Eye Shirt"], ["percentage", 0.6], ["created_at", "2022-08-30 05:52:44.885933"], ["updated_at", "2022-08-30 05:52:44.885933"]]
+  ↳ db/seeds.rb:203
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:203
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:208
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Mummy Mask with Laser beam"], ["percentage", 0.02], ["created_at", "2022-08-30 05:52:44.886459"], ["updated_at", "2022-08-30 05:52:44.886459"]]
+  ↳ db/seeds.rb:208
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:208
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:213
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Robotic fighter suite"], ["percentage", 10.0], ["created_at", "2022-08-30 05:52:44.887004"], ["updated_at", "2022-08-30 05:52:44.887004"]]
+  ↳ db/seeds.rb:213
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:213
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:218
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Mummy Mash with Tokyo Sign"], ["percentage", 0.9], ["created_at", "2022-08-30 05:52:44.887577"], ["updated_at", "2022-08-30 05:52:44.887577"]]
+  ↳ db/seeds.rb:218
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:218
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:223
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Black and white hoodie"], ["percentage", 0.003], ["created_at", "2022-08-30 05:52:44.888167"], ["updated_at", "2022-08-30 05:52:44.888167"]]
+  ↳ db/seeds.rb:223
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:223
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:228
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Green Monkey with Yellow Eyes"], ["percentage", 0.002], ["created_at", "2022-08-30 05:52:44.888757"], ["updated_at", "2022-08-30 05:52:44.888757"]]
+  ↳ db/seeds.rb:228
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:228
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:233
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Shirtless Gold MonKey Fur"], ["percentage", 0.23], ["created_at", "2022-08-30 05:52:44.889245"], ["updated_at", "2022-08-30 05:52:44.889245"]]
+  ↳ db/seeds.rb:233
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:233
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:238
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Gold Monkey with grills"], ["percentage", 12.0], ["created_at", "2022-08-30 05:52:44.889665"], ["updated_at", "2022-08-30 05:52:44.889665"]]
+  ↳ db/seeds.rb:238
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:238
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:243
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Purple Yankies jersey"], ["percentage", 9.0], ["created_at", "2022-08-30 05:52:44.890130"], ["updated_at", "2022-08-30 05:52:44.890130"]]
+  ↳ db/seeds.rb:243
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:243
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:248
+  [1m[36mProperty Create (0.0ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Light Blue Monkey with Hallow"], ["percentage", 3.0], ["created_at", "2022-08-30 05:52:44.890548"], ["updated_at", "2022-08-30 05:52:44.890548"]]
+  ↳ db/seeds.rb:248
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:248
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:253
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Background"], ["trait_value", "Space Grey Blurred Buildings"], ["percentage", 40.0], ["created_at", "2022-08-30 05:52:44.890938"], ["updated_at", "2022-08-30 05:52:44.890938"]]
+  ↳ db/seeds.rb:253
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:253
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:258
+  [1m[36mProperty Create (0.0ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Central Art"], ["trait_value", "Robotic Skull"], ["percentage", 29.0], ["created_at", "2022-08-30 05:52:44.891342"], ["updated_at", "2022-08-30 05:52:44.891342"]]
+  ↳ db/seeds.rb:258
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:258
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:263
+  [1m[36mProperty Create (0.0ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Background"], ["trait_value", "Light Blue Sky with Clouds"], ["percentage", 70.0], ["created_at", "2022-08-30 05:52:44.891735"], ["updated_at", "2022-08-30 05:52:44.891735"]]
+  ↳ db/seeds.rb:263
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:263
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:268
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Central Art"], ["trait_value", "Leaning Robotic Space Building"], ["percentage", 10.0], ["created_at", "2022-08-30 05:52:44.892139"], ["updated_at", "2022-08-30 05:52:44.892139"]]
+  ↳ db/seeds.rb:268
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:268
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:273
+  [1m[36mProperty Create (0.0ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Background"], ["trait_value", "Futuristic Building with Pink Sky"], ["percentage", 0.2], ["created_at", "2022-08-30 05:52:44.892556"], ["updated_at", "2022-08-30 05:52:44.892556"]]
+  ↳ db/seeds.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:273
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:278
+  [1m[36mProperty Create (0.0ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Central Art"], ["trait_value", "Lost Human in Dyspotian World"], ["percentage", 12.0], ["created_at", "2022-08-30 05:52:44.892931"], ["updated_at", "2022-08-30 05:52:44.892931"]]
+  ↳ db/seeds.rb:278
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:278
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:283
+  [1m[36mProperty Create (0.0ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Thanos Armor with Infinity Gauntlet"], ["percentage", 12.0], ["created_at", "2022-08-30 05:52:44.893319"], ["updated_at", "2022-08-30 05:52:44.893319"]]
+  ↳ db/seeds.rb:283
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:283
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:288
+  [1m[36mProperty Create (0.0ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Mad Monkey with Thanos Helmet"], ["percentage", 32.0], ["created_at", "2022-08-30 05:52:44.893695"], ["updated_at", "2022-08-30 05:52:44.893695"]]
+  ↳ db/seeds.rb:288
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:288
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:293
+  [1m[36mProperty Create (0.0ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Red Checkered Shirt"], ["percentage", 30.0], ["created_at", "2022-08-30 05:52:44.894071"], ["updated_at", "2022-08-30 05:52:44.894071"]]
+  ↳ db/seeds.rb:293
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:293
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:298
+  [1m[36mProperty Create (0.0ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Wizard Monkehy with Dimond Earing"], ["percentage", 0.22], ["created_at", "2022-08-30 05:52:44.894451"], ["updated_at", "2022-08-30 05:52:44.894451"]]
+  ↳ db/seeds.rb:298
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:298
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:303
+  [1m[36mProperty Create (0.0ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Shirtless Grey Monkey moving hair"], ["percentage", 12.0], ["created_at", "2022-08-30 05:52:44.894832"], ["updated_at", "2022-08-30 05:52:44.894832"]]
+  ↳ db/seeds.rb:303
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:303
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:308
+  [1m[36mProperty Create (0.0ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Cowboy Hat Monkey"], ["percentage", 0.2], ["created_at", "2022-08-30 05:52:44.895205"], ["updated_at", "2022-08-30 05:52:44.895205"]]
+  ↳ db/seeds.rb:308
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:308
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "properties"[0m
+  ↳ db/seeds.rb:314
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "properties"."trait" FROM "properties"[0m
+  ↳ db/seeds.rb:315
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:316
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 296], ["updated_at", "2022-08-30 05:52:44.896530"], ["id", 347]]
+  ↳ db/seeds.rb:316
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:316
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:316
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 296], ["updated_at", "2022-08-30 05:52:44.897038"], ["id", 348]]
+  ↳ db/seeds.rb:316
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:316
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:317
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 297], ["updated_at", "2022-08-30 05:52:44.897484"], ["id", 349]]
+  ↳ db/seeds.rb:317
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:317
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:317
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 297], ["updated_at", "2022-08-30 05:52:44.897887"], ["id", 350]]
+  ↳ db/seeds.rb:317
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:317
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:318
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 298], ["updated_at", "2022-08-30 05:52:44.898305"], ["id", 351]]
+  ↳ db/seeds.rb:318
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:318
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:318
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 298], ["updated_at", "2022-08-30 05:52:44.898691"], ["id", 352]]
+  ↳ db/seeds.rb:318
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:318
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:319
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 299], ["updated_at", "2022-08-30 05:52:44.899106"], ["id", 353]]
+  ↳ db/seeds.rb:319
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:319
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:319
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 299], ["updated_at", "2022-08-30 05:52:44.899493"], ["id", 354]]
+  ↳ db/seeds.rb:319
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:319
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:320
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 300], ["updated_at", "2022-08-30 05:52:44.899909"], ["id", 355]]
+  ↳ db/seeds.rb:320
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:320
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:320
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 300], ["updated_at", "2022-08-30 05:52:44.900285"], ["id", 356]]
+  ↳ db/seeds.rb:320
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:320
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:321
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 301], ["updated_at", "2022-08-30 05:52:44.900717"], ["id", 357]]
+  ↳ db/seeds.rb:321
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:321
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:321
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 301], ["updated_at", "2022-08-30 05:52:44.901086"], ["id", 358]]
+  ↳ db/seeds.rb:321
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:321
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:322
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 302], ["updated_at", "2022-08-30 05:52:44.901492"], ["id", 359]]
+  ↳ db/seeds.rb:322
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:322
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:322
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 302], ["updated_at", "2022-08-30 05:52:44.901859"], ["id", 360]]
+  ↳ db/seeds.rb:322
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:322
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:323
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 303], ["updated_at", "2022-08-30 05:52:44.902290"], ["id", 361]]
+  ↳ db/seeds.rb:323
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:323
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:323
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 303], ["updated_at", "2022-08-30 05:52:44.902675"], ["id", 362]]
+  ↳ db/seeds.rb:323
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:323
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:324
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 304], ["updated_at", "2022-08-30 05:52:44.903087"], ["id", 363]]
+  ↳ db/seeds.rb:324
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:324
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:324
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 304], ["updated_at", "2022-08-30 05:52:44.903464"], ["id", 364]]
+  ↳ db/seeds.rb:324
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:324
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:325
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 305], ["updated_at", "2022-08-30 05:52:44.903890"], ["id", 365]]
+  ↳ db/seeds.rb:325
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:325
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:325
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 305], ["updated_at", "2022-08-30 05:52:44.904266"], ["id", 366]]
+  ↳ db/seeds.rb:325
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:325
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:326
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 306], ["updated_at", "2022-08-30 05:52:44.904686"], ["id", 367]]
+  ↳ db/seeds.rb:326
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:326
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:326
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 306], ["updated_at", "2022-08-30 05:52:44.905144"], ["id", 368]]
+  ↳ db/seeds.rb:326
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:326
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:327
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 307], ["updated_at", "2022-08-30 05:52:44.905652"], ["id", 369]]
+  ↳ db/seeds.rb:327
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:327
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:327
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 307], ["updated_at", "2022-08-30 05:52:44.906069"], ["id", 370]]
+  ↳ db/seeds.rb:327
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:327
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "properties"."trait_value" FROM "properties" WHERE "properties"."work_id" = $1[0m  [["work_id", 296]]
+  ↳ db/seeds.rb:329
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 51]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 51]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 52]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 52]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 53]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 53]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 54]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 54]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 55]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 55]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 56]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 56]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 57]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 57]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 58]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 58]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 59]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 59]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 60]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 60]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:336
+  [1m[36mGenre Create (0.5ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Futuristic"], ["created_at", "2022-08-30 05:52:44.914615"], ["updated_at", "2022-08-30 05:52:44.914615"], ["genre_picture", "future.png"]]
+  ↳ db/seeds.rb:336
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:336
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:340
+  [1m[36mGenre Create (0.1ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "3D Rendered art"], ["created_at", "2022-08-30 05:52:44.915648"], ["updated_at", "2022-08-30 05:52:44.915648"], ["genre_picture", "3D.png"]]
+  ↳ db/seeds.rb:340
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:340
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:345
+  [1m[36mGenre Create (0.0ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Anime"], ["created_at", "2022-08-30 05:52:44.916072"], ["updated_at", "2022-08-30 05:52:44.916072"], ["genre_picture", "anime.png"]]
+  ↳ db/seeds.rb:345
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:345
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:350
+  [1m[36mGenre Create (0.0ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pixelated"], ["created_at", "2022-08-30 05:52:44.916474"], ["updated_at", "2022-08-30 05:52:44.916474"], ["genre_picture", "pix.png"]]
+  ↳ db/seeds.rb:350
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:350
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:355
+  [1m[36mGenre Create (0.0ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Memes"], ["created_at", "2022-08-30 05:52:44.916849"], ["updated_at", "2022-08-30 05:52:44.916849"], ["genre_picture", "memes.gif"]]
+  ↳ db/seeds.rb:355
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:355
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:360
+  [1m[36mGenre Create (0.0ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Gifs"], ["created_at", "2022-08-30 05:52:44.917244"], ["updated_at", "2022-08-30 05:52:44.917244"], ["genre_picture", "gify.gif"]]
+  ↳ db/seeds.rb:360
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:360
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:365
+  [1m[36mGenre Create (0.0ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Photographs"], ["created_at", "2022-08-30 05:52:44.917626"], ["updated_at", "2022-08-30 05:52:44.917626"], ["genre_picture", "photo.png"]]
+  ↳ db/seeds.rb:365
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:365
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:370
+  [1m[36mGenre Create (0.0ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pop Culture"], ["created_at", "2022-08-30 05:52:44.917989"], ["updated_at", "2022-08-30 05:52:44.917989"], ["genre_picture", "pop.png"]]
+  ↳ db/seeds.rb:370
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:370
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:375
+  [1m[36mGenre Create (0.0ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sports"], ["created_at", "2022-08-30 05:52:44.918361"], ["updated_at", "2022-08-30 05:52:44.918361"], ["genre_picture", "sports.png"]]
+  ↳ db/seeds.rb:375
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:375
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:380
+  [1m[36mGenre Create (0.0ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Collectables"], ["created_at", "2022-08-30 05:52:44.918728"], ["updated_at", "2022-08-30 05:52:44.918728"], ["genre_picture", "collectables.png"]]
+  ↳ db/seeds.rb:380
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:380
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ db/seeds.rb:385
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:387
+  [1m[36mWork::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 296], ["genre_id", 61]]
+  ↳ db/seeds.rb:387
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:387
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:387
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 296], ["genre_id", 62]]
+  ↳ db/seeds.rb:387
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:387
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:388
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 297], ["genre_id", 61]]
+  ↳ db/seeds.rb:388
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:388
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:388
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 297], ["genre_id", 62]]
+  ↳ db/seeds.rb:388
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:388
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:389
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 298], ["genre_id", 61]]
+  ↳ db/seeds.rb:389
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:389
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:389
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 298], ["genre_id", 62]]
+  ↳ db/seeds.rb:389
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:389
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:389
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 298], ["genre_id", 63]]
+  ↳ db/seeds.rb:389
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:389
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:390
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 299], ["genre_id", 62]]
+  ↳ db/seeds.rb:390
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:390
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:390
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 299], ["genre_id", 68]]
+  ↳ db/seeds.rb:390
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:390
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:391
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 300], ["genre_id", 62]]
+  ↳ db/seeds.rb:391
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:391
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:391
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 300], ["genre_id", 68]]
+  ↳ db/seeds.rb:391
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:391
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:392
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 301], ["genre_id", 62]]
+  ↳ db/seeds.rb:392
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:392
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:392
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 301], ["genre_id", 68]]
+  ↳ db/seeds.rb:392
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:392
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:392
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 301], ["genre_id", 69]]
+  ↳ db/seeds.rb:392
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:392
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:393
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 302], ["genre_id", 61]]
+  ↳ db/seeds.rb:393
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:393
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:393
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 302], ["genre_id", 62]]
+  ↳ db/seeds.rb:393
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:393
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:393
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 302], ["genre_id", 67]]
+  ↳ db/seeds.rb:393
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:393
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:394
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 303], ["genre_id", 61]]
+  ↳ db/seeds.rb:394
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:394
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:394
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 303], ["genre_id", 62]]
+  ↳ db/seeds.rb:394
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:394
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:394
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 303], ["genre_id", 67]]
+  ↳ db/seeds.rb:394
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:394
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:395
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 304], ["genre_id", 61]]
+  ↳ db/seeds.rb:395
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:395
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:395
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 304], ["genre_id", 62]]
+  ↳ db/seeds.rb:395
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:395
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:395
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 304], ["genre_id", 67]]
+  ↳ db/seeds.rb:395
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:395
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:396
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 305], ["genre_id", 66]]
+  ↳ db/seeds.rb:396
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:396
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:396
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 305], ["genre_id", 68]]
+  ↳ db/seeds.rb:396
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:396
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:397
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 306], ["genre_id", 66]]
+  ↳ db/seeds.rb:397
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:397
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:397
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 306], ["genre_id", 68]]
+  ↳ db/seeds.rb:397
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:397
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:398
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 307], ["genre_id", 66]]
+  ↳ db/seeds.rb:398
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:398
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:398
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 307], ["genre_id", 68]]
+  ↳ db/seeds.rb:398
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:398
+  [1m[36mBid Load (0.2ms)[0m  [1m[34mSELECT "bids".* FROM "bids"[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.1ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 13]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 14]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 15]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 16]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 17]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 18]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 19]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 20]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 21]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 22]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 23]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 24]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 25]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 26]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 27]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 28]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 29]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 30]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:404
+  [1m[36mBid Create (0.1ms)[0m  [1m[32mINSERT INTO "bids" ("currency", "blockchain", "created_at", "updated_at", "price") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["currency", "Eth"], ["blockchain", "Etherum"], ["created_at", "2022-08-30 05:52:44.945180"], ["updated_at", "2022-08-30 05:52:44.945180"], ["price", 12.0]]
+  ↳ db/seeds.rb:404
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:404
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:409
+  [1m[36mBid Create (0.1ms)[0m  [1m[32mINSERT INTO "bids" ("currency", "blockchain", "created_at", "updated_at", "price") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["currency", "Eth"], ["blockchain", "Etherum"], ["created_at", "2022-08-30 05:52:44.945742"], ["updated_at", "2022-08-30 05:52:44.945742"], ["price", 1.0]]
+  ↳ db/seeds.rb:409
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:409
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:415
+  [1m[36mBid Create (0.4ms)[0m  [1m[32mINSERT INTO "bids" ("currency", "blockchain", "created_at", "updated_at", "price") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["currency", "Eth"], ["blockchain", "Etherum"], ["created_at", "2022-08-30 05:52:44.946190"], ["updated_at", "2022-08-30 05:52:44.946190"], ["price", 2.0]]
+  ↳ db/seeds.rb:415
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:415
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:421
+  [1m[36mBid Create (0.1ms)[0m  [1m[32mINSERT INTO "bids" ("currency", "blockchain", "created_at", "updated_at", "price") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["currency", "Eth"], ["blockchain", "Etherum"], ["created_at", "2022-08-30 05:52:44.947066"], ["updated_at", "2022-08-30 05:52:44.947066"], ["price", 0.1]]
+  ↳ db/seeds.rb:421
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:421
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bids"[0m
+  ↳ db/seeds.rb:426
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:428
+  [1m[36mBid Update (0.1ms)[0m  [1m[33mUPDATE "bids" SET "updated_at" = $1, "user_id" = $2 WHERE "bids"."id" = $3[0m  [["updated_at", "2022-08-30 05:52:44.949870"], ["user_id", 82], ["id", 31]]
+  ↳ db/seeds.rb:428
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:428
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:428
+  [1m[36mBid Update (0.1ms)[0m  [1m[33mUPDATE "bids" SET "updated_at" = $1, "user_id" = $2 WHERE "bids"."id" = $3[0m  [["updated_at", "2022-08-30 05:52:44.950436"], ["user_id", 82], ["id", 32]]
+  ↳ db/seeds.rb:428
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:428
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:429
+  [1m[36mBid Update (0.0ms)[0m  [1m[33mUPDATE "bids" SET "updated_at" = $1, "user_id" = $2 WHERE "bids"."id" = $3[0m  [["updated_at", "2022-08-30 05:52:44.950910"], ["user_id", 83], ["id", 33]]
+  ↳ db/seeds.rb:429
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:429
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:429
+  [1m[36mBid Update (0.0ms)[0m  [1m[33mUPDATE "bids" SET "updated_at" = $1, "user_id" = $2 WHERE "bids"."id" = $3[0m  [["updated_at", "2022-08-30 05:52:44.951311"], ["user_id", 83], ["id", 34]]
+  ↳ db/seeds.rb:429
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:429
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:430
+  [1m[36mBid Update (0.1ms)[0m  [1m[33mUPDATE "bids" SET "updated_at" = $1, "work_id" = $2 WHERE "bids"."id" = $3[0m  [["updated_at", "2022-08-30 05:52:44.952030"], ["work_id", 299], ["id", 31]]
+  ↳ db/seeds.rb:430
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:430
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:430
+  [1m[36mBid Update (0.1ms)[0m  [1m[33mUPDATE "bids" SET "updated_at" = $1, "work_id" = $2 WHERE "bids"."id" = $3[0m  [["updated_at", "2022-08-30 05:52:44.952490"], ["work_id", 299], ["id", 32]]
+  ↳ db/seeds.rb:430
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:430
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:431
+  [1m[36mBid Update (0.1ms)[0m  [1m[33mUPDATE "bids" SET "updated_at" = $1, "work_id" = $2 WHERE "bids"."id" = $3[0m  [["updated_at", "2022-08-30 05:52:44.953069"], ["work_id", 303], ["id", 33]]
+  ↳ db/seeds.rb:431
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:431
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:431
+  [1m[36mBid Update (0.1ms)[0m  [1m[33mUPDATE "bids" SET "updated_at" = $1, "work_id" = $2 WHERE "bids"."id" = $3[0m  [["updated_at", "2022-08-30 05:52:44.953582"], ["work_id", 303], ["id", 34]]
+  ↳ db/seeds.rb:431
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:431
+Started GET "/search" for 127.0.0.1 at 2022-08-30 15:52:51 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.4ms)
+
+
+  
+NameError (uninitialized constant SearchController::Post):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 15:53:10 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 2.3ms)
+
+
+  
+NameError (uninitialized constant SearchController::Post):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 15:56:56 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 4.7ms)
+
+
+  
+NameError (uninitialized constant SearchController::Adventure):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 15:57:06 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 2.9ms)
+
+
+  
+NameError (uninitialized constant SearchController::POST):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:00:16 +1000
+  
+SyntaxError (/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/controllers/application_controller.rb:31: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/application_controller.rb:31: syntax error, unexpected `end', expecting end-of-input
+app/controllers/search_controller.rb:1:in `<main>'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:00:52 +1000
+  
+ActionController::RoutingError (undefined method `before_filter' for ApplicationController:Class
+Did you mean?  before_action):
+  
+app/controllers/application_controller.rb:24:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/search_controller.rb:1:in `<main>'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:01:19 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 4.3ms)
+
+
+  
+NameError (uninitialized constant ApplicationController::Post):
+  
+app/controllers/application_controller.rb:27:in `site_search'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:03:44 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 13.6ms)
+
+
+  
+NameError (uninitialized constant SearchController::Person):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:04:35 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 2.0ms)
+
+
+  
+NameError (uninitialized constant SearchController::Person):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:11:57 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 3.8ms)
+
+
+  
+NameError (uninitialized constant SearchController::Post):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:12:08 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 2.3ms)
+
+
+  
+NameError (uninitialized constant SearchController::Person):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:20:13 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 3.5ms)
+
+
+  
+NameError (uninitialized constant SearchController::Post):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:22:01 +1000
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 2.0ms)
+
+
+  
+NameError (uninitialized constant SearchController::Post):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:24:48 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms)
+
+
+  
+NameError (uninitialized constant SearchController::Post):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:25:02 +1000
+Processing by SearchController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/_form.html.erb (0.4ms)
+  Rendered search/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.8ms)
+
+
+  
+SyntaxError (/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/views/search/_form.html.erb:3: syntax error, unexpected tLABEL, expecting `do' or '{' or '('
+...query, url: search_path method: :get, class:'d-flex') do |f|...
+...                        ^~~~~~~
+/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/views/search/_form.html.erb:3: syntax error, unexpected ')', expecting `end'
+...h method: :get, class:'d-flex') do |f| @output_buffer.safe_a...
+...                              ^
+/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/views/search/_form.html.erb:10: syntax error, unexpected `ensure', expecting end-of-input
+          ensure
+          ^~~~~~
+):
+  
+app/views/search/_form.html.erb:3: syntax error, unexpected tLABEL, expecting `do' or '{' or '('
+app/views/search/_form.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/search/_form.html.erb:10: syntax error, unexpected `ensure', expecting end-of-input
+app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__2016929022078492139_24420'
+Started GET "/" for 127.0.0.1 at 2022-08-30 16:25:24 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 172ms (Views: 168.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2022-08-30 16:26:46 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [45 times] (3.8ms)
+  Rendered /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.2ms)
+  Rendered /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:27:03 +1000
+Processing by SearchController#index as HTML
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/_form.html.erb (0.6ms)
+  Rendered search/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/views/search/_form.html.erb:3: syntax error, unexpected tLABEL, expecting `do' or '{' or '('
+...query, url: search_path method: :get, class:'d-flex') do |f|...
+...                        ^~~~~~~
+/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/views/search/_form.html.erb:3: syntax error, unexpected ')', expecting `end'
+...h method: :get, class:'d-flex') do |f| @output_buffer.safe_a...
+...                              ^
+/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/views/search/_form.html.erb:10: syntax error, unexpected `ensure', expecting end-of-input
+          ensure
+          ^~~~~~
+):
+  
+app/views/search/_form.html.erb:3: syntax error, unexpected tLABEL, expecting `do' or '{' or '('
+app/views/search/_form.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/search/_form.html.erb:10: syntax error, unexpected `ensure', expecting end-of-input
+app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__2016929022078492139_31580'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:27:16 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant SearchController::Post):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:27:29 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant SearchController::Person):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:28:25 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `join_root' called for #<ActiveRecord::Associations::JoinDependency:0x00000001056750d8>):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/rails/info/routes" for ::1 at 2022-08-30 16:32:07 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [45 times] (5.6ms)
+  Rendered /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.6ms)
+  Rendered /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for ::1 at 2022-08-30 16:32:16 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [45 times] (11.2ms)
+  Rendered /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 16:32:28 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/works/new" for ::1 at 2022-08-30 16:32:32 +1000
+Processing by WorksController#new as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :check_if_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2022-08-30 16:32:32 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2022-08-30 16:32:33 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 49ms (Views: 33.9ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/genres" for ::1 at 2022-08-30 16:32:34 +1000
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (1.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/genres/index.html.erb:5
+  Rendered genres/index.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 49ms (Views: 36.0ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/genres/search" for ::1 at 2022-08-30 16:32:40 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"search"}
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+Completed 404 Not Found in 3ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Genre with 'id'=search):
+  
+app/controllers/genres_controller.rb:13:in `show'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:33:06 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `join_root' called for #<ActiveRecord::Associations::JoinDependency:0x0000000107a48bb8>):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:36:54 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `join_root' called for #<ActiveRecord::Associations::JoinDependency:0x0000000107bbd5c0>):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2022-08-30 16:38:56 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:39:02 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `join_root' called for #<ActiveRecord::Associations::JoinDependency:0x0000000133ccefc8>):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2022-08-30 16:40:50 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-30 16:43:49 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2022-08-30 16:44:01 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (hell):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2022-08-30 16:46:17 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial pages/_@query, application/_@query with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/views"
+):
+    5: <p>Add more description</p>
+    6: <p>Add a search bar here</p>
+    7: 
+    8: <%= render partial: '@query' %>
+  
+app/views/pages/home.html.erb:8:in `_app_views_pages_home_html_erb__326583141707759634_73680'
+Started GET "/" for 127.0.0.1 at 2022-08-30 16:47:16 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered search/_form.html.erb (0.9ms)
+  Rendered pages/home.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/views/search/_form.html.erb:3: syntax error, unexpected tLABEL, expecting `do' or '{' or '('
+...query, url: search_path method: :get, class:'d-flex') do |f|...
+...                        ^~~~~~~
+/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/views/search/_form.html.erb:3: syntax error, unexpected ')', expecting `end'
+...h method: :get, class:'d-flex') do |f| @output_buffer.safe_a...
+...                              ^
+/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/views/search/_form.html.erb:10: syntax error, unexpected `ensure', expecting end-of-input
+          ensure
+          ^~~~~~
+):
+  
+app/views/search/_form.html.erb:3: syntax error, unexpected tLABEL, expecting `do' or '{' or '('
+app/views/search/_form.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/search/_form.html.erb:10: syntax error, unexpected `ensure', expecting end-of-input
+app/views/pages/home.html.erb:8:in `_app_views_pages_home_html_erb__326583141707759634_74200'
+Started GET "/" for 127.0.0.1 at 2022-08-30 16:47:53 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered search/_form.html.erb (2.0ms)
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No Ransack::Search object was provided to search_form_for!):
+    1: <%# Create a search form, add the direction of the search form through url, then use the method %>
+    2: 
+    3: <%= search_form_for(@query, url: search_path, method: :get, class:'d-flex') do |f| %>
+    4:     
+    5:     <%= f.search_field :title_or_body_or_user_email_or_user_name_or_genre_name_or_work_name_or_name_count_any, placeholder: "Search...", class: 'form-search' %>
+    6:     
+  
+app/views/search/_form.html.erb:3:in `_app_views_search__form_html_erb___3876874144088137066_74760'
+app/views/pages/home.html.erb:8:in `_app_views_pages_home_html_erb__326583141707759634_74740'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 17:07:30 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `join_root' called for #<ActiveRecord::Associations::JoinDependency:0x0000000107b96d58>):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2022-08-30 17:07:46 +1000
+  
+SyntaxError (/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/controllers/pages_controller.rb:5: syntax error, unexpected `end'
+  end
+  ^~~
+/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/controllers/pages_controller.rb:13: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/pages_controller.rb:5: syntax error, unexpected `end'
+app/controllers/pages_controller.rb:13: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 17:08:30 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `join_root' called for #<ActiveRecord::Associations::JoinDependency:0x0000000106259980>):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 17:11:10 +1000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `join_root' called for #<ActiveRecord::Associations::JoinDependency:0x000000011960c538>):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2022-08-30 17:11:22 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered search/_form.html.erb (1.4ms)
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No Ransack::Search object was provided to search_form_for!):
+    1: <%# Create a search form, add the direction of the search form through url, then use the method %>
+    2: 
+    3: <%= search_form_for(@query, url: search_path, method: :get, class:'d-flex') do |f| %>
+    4:     
+    5:     <%= f.search_field :name_or_description_or_artist_or_blockchain_i_cont_any, placeholder: "Search...", class: 'form-search' %>
+    6:     
+  
+app/views/search/_form.html.erb:3:in `_app_views_search__form_html_erb___2281098998129492212_17620'
+app/views/pages/home.html.erb:8:in `_app_views_pages_home_html_erb__2794166258045489607_17600'
+Started GET "/" for 127.0.0.1 at 2022-08-30 17:13:21 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered search/_form.html.erb (1.6ms)
+  Rendered pages/home.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No Ransack::Search object was provided to search_form_for!):
+    1: <%# Create a search form, add the direction of the search form through url, then use the method %>
+    2: 
+    3: <%= search_form_for(@query, url: search_path, method: :get, class:'d-flex') do |f| %>
+    4:     
+    5:     <%= f.search_field :name_or_description_or_artist_or_blockchain_i_cont_any, placeholder: "Search...", class: 'form-search' %>
+    6:     
+  
+app/views/search/_form.html.erb:3:in `_app_views_search__form_html_erb___2281098998129492212_18200'
+app/views/pages/home.html.erb:8:in `_app_views_pages_home_html_erb__2794166258045489607_18180'
+Started GET "/" for 127.0.0.1 at 2022-08-30 17:13:23 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered search/_form.html.erb (1.8ms)
+  Rendered pages/home.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No Ransack::Search object was provided to search_form_for!):
+    1: <%# Create a search form, add the direction of the search form through url, then use the method %>
+    2: 
+    3: <%= search_form_for(@query, url: search_path, method: :get, class:'d-flex') do |f| %>
+    4:     
+    5:     <%= f.search_field :name_or_description_or_artist_or_blockchain_i_cont_any, placeholder: "Search...", class: 'form-search' %>
+    6:     
+  
+app/views/search/_form.html.erb:3:in `_app_views_search__form_html_erb___2281098998129492212_18780'
+app/views/pages/home.html.erb:8:in `_app_views_pages_home_html_erb__2794166258045489607_18760'
+Started GET "/" for 127.0.0.1 at 2022-08-30 17:13:25 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered search/_form.html.erb (1.4ms)
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No Ransack::Search object was provided to search_form_for!):
+    1: <%# Create a search form, add the direction of the search form through url, then use the method %>
+    2: 
+    3: <%= search_form_for(@query, url: search_path, method: :get, class:'d-flex') do |f| %>
+    4:     
+    5:     <%= f.search_field :name_or_description_or_artist_or_blockchain_i_cont_any, placeholder: "Search...", class: 'form-search' %>
+    6:     
+  
+app/views/search/_form.html.erb:3:in `_app_views_search__form_html_erb___2281098998129492212_19320'
+app/views/pages/home.html.erb:8:in `_app_views_pages_home_html_erb__2794166258045489607_19300'
+Started GET "/" for 127.0.0.1 at 2022-08-30 17:13:40 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered search/_form.html.erb (1.8ms)
+  Rendered pages/home.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No Ransack::Search object was provided to search_form_for!):
+    1: <%# Create a search form, add the direction of the search form through url, then use the method %>
+    2: 
+    3: <%= search_form_for(@query, url: search_path, method: :get, class:'d-flex') do |f| %>
+    4:     
+    5:     <%= f.search_field :name_or_description_or_artist_or_blockchain_i_cont_any, placeholder: "Search...", class: 'form-search' %>
+    6:     
+  
+app/views/search/_form.html.erb:3:in `_app_views_search__form_html_erb___2281098998129492212_19860'
+app/views/pages/home.html.erb:8:in `_app_views_pages_home_html_erb__2794166258045489607_19840'
+Started GET "/" for 127.0.0.1 at 2022-08-30 17:14:48 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 176ms (Views: 174.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2022-08-30 17:14:59 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `join_root' called for #<ActiveRecord::Associations::JoinDependency:0x0000000108d0b980>):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 17:17:33 +1000
+Processing by SearchController#index as HTML
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2022-08-30 17:18:05 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `join_root' called for #<ActiveRecord::Associations::JoinDependency:0x0000000108d8a7d0>):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 17:19:13 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `join_root' called for #<ActiveRecord::Associations::JoinDependency:0x0000000108d33188>):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2022-08-30 17:28:21 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2022-08-30 17:28:27 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `join_root' called for #<ActiveRecord::Associations::JoinDependency:0x00000001089ea148>):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for 127.0.0.1 at 2022-08-30 17:29:47 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `join_root' called for #<ActiveRecord::Associations::JoinDependency:0x0000000109d90328>):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2022-08-30 17:29:53 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2022-08-30 17:29:57 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `join_root' called for #<ActiveRecord::Associations::JoinDependency:0x00000001089b0bc8>):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2022-08-30 17:31:02 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2022-08-30 17:31:16 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-08-30 17:31:57 +1000
+Processing by PagesController#home as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `join_root' called for #<ActiveRecord::Associations::JoinDependency:0x0000000109de3e10>):
+  
+app/controllers/pages_controller.rb:3:in `home'
+  [1m[32mSOLR Request (5.7ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+  [1m[32mSOLR Request (5.1ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "properties"[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "works"[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/bin/rake:23
+  [1m[32mSOLR Request (8.8ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "properties"[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "works"[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/bin/rake:23
+  [1m[32mSOLR Request (6.4ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+Started GET "/" for ::1 at 2022-08-30 21:39:44 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "properties"[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "works"[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/bin/rake:23
+  [1m[32mSOLR Request (6.9ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "properties"[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "works"[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/bin/rake:23
+  [1m[32mSOLR Request (6.4ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "properties"[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "works"[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/bin/rake:23
+  [1m[32mSOLR Request (6.1ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+Started GET "/" for ::1 at 2022-08-30 21:59:39 +1000
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 125ms (Views: 120.0ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/works/new" for ::1 at 2022-08-30 21:59:42 +1000
+Processing by WorksController#new as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :check_if_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2022-08-30 21:59:42 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/works" for ::1 at 2022-08-30 21:59:42 +1000
+Processing by WorksController#index as HTML
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `join_root' called for #<ActiveRecord::Associations::JoinDependency:0x000000013b1e91f0>):
+  
+app/controllers/works_controller.rb:48:in `index'
+Started GET "/works" for ::1 at 2022-08-30 22:02:34 +1000
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (4.9ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (47.6ms)
+Completed 200 OK in 68ms (Views: 53.1ms | ActiveRecord: 9.7ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:11:47 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:11:50 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:11:51 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:11:51 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:11:52 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:11:53 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:11:54 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:13:28 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2022-08-30 22:13:30 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `join_root' called for #<ActiveRecord::Associations::JoinDependency:0x000000013f932688>):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for ::1 at 2022-08-30 22:13:50 +1000
+Processing by SearchController#index as HTML
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2022-08-30 22:13:55 +1000
+Processing by SearchController#index as HTML
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2022-08-30 22:13:58 +1000
+Processing by SearchController#index as HTML
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2022-08-30 22:14:01 +1000
+Processing by SearchController#index as HTML
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2022-08-30 22:14:04 +1000
+Processing by SearchController#index as HTML
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2022-08-30 22:14:07 +1000
+Processing by SearchController#index as HTML
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2022-08-30 22:14:10 +1000
+Processing by SearchController#index as HTML
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2022-08-30 22:21:44 +1000
+  
+ActionController::RoutingError (uninitialized constant WorkController):
+  
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.8.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.8.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.8.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.8.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search" for ::1 at 2022-08-30 22:23:11 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for ::1 at 2022-08-30 22:25:35 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for ::1 at 2022-08-30 22:26:07 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for ::1 at 2022-08-30 22:26:10 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2022-08-30 22:26:16 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2022-08-30 22:26:20 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for ::1 at 2022-08-30 22:27:03 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/search_controller.rb:3:in `+'
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/search" for ::1 at 2022-08-30 22:30:40 +1000
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/search_controller.rb:3:in `+'
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2022-08-30 22:30:43 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=monkey" for ::1 at 2022-08-30 22:30:46 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"monkey"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (3.8ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%monkey%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered search/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 49ms (Views: 34.8ms | ActiveRecord: 12.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:31:01 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=nft" for ::1 at 2022-08-30 22:31:09 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"nft"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%nft%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered search/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:31:10 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=robot" for ::1 at 2022-08-30 22:31:14 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"robot"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (1.0ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%robot%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered search/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 62ms (Views: 58.0ms | ActiveRecord: 1.0ms | Solr: 0.0ms)
+
+
+Started GET "/works" for ::1 at 2022-08-30 22:31:16 +1000
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.6ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 37ms (Views: 31.4ms | ActiveRecord: 4.3ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:31:29 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=mob" for ::1 at 2022-08-30 22:31:32 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"mob"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%mob%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered search/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:32:22 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=ape" for ::1 at 2022-08-30 22:32:26 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%ape%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered search/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:32:42 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:32:44 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/works" for ::1 at 2022-08-30 22:32:45 +1000
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 51ms (Views: 39.8ms | ActiveRecord: 3.8ms | Solr: 0.0ms)
+
+
+Started GET "/works/299" for ::1 at 2022-08-30 22:32:46 +1000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"299"}
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 299], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:54
+  Rendering works/show.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/works/show.html.erb:24
+  Rendered works/show.html.erb within layouts/application (38.9ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 16.8ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 2)):
+    50:   </p>
+    51:   <strong> Genres:</strong>
+    52:   <p>
+    53:     <% @work.genres.each do |genre| %>
+    54:    <%= link_to genre.name, genre_path(genre.id) %>
+    55:   <% end %>
+    56:   </p>
+  
+app/views/works/show.html.erb:53:in `_app_views_works_show_html_erb__1662027010442078469_81120'
+Started GET "/works/300" for ::1 at 2022-08-30 22:32:54 +1000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"300"}
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 300], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:54
+  Rendering works/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/works/show.html.erb:24
+  Rendered works/show.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 2)):
+    50:   </p>
+    51:   <strong> Genres:</strong>
+    52:   <p>
+    53:     <% @work.genres.each do |genre| %>
+    54:    <%= link_to genre.name, genre_path(genre.id) %>
+    55:   <% end %>
+    56:   </p>
+  
+app/views/works/show.html.erb:53:in `_app_views_works_show_html_erb__1662027010442078469_81680'
+Started GET "/works/296" for ::1 at 2022-08-30 22:33:39 +1000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"296"}
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 296], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:54
+  Rendering works/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  ↳ app/views/works/show.html.erb:24
+  Rendered works/show.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 2)):
+    50:   </p>
+    51:   <strong> Genres:</strong>
+    52:   <p>
+    53:     <% @work.genres.each do |genre| %>
+    54:    <%= link_to genre.name, genre_path(genre.id) %>
+    55:   <% end %>
+    56:   </p>
+  
+app/views/works/show.html.erb:53:in `_app_views_works_show_html_erb__1662027010442078469_82200'
+Started GET "/works/296" for ::1 at 2022-08-30 22:36:23 +1000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"296"}
+  [1m[36mWork Load (0.2ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 296], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:54
+  Rendering works/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  ↳ app/views/works/show.html.erb:24
+  Rendered works/show.html.erb within layouts/application (15.5ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 13.7ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 2)):
+    50:   </p>
+    51:   <strong> Genres:</strong>
+    52:   <p>
+    53:     <% @w_genre.each do |genre| %>
+    54:    <%= link_to genre.name, genre_path(genre.id) %>
+    55:   <% end %>
+    56:   </p>
+  
+app/views/works/show.html.erb:53:in `_app_views_works_show_html_erb__1662027010442078469_88940'
+Started GET "/works" for ::1 at 2022-08-30 22:37:31 +1000
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.7ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 39ms (Views: 27.2ms | ActiveRecord: 4.5ms | Solr: 0.0ms)
+
+
+Started GET "/works/301" for ::1 at 2022-08-30 22:37:32 +1000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"301"}
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 301], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:54
+  Rendering works/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/works/show.html.erb:24
+  [1m[36mProperty Load (0.6ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."work_id" = $1[0m  [["work_id", 301]]
+  ↳ app/views/works/show.html.erb:60
+  [1m[36mBid Load (1.1ms)[0m  [1m[34mSELECT  "bids".* FROM "bids" WHERE "bids"."work_id" = $1 ORDER BY "bids"."id" DESC LIMIT $2[0m  [["work_id", 301], ["LIMIT", 5]]
+  ↳ app/views/works/show.html.erb:76
+  Rendered works/show.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 69ms (Views: 36.9ms | ActiveRecord: 11.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:37:43 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=monkey" for ::1 at 2022-08-30 22:37:46 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"monkey"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (2.9ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (Work.name Like'%monkey%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 2.9ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "work"
+LINE 1: SELECT "works".* FROM "works" WHERE (Work.name Like'%monkey%...
+                                             ^
+: SELECT "works".* FROM "works" WHERE (Work.name Like'%monkey%')):
+    2: <p>Find me in app/views/search/index.html.erb</p>
+    3: 
+    4: 
+    5: <%= render @works %> 
+  
+app/views/search/index.html.erb:5:in `_app_views_search_index_html_erb___917368102369737947_96020'
+Started GET "/search?q=monkey" for ::1 at 2022-08-30 22:39:29 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"monkey"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (0.5ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%monkey%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered search/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 26ms (Views: 18.2ms | ActiveRecord: 1.6ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=monkey" for ::1 at 2022-08-30 22:40:41 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"monkey"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (0.9ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (:name Like'%monkey%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (PG::SyntaxError: ERROR:  syntax error at or near ":"
+LINE 1: SELECT "works".* FROM "works" WHERE (:name Like'%monkey%')
+                                             ^
+: SELECT "works".* FROM "works" WHERE (:name Like'%monkey%')):
+    2: <p>Find me in app/views/search/index.html.erb</p>
+    3: 
+    4: 
+    5: <%= render @works %> 
+  
+app/views/search/index.html.erb:5:in `_app_views_search_index_html_erb___917368102369737947_108860'
+Started GET "/search?q=monkey" for ::1 at 2022-08-30 22:41:10 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"monkey"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (1.1ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (params[:name] Like'%monkey%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column "params" does not exist
+LINE 1: SELECT "works".* FROM "works" WHERE (params[:name] Like'%mon...
+                                             ^
+: SELECT "works".* FROM "works" WHERE (params[:name] Like'%monkey%')):
+    2: <p>Find me in app/views/search/index.html.erb</p>
+    3: 
+    4: 
+    5: <%= render @works %> 
+  
+app/views/search/index.html.erb:5:in `_app_views_search_index_html_erb___917368102369737947_115500'
+Started GET "/search?q=monkey" for ::1 at 2022-08-30 22:41:21 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"monkey"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%monkey%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered search/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 24ms (Views: 17.5ms | ActiveRecord: 1.9ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:41:59 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=ape" for ::1 at 2022-08-30 22:42:04 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"ape"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (hell):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/works" for ::1 at 2022-08-30 22:42:21 +1000
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.6ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 55ms (Views: 39.7ms | ActiveRecord: 4.3ms | Solr: 0.0ms)
+
+
+Started GET "/works/299" for ::1 at 2022-08-30 22:42:24 +1000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"299"}
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 299], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:54
+  Rendering works/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/works/show.html.erb:24
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."work_id" = $1[0m  [["work_id", 299]]
+  ↳ app/views/works/show.html.erb:60
+  [1m[36mBid Load (0.4ms)[0m  [1m[34mSELECT  "bids".* FROM "bids" WHERE "bids"."work_id" = $1 ORDER BY "bids"."id" DESC LIMIT $2[0m  [["work_id", 299], ["LIMIT", 5]]
+  ↳ app/views/works/show.html.erb:76
+  Rendered works/show.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 57ms (Views: 34.6ms | ActiveRecord: 9.9ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 22:42:50 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=ape" for ::1 at 2022-08-30 22:42:54 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"ape"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (hell):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2022-08-30 22:43:07 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=ape" for ::1 at 2022-08-30 22:43:11 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (1.2ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (work_id Like'%ape%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column "work_id" does not exist
+LINE 1: SELECT "works".* FROM "works" WHERE (work_id Like'%ape%')
+                                             ^
+: SELECT "works".* FROM "works" WHERE (work_id Like'%ape%')):
+    2: <p>Find me in app/views/search/index.html.erb</p>
+    3: 
+    4: 
+    5: <%= render @works %> 
+  
+app/views/search/index.html.erb:5:in `_app_views_search_index_html_erb___917368102369737947_142060'
+Started GET "/search?q=ape" for ::1 at 2022-08-30 23:29:39 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 23:29:41 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-30 23:37:21 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for ::1 at 2022-08-30 23:37:40 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 32ms (Views: 20.8ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/works" for ::1 at 2022-08-31 08:53:29 +1000
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.8ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (35.3ms)
+Completed 200 OK in 54ms (Views: 43.7ms | ActiveRecord: 7.3ms | Solr: 0.0ms)
+
+
+Started GET "/works" for ::1 at 2022-08-31 08:53:35 +1000
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.8ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.8ms | Solr: 0.0ms)
+
+
+Started GET "/works/299" for ::1 at 2022-08-31 08:53:36 +1000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"299"}
+  [1m[36mWork Load (0.2ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 299], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:54
+  Rendering works/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/works/show.html.erb:24
+  [1m[36mProperty Load (0.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."work_id" = $1[0m  [["work_id", 299]]
+  ↳ app/views/works/show.html.erb:60
+  [1m[36mBid Load (0.6ms)[0m  [1m[34mSELECT  "bids".* FROM "bids" WHERE "bids"."work_id" = $1 ORDER BY "bids"."id" DESC LIMIT $2[0m  [["work_id", 299], ["LIMIT", 5]]
+  ↳ app/views/works/show.html.erb:76
+  Rendered works/show.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 79ms (Views: 45.4ms | ActiveRecord: 13.7ms | Solr: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2022-08-31 08:54:01 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2022-08-31 08:54:07 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yp1S6FjoQp1UrY9j3IqrbYpx32igrmhPC3eOyLhzwxcwzoEzlXlNXMw7w1okeLJRgL85gD3iSDfcbz6ePee7fA==", "email"=>"mdak2806@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mdak2806@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:7
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for ::1 at 2022-08-31 08:54:07 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2022-08-31 08:54:23 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b56zp7i/wgG7gr4wZIo4TsyBFDj9PNPIFuwTv/FE1Lo9zWB8dS7NwCMU8gmceCFyxk/y0GBw87DB9KPpdNCs0Q==", "email"=>"monkey@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "monkey@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:7
+Redirected to http://localhost:3000/login
+Completed 302 Found in 285ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2022-08-31 08:54:23 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-31 08:54:28 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:06:56 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 39ms (Views: 35.5ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/works" for 127.0.0.1 at 2022-08-31 09:06:59 +1000
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (1.2ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 1.2ms | Solr: 0.0ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2022-08-31 09:07:00 +1000
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/genres/index.html.erb:5
+  Rendered genres/index.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 46ms (Views: 36.2ms | ActiveRecord: 7.4ms | Solr: 0.0ms)
+
+
+Started GET "/genres/61" for 127.0.0.1 at 2022-08-31 09:07:02 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 2)):
+    1: <h2><%= @genre.name %></h2>
+    2: <ul>
+    3: <% @genre.works.each do |work| %>
+    4: <li>
+    5: <%= link_to work.name, work_path(work.id) %>
+    6: <%= image_tag work.picture, alt:work.name, class: 'Genre-NFT' %>
+  
+app/views/genres/show.html.erb:3:in `_app_views_genres_show_html_erb__3673085592331665601_150300'
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:10:52 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 09:10:55 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 22.2ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:12:51 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=appe" for 127.0.0.1 at 2022-08-31 09:12:54 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"appe"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (1.9ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (work_id Like'%%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column "work_id" does not exist
+LINE 1: SELECT "works".* FROM "works" WHERE (work_id Like'%%')
+                                             ^
+: SELECT "works".* FROM "works" WHERE (work_id Like'%%')):
+    2: <p>Find me in app/views/search/index.html.erb</p>
+    3: 
+    4: 
+    5: <%= render @works %> 
+  
+app/views/search/index.html.erb:5:in `_app_views_search_index_html_erb___917368102369737947_157180'
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:13:09 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 09:13:13 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:13:47 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 09:13:49 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (hell):
+    1: <h1>Search Results</h1>
+    2: <p>Find me in app/views/search/index.html.erb</p>
+    3: 
+    4: <% raise 'hell' %>
+    5: <%=  @works %> 
+  
+app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb___917368102369737947_157940'
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:15:51 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 09:15:54 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (hell):
+    1: <h1>Search Results</h1>
+    2: <p>Find me in app/views/search/index.html.erb</p>
+    3: 
+    4: <% raise 'hell' %>
+    5: <%=  @works.each do |work| %> 
+    6: <li>
+    7:     <%= link_to work.name, work_path(work.id) %>
+  
+app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb___917368102369737947_158540'
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:16:04 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 09:16:07 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (1.2ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (work_id Like'%%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column "work_id" does not exist
+LINE 1: SELECT "works".* FROM "works" WHERE (work_id Like'%%')
+                                             ^
+: SELECT "works".* FROM "works" WHERE (work_id Like'%%')):
+    2: <p>Find me in app/views/search/index.html.erb</p>
+    3: 
+    4: 
+    5: <%=  @works.each do |work| %> 
+    6: <li>
+    7:     <%= link_to work.name, work_path(work.id) %>
+    8:     <br>
+  
+app/views/search/index.html.erb:5:in `_app_views_search_index_html_erb___917368102369737947_159140'
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 09:17:08 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (1.1ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (work_id Like'%%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column "work_id" does not exist
+LINE 1: SELECT "works".* FROM "works" WHERE (work_id Like'%%')
+                                             ^
+: SELECT "works".* FROM "works" WHERE (work_id Like'%%')):
+    2: <p>Find me in app/views/search/index.html.erb</p>
+    3: 
+    4: 
+    5: <%=  @works.each do |work| %> 
+    6: <li>
+    7:     <%= work.name %>
+    8:     <br>
+  
+app/views/search/index.html.erb:5:in `_app_views_search_index_html_erb___917368102369737947_159660'
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 09:19:56 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (1.1ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 32ms (Views: 20.5ms | ActiveRecord: 6.4ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:20:06 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=monkey" for 127.0.0.1 at 2022-08-31 09:20:09 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"monkey"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:20:48 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 09:20:50 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (hell):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:21:14 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 09:21:17 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (0.5ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 57ms (Views: 44.5ms | ActiveRecord: 4.1ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:22:27 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 09:22:31 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (0.7ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 53ms (Views: 39.6ms | ActiveRecord: 4.8ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:23:43 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 09:23:46 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (hell):
+  
+app/controllers/search_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:25:34 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 09:25:37 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+Completed 404 Not Found in 13ms (ActiveRecord: 3.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Work without an ID):
+  
+app/controllers/search_controller.rb:5:in `index'
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:26:31 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 09:26:34 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (2.5ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%%') AND (LOWER(name) LIKE '%ape')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 38ms (Views: 24.6ms | ActiveRecord: 3.9ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 09:27:21 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (0.6ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 38ms (Views: 28.2ms | ActiveRecord: 4.3ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 09:27:49 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (0.8ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 38ms (Views: 26.7ms | ActiveRecord: 5.8ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:27:55 +1000
+  
+SyntaxError (/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/controllers/pages_controller.rb:17: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/pages_controller.rb:17: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:28:03 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 09:28:06 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (0.5ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (34.6ms)
+Completed 200 OK in 56ms (Views: 42.6ms | ActiveRecord: 4.4ms | Solr: 0.0ms)
+
+

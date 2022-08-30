@@ -8,6 +8,8 @@ class WorksController < ApplicationController
     @genre = Genre.all
   end
 
+ 
+
   def create
     @bid = Bid.new bid_params
     @work = Work.new work_params

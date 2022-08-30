@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   root to: 'pages#home'
   # roots for login details
   get '/login' => 'session#new'
@@ -13,7 +14,9 @@ Rails.application.routes.draw do
   resources :properties
   resources :genres
   resources :bids
-  
+  # search bar
+  # resources :seraches
+  get '/search', :to => 'search#index'
 
 
 end

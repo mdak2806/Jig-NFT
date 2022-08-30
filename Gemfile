@@ -52,3 +52,7 @@ end
 
 #Pry in rails
 gem 'pry-rails'
+
+# gem ransack for search bar
+gem 'ransack'
+

@@ -1,10 +1,16 @@
 class PagesController < ApplicationController
   def home
-    fetch_user
+
+  end
+  def index
+    # @works = Work.find params[:search]
+    if params[:search]
+      @search_term = params[:search]
+      @works = @works.search_by(@search_term)
+    end
   end
 
   def faq
-    fetch_user
   end
 
   private

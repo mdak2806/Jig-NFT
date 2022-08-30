@@ -1,0 +1,14 @@
+<h1>Search Results</h1>
+<p>Find me in app/views/search/index.html.erb</p>
+
+
+<%=  @works.each do |work| %> 
+<li>
+    <%= link_to work.name, work_path(work.id) %>
+    <br>
+     <%= work.artist %>
+     <br>
+    <%= image_tag work.picture, alt:work.name, class:'NFT' %>
+  </li>
+<% end %>
+</ul>

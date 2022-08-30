@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
-
+   
+  
     before_action :fetch_user
     def fetch_user
 
@@ -19,6 +20,12 @@ class ApplicationController < ActionController::Base
             redirect_to login_path
         end
     end
+   
+    # before_action :site_search
 
+    # def site_search
+    #   @query = Post.ransack(params[:q])
+    #   @query_search = @query.result(distinct: true)
+    # end
 
 end
