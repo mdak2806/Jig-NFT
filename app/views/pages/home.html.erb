@@ -5,21 +5,13 @@
 <p>Add more description</p>
 <p>Add a search bar here</p>
 
-<div>
-<form class="HomeSearch" action="/search">
-<input class="Search bar" name="q" type="text" placeholder="Search" aria-label="Search">
-<button class="Search Button">Search</button>
+<div >
 
-<%# second attempt %>
-form 2
-<%= form_for "", url: search_path, role:"search", method: :get do %>
-<%= text_field_tag :search, @search_term,placeholder: "Search..." %>
+
+<%= form_with url: search_path, local: true, role:"search", method: :get do |f| %>
+    <%= f.text_field :search, placeholder: "Search..." %>
+    <%= f.submit "Search" %>
 <% end %>
 </form>
 </div>
 
-<%= form_tag "/works", method: "GET" do %>
-<%= label_tag :search_by_name %>
-<%= text_field_tag :search_by_name, params[:search_by_name] %>
-<% end %>
-<%# <%= render 'search/form' %>     

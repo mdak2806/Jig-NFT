@@ -1,7 +1,8 @@
 class SearchController < ApplicationController
   def index
     # raise 'hell'
-      @works = Work.where("name Like?", "%" + params[:q] + "%")
+      search = "%" + params[:search] + "%"
+      @works = Work.where("name ILIKE ? OR description ILIKE ? OR artist ILIKE ?", search, search, search)
       
   end
 
