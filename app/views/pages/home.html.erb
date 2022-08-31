@@ -17,4 +17,9 @@ form 2
 <% end %>
 </form>
 </div>
+
+<%= form_tag "/works", method: "GET" do %>
+<%= label_tag :search_by_name %>
+<%= text_field_tag :search_by_name, params[:search_by_name] %>
+<% end %>
 <%# <%= render 'search/form' %>     

@@ -1,7 +1,7 @@
 <h1>Search Results</h1>
 <p>Find me in app/views/search/index.html.erb</p>
 
-
+<div class="work-index">
 <%=  @works.each do |work| %> 
 <li>
     <%= link_to work.name, work_path(work.id) %>
@@ -11,4 +11,15 @@
     <%= image_tag work.picture, alt:work.name, class:'NFT' %>
   </li>
 <% end %>
+</div>
+
+<div class="index-filter">
+<%= select_tag "filer", options_for_select(['Genre Filter', 'Futuristic', '3D Rendered art', 'Anime', 'Pixelated', 'Memes', 'Gifs', 'Photographs', 'Pop Culture', 'Sports', 'Collectables' ]), class:'custom-select' %>
+<%= submit_tag "Filter", class:'btn btn-dark' %>
+</div>
+<% end %>
+
+
+
+
 </ul>

@@ -41677,3 +41677,2162 @@ Processing by SearchController#index as HTML
 Completed 200 OK in 56ms (Views: 42.6ms | ActiveRecord: 4.4ms | Solr: 0.0ms)
 
 
+Started GET "/genres" for 127.0.0.1 at 2022-08-31 09:42:42 +1000
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/genres/index.html.erb:5
+  Rendered genres/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 64ms (Views: 47.6ms | ActiveRecord: 7.9ms | Solr: 0.0ms)
+
+
+Started GET "/genres/61" for 127.0.0.1 at 2022-08-31 09:42:45 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 2)):
+    1: <h2><%= @genre.name %></h2>
+    2: <ul>
+    3: <% @genre.works.each do |work| %>
+    4: <li>
+    5: <%= link_to work.name, work_path(work.id) %>
+    6: <%= image_tag work.picture, alt:work.name, class: 'Genre-NFT' %>
+  
+app/views/genres/show.html.erb:3:in `_app_views_genres_show_html_erb__3673085592331665601_224660'
+Started GET "/" for 127.0.0.1 at 2022-08-31 09:43:29 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2022-08-31 09:44:23 +1000
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/genres/index.html.erb:5
+  Rendered genres/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
+
+
+Started GET "/genres/61" for 127.0.0.1 at 2022-08-31 09:44:24 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 2)):
+    1: <h2><%= @genre.name %></h2>
+    2: <ul>
+    3: <% @genre.works.each do |work| %>
+    4: <li>
+    5: <%= link_to work.name, work_path(work.id) %>
+    6: <%= image_tag work.picture, alt:work.name, class: 'Genre-NFT' %>
+  
+app/views/genres/show.html.erb:3:in `_app_views_genres_show_html_erb__3673085592331665601_225340'
+Started PUT "/__web_console/repl_sessions/2a0039266d1d31771d48ed7feacf9b9c" for 127.0.0.1 at 2022-08-31 09:44:52 +1000
+Started PUT "/__web_console/repl_sessions/2a0039266d1d31771d48ed7feacf9b9c" for 127.0.0.1 at 2022-08-31 09:44:54 +1000
+Started PUT "/__web_console/repl_sessions/2a0039266d1d31771d48ed7feacf9b9c" for 127.0.0.1 at 2022-08-31 09:45:04 +1000
+Started PUT "/__web_console/repl_sessions/2a0039266d1d31771d48ed7feacf9b9c" for 127.0.0.1 at 2022-08-31 09:45:05 +1000
+Started PUT "/__web_console/repl_sessions/2a0039266d1d31771d48ed7feacf9b9c" for 127.0.0.1 at 2022-08-31 09:45:13 +1000
+Started PUT "/__web_console/repl_sessions/2a0039266d1d31771d48ed7feacf9b9c" for 127.0.0.1 at 2022-08-31 09:45:15 +1000
+Started PUT "/__web_console/repl_sessions/2a0039266d1d31771d48ed7feacf9b9c" for 127.0.0.1 at 2022-08-31 09:45:17 +1000
+Started PUT "/__web_console/repl_sessions/2a0039266d1d31771d48ed7feacf9b9c" for 127.0.0.1 at 2022-08-31 09:45:18 +1000
+Started PUT "/__web_console/repl_sessions/2a0039266d1d31771d48ed7feacf9b9c" for 127.0.0.1 at 2022-08-31 09:47:50 +1000
+Started PUT "/__web_console/repl_sessions/2a0039266d1d31771d48ed7feacf9b9c" for 127.0.0.1 at 2022-08-31 09:48:02 +1000
+Started PUT "/__web_console/repl_sessions/2a0039266d1d31771d48ed7feacf9b9c" for 127.0.0.1 at 2022-08-31 09:48:18 +1000
+Started PUT "/__web_console/repl_sessions/2a0039266d1d31771d48ed7feacf9b9c" for 127.0.0.1 at 2022-08-31 09:48:23 +1000
+Started GET "/genres" for 127.0.0.1 at 2022-08-31 09:55:28 +1000
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (1.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/genres/index.html.erb:5
+  Rendered genres/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 43ms (Views: 37.6ms | ActiveRecord: 1.0ms | Solr: 0.0ms)
+
+
+Started GET "/genres/61" for 127.0.0.1 at 2022-08-31 09:55:30 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 2)):
+    1: <h2><%= @genre.name %></h2>
+    2: <ul>
+    3: <% @genre.works.each do |work| %>
+    4: <li>
+    5: <%= link_to work.name, work_path(work.id) %>
+    6: <%= image_tag work.picture, alt:work.name, class: 'Genre-NFT' %>
+  
+app/views/genres/show.html.erb:3:in `_app_views_genres_show_html_erb__3673085592331665601_225960'
+Started PUT "/__web_console/repl_sessions/61810424e5d800ce246b7372341af65d" for 127.0.0.1 at 2022-08-31 09:56:10 +1000
+Started PUT "/__web_console/repl_sessions/61810424e5d800ce246b7372341af65d" for 127.0.0.1 at 2022-08-31 09:56:13 +1000
+Started PUT "/__web_console/repl_sessions/61810424e5d800ce246b7372341af65d" for 127.0.0.1 at 2022-08-31 09:56:17 +1000
+Started PUT "/__web_console/repl_sessions/61810424e5d800ce246b7372341af65d" for 127.0.0.1 at 2022-08-31 09:56:23 +1000
+Started PUT "/__web_console/repl_sessions/61810424e5d800ce246b7372341af65d" for 127.0.0.1 at 2022-08-31 09:56:26 +1000
+Started GET "/genres/67" for 127.0.0.1 at 2022-08-31 09:56:49 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 2)):
+    1: <h2><%= @genre.name %></h2>
+    2: <ul>
+    3: <% @genre.works.each do |work| %>
+    4: <li>
+    5: <%= link_to work.name, work_path(work.id) %>
+    6: <%= image_tag work.picture, alt:work.name, class: 'Genre-NFT' %>
+  
+app/views/genres/show.html.erb:3:in `_app_views_genres_show_html_erb__3673085592331665601_226480'
+Started GET "/genres/61" for 127.0.0.1 at 2022-08-31 09:57:29 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 2)):
+    1: <h2><%= @genre.name %></h2>
+    2: <ul>
+    3: <% @genre.works.each do |work| %>
+    4: <li>
+    5: <%= link_to work.name, work_path(work.id) %>
+    6: <%= image_tag work.picture, alt:work.name, class: 'Genre-NFT' %>
+  
+app/views/genres/show.html.erb:3:in `_app_views_genres_show_html_erb__3673085592331665601_227000'
+Started PUT "/__web_console/repl_sessions/913d48b55fa85b8362cd25ce6efd1273" for 127.0.0.1 at 2022-08-31 09:57:32 +1000
+Started PUT "/__web_console/repl_sessions/913d48b55fa85b8362cd25ce6efd1273" for 127.0.0.1 at 2022-08-31 09:57:33 +1000
+  [1m[36mWork Load (0.5ms)[0m  [1m[34mSELECT  "works".* FROM "works" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Started PUT "/__web_console/repl_sessions/913d48b55fa85b8362cd25ce6efd1273" for 127.0.0.1 at 2022-08-31 10:06:45 +1000
+Started PUT "/__web_console/repl_sessions/913d48b55fa85b8362cd25ce6efd1273" for 127.0.0.1 at 2022-08-31 10:06:47 +1000
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/genres/show.html.erb:3
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/genres/show.html.erb:3
+Started PUT "/__web_console/repl_sessions/913d48b55fa85b8362cd25ce6efd1273" for 127.0.0.1 at 2022-08-31 10:06:49 +1000
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/genres/show.html.erb:3
+Started PUT "/__web_console/repl_sessions/913d48b55fa85b8362cd25ce6efd1273" for 127.0.0.1 at 2022-08-31 10:06:57 +1000
+Started PUT "/__web_console/repl_sessions/913d48b55fa85b8362cd25ce6efd1273" for 127.0.0.1 at 2022-08-31 10:06:58 +1000
+Started PUT "/__web_console/repl_sessions/913d48b55fa85b8362cd25ce6efd1273" for 127.0.0.1 at 2022-08-31 10:06:59 +1000
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/genres/show.html.erb:3
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/genres/show.html.erb:3
+Started PUT "/__web_console/repl_sessions/913d48b55fa85b8362cd25ce6efd1273" for 127.0.0.1 at 2022-08-31 10:07:00 +1000
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/genres/show.html.erb:3
+Started PUT "/__web_console/repl_sessions/913d48b55fa85b8362cd25ce6efd1273" for 127.0.0.1 at 2022-08-31 10:07:06 +1000
+Started PUT "/__web_console/repl_sessions/913d48b55fa85b8362cd25ce6efd1273" for 127.0.0.1 at 2022-08-31 10:07:08 +1000
+Started PUT "/__web_console/repl_sessions/913d48b55fa85b8362cd25ce6efd1273" for 127.0.0.1 at 2022-08-31 10:07:09 +1000
+Started PUT "/__web_console/repl_sessions/913d48b55fa85b8362cd25ce6efd1273" for 127.0.0.1 at 2022-08-31 10:07:10 +1000
+Started PUT "/__web_console/repl_sessions/913d48b55fa85b8362cd25ce6efd1273" for 127.0.0.1 at 2022-08-31 10:07:16 +1000
+Started PUT "/__web_console/repl_sessions/913d48b55fa85b8362cd25ce6efd1273" for 127.0.0.1 at 2022-08-31 10:07:16 +1000
+Started PUT "/__web_console/repl_sessions/913d48b55fa85b8362cd25ce6efd1273" for 127.0.0.1 at 2022-08-31 10:07:17 +1000
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mWork Load (0.6ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (1.9ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 299]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.3ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 299]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 300]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.2ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 300]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.4ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 301]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 301]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 302]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 302]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 303]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 303]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 304]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 304]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.3ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 305]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.2ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 305]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 306]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 306]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 307]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 307]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 296]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 296]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 297]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.2ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 297]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWork::HABTM_Genres Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."work_id" = $1[0m  [["work_id", 298]]
+  ↳ db/seeds.rb:9
+  [1m[36mWork Destroy (0.1ms)[0m  [1m[31mDELETE FROM "works" WHERE "works"."id" = $1[0m  [["id", 298]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mWork Create (0.9ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Infected Mob #1"], ["description", "A collection of deranged and savage mobsters spreading across Solana"], ["artist", "Sophie"], ["token_id", 8283], ["blockchain", "Solana"], ["price", 18], ["currency", "Sol"], ["picture", "sophie1.png"], ["created_at", "2022-08-31 00:09:52.334154"], ["updated_at", "2022-08-31 00:09:52.334154"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mWork Create (0.2ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Infected Mob #2"], ["description", "A collection of deranged and savage mobsters spreading across Solana."], ["artist", "Sophie"], ["token_id", 2873], ["blockchain", "Solana"], ["price", 10], ["currency", "Sol"], ["picture", "sophie2.png"], ["created_at", "2022-08-31 00:09:52.335902"], ["updated_at", "2022-08-31 00:09:52.335902"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mWork Create (0.1ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Infected Mob #3"], ["description", "A collection of deranged and savage mobsters spreading across Solana."], ["artist", "Sophie"], ["token_id", 3887], ["blockchain", "Solana"], ["price", 3], ["currency", "Sol"], ["picture", "sophie3.png"], ["created_at", "2022-08-31 00:09:52.336701"], ["updated_at", "2022-08-31 00:09:52.336701"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mWork Create (0.2ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Steezy Ape #1"], ["description", "Collection of street apes swagged out and dripped out"], ["artist", "Pop"], ["token_id", 3778], ["blockchain", "Ethereum"], ["price", 100], ["currency", "Eth"], ["picture", "ape1.png"], ["created_at", "2022-08-31 00:09:52.337441"], ["updated_at", "2022-08-31 00:09:52.337441"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mWork Create (0.2ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Steezy Ape #2"], ["description", "Collection of street apes swagged out and dripped out"], ["artist", "Pop"], ["token_id", 3778], ["blockchain", "Ethereum"], ["price", 78], ["currency", "Eth"], ["picture", "ape2.png"], ["created_at", "2022-08-31 00:09:52.338229"], ["updated_at", "2022-08-31 00:09:52.338229"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:67
+  [1m[36mWork Create (0.1ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Steezy Ape #3"], ["description", "Collection of street apes swagged out and dripped out"], ["artist", "Pop"], ["token_id", 3774], ["blockchain", "Ethereum"], ["price", 30], ["currency", "Eth"], ["picture", "ape3.png"], ["created_at", "2022-08-31 00:09:52.338964"], ["updated_at", "2022-08-31 00:09:52.338964"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[36mWork Create (0.1ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Solider of Fortune"], ["description", "This collection is an exploration of other-worldly cityscapes and dark fantasies in the visual aesthetic of BEEBLE distinct style with abstract digital paint in psychedelic colors."], ["artist", "Beeble"], ["token_id", 2929], ["blockchain", "Ethereum"], ["price", 200], ["currency", "Eth"], ["picture", "sold1.png"], ["created_at", "2022-08-31 00:09:52.339626"], ["updated_at", "2022-08-31 00:09:52.339626"]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:89
+  [1m[36mWork Create (0.1ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Peace in this life"], ["description", "This collection is an exploration of other-worldly cityscapes and dark fantasies in the visual aesthetic of BEEBLE distinct style with abstract digital paint in psychedelic colors."], ["artist", "Beeble"], ["token_id", 2929], ["blockchain", "Ethereum"], ["price", 223], ["currency", "Eth"], ["picture", "sold2.png"], ["created_at", "2022-08-31 00:09:52.340258"], ["updated_at", "2022-08-31 00:09:52.340258"]]
+  ↳ db/seeds.rb:89
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:89
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:99
+  [1m[36mWork Create (0.1ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Never get rich"], ["description", "This collection is an exploration of other-worldly cityscapes and dark fantasies in the visual aesthetic of BEEBLE distinct style with abstract digital paint in psychedelic colors."], ["artist", "Beeble"], ["token_id", 2929], ["blockchain", "Ethereum"], ["price", 100], ["currency", "Eth"], ["picture", "sold3.png"], ["created_at", "2022-08-31 00:09:52.340904"], ["updated_at", "2022-08-31 00:09:52.340904"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mWork Create (0.2ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "The Snap"], ["description", "Collection of Gifapes reflecting pop culture in the 21st Century"], ["artist", "Gifapes"], ["token_id", 2442], ["blockchain", "Ethereum"], ["price", 4], ["currency", "Eth"], ["picture", "gifape1.gif"], ["created_at", "2022-08-31 00:09:52.341684"], ["updated_at", "2022-08-31 00:09:52.341684"]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:122
+  [1m[36mWork Create (0.1ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Magnificent Magic"], ["description", "Collection of Gifapes reflecting pop culture in the 21st Century"], ["artist", "Gifapes"], ["token_id", 2442], ["blockchain", "Ethereum"], ["price", 6], ["currency", "Eth"], ["picture", "GifAp2.gif"], ["created_at", "2022-08-31 00:09:52.342430"], ["updated_at", "2022-08-31 00:09:52.342430"]]
+  ↳ db/seeds.rb:122
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:122
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:133
+  [1m[36mWork Create (0.1ms)[0m  [1m[32mINSERT INTO "works" ("name", "description", "artist", "token_id", "blockchain", "price", "currency", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Western Showdown"], ["description", "Collection of Gifapes reflecting pop culture in the 21st Century"], ["artist", "Gifapes"], ["token_id", 2442], ["blockchain", "Ethereum"], ["price", 3], ["currency", "Eth"], ["picture", "gifApe3.gif"], ["created_at", "2022-08-31 00:09:52.343065"], ["updated_at", "2022-08-31 00:09:52.343065"]]
+  ↳ db/seeds.rb:133
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:133
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "works"[0m
+  ↳ db/seeds.rb:144
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "works"."name" FROM "works"[0m
+  ↳ db/seeds.rb:145
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:148
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:148
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 82]]
+  ↳ db/seeds.rb:148
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:148
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:148
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 83]]
+  ↳ db/seeds.rb:148
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:148
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:148
+  [1m[36mUser Destroy (0.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 84]]
+  ↳ db/seeds.rb:148
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:148
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:148
+  [1m[36mUser Destroy (0.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 85]]
+  ↳ db/seeds.rb:148
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:148
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:150
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ann@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:150
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "dob", "email", "password_digest", "profile_picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Ann Kuchna"], ["dob", "1980-10-29"], ["email", "ann@gmail.com"], ["password_digest", "$2a$12$T7uvXia9fYv6P9K4iSzfDupfzuWm1ysEDfxKWeB31ZROxXLffgaO6"], ["profile_picture", "u1.png"], ["created_at", "2022-08-31 00:09:52.600314"], ["updated_at", "2022-08-31 00:09:52.600314"]]
+  ↳ db/seeds.rb:150
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:150
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:157
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dark.v@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:157
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "dob", "email", "password_digest", "profile_picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Dark Vador"], ["dob", "1975-01-11"], ["email", "dark.v@gmail.com"], ["password_digest", "$2a$12$teNzQ4RSxF7IUg5KJk.HwOsB0FfB2ywAbNk2/rbaEAyGbL8ineQtq"], ["profile_picture", "u2.png"], ["created_at", "2022-08-31 00:09:52.848758"], ["updated_at", "2022-08-31 00:09:52.848758"]]
+  ↳ db/seeds.rb:157
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:157
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:164
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "bart@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:164
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "dob", "email", "password_digest", "profile_picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Bart Simpson"], ["dob", "1994-12-12"], ["email", "bart@gmail.com"], ["password_digest", "$2a$12$6.3alBv2Tn1snly/n4OcUeVarK.V4PiqNaCSTTBa0S.jatqYOlOlW"], ["profile_picture", "u3.png"], ["created_at", "2022-08-31 00:09:53.097626"], ["updated_at", "2022-08-31 00:09:53.097626"]]
+  ↳ db/seeds.rb:164
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:164
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:171
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "monkey@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:171
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "dob", "email", "password_digest", "profile_picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Monkey Boo"], ["dob", "2000-01-12"], ["email", "monkey@gmail.com"], ["password_digest", "$2a$12$hEGEBUE6iCT/7uH0wHcG2ul35l/jnjwCxFZeCBnn9tSE9L8XzKPS6"], ["profile_picture", "u4.png"], ["created_at", "2022-08-31 00:09:53.346827"], ["updated_at", "2022-08-31 00:09:53.346827"]]
+  ↳ db/seeds.rb:171
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:171
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:179
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "users"."name" FROM "users"[0m
+  ↳ db/seeds.rb:180
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:181
+  [1m[36mWork Update (0.2ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 86], ["updated_at", "2022-08-31 00:09:53.351562"], ["id", 308]]
+  ↳ db/seeds.rb:181
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:181
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:181
+  [1m[36mWork Update (0.3ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 86], ["updated_at", "2022-08-31 00:09:53.352515"], ["id", 309]]
+  ↳ db/seeds.rb:181
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:181
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:181
+  [1m[36mWork Update (0.3ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 86], ["updated_at", "2022-08-31 00:09:53.354058"], ["id", 310]]
+  ↳ db/seeds.rb:181
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:181
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:182
+  [1m[36mWork Update (0.4ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 87], ["updated_at", "2022-08-31 00:09:53.355033"], ["id", 311]]
+  ↳ db/seeds.rb:182
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:182
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:182
+  [1m[36mWork Update (0.2ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 87], ["updated_at", "2022-08-31 00:09:53.356300"], ["id", 312]]
+  ↳ db/seeds.rb:182
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:182
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:182
+  [1m[36mWork Update (0.1ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 87], ["updated_at", "2022-08-31 00:09:53.357050"], ["id", 313]]
+  ↳ db/seeds.rb:182
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:182
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:183
+  [1m[36mWork Update (0.1ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 88], ["updated_at", "2022-08-31 00:09:53.357747"], ["id", 314]]
+  ↳ db/seeds.rb:183
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:183
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:183
+  [1m[36mWork Update (0.1ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 88], ["updated_at", "2022-08-31 00:09:53.358481"], ["id", 315]]
+  ↳ db/seeds.rb:183
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:183
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:183
+  [1m[36mWork Update (0.1ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 88], ["updated_at", "2022-08-31 00:09:53.359125"], ["id", 316]]
+  ↳ db/seeds.rb:183
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:183
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:184
+  [1m[36mWork Update (0.1ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 89], ["updated_at", "2022-08-31 00:09:53.359797"], ["id", 317]]
+  ↳ db/seeds.rb:184
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:184
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:184
+  [1m[36mWork Update (0.1ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 89], ["updated_at", "2022-08-31 00:09:53.360473"], ["id", 318]]
+  ↳ db/seeds.rb:184
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:184
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:184
+  [1m[36mWork Update (0.5ms)[0m  [1m[33mUPDATE "works" SET "user_id" = $1, "updated_at" = $2 WHERE "works"."id" = $3[0m  [["user_id", 89], ["updated_at", "2022-08-31 00:09:53.361208"], ["id", 319]]
+  ↳ db/seeds.rb:184
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:184
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "works"."name" FROM "works" WHERE "works"."user_id" = $1[0m  [["user_id", 86]]
+  ↳ db/seeds.rb:186
+  [1m[36mProperty Load (0.6ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.5ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 364]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 365]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 366]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 367]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 368]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 369]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.3ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 370]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.2ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 347]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.2ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 348]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 349]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 350]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 351]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 352]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 353]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 354]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 355]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 356]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 357]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 358]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 359]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 360]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 361]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.4ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 362]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:191
+  [1m[36mProperty Destroy (0.1ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = $1[0m  [["id", 363]]
+  ↳ db/seeds.rb:191
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:191
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:193
+  [1m[36mProperty Create (0.3ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Robotic Ice Suite"], ["percentage", 5.0], ["created_at", "2022-08-31 00:09:53.383967"], ["updated_at", "2022-08-31 00:09:53.383967"]]
+  ↳ db/seeds.rb:193
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:193
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:198
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Robotic Toxic Mars Mask"], ["percentage", 0.1], ["created_at", "2022-08-31 00:09:53.384818"], ["updated_at", "2022-08-31 00:09:53.384818"]]
+  ↳ db/seeds.rb:198
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:198
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:203
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Alien Space Eye Shirt"], ["percentage", 0.6], ["created_at", "2022-08-31 00:09:53.385364"], ["updated_at", "2022-08-31 00:09:53.385364"]]
+  ↳ db/seeds.rb:203
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:203
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:208
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Mummy Mask with Laser beam"], ["percentage", 0.02], ["created_at", "2022-08-31 00:09:53.385919"], ["updated_at", "2022-08-31 00:09:53.385919"]]
+  ↳ db/seeds.rb:208
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:208
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:213
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Robotic fighter suite"], ["percentage", 10.0], ["created_at", "2022-08-31 00:09:53.386503"], ["updated_at", "2022-08-31 00:09:53.386503"]]
+  ↳ db/seeds.rb:213
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:213
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:218
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Mummy Mash with Tokyo Sign"], ["percentage", 0.9], ["created_at", "2022-08-31 00:09:53.387109"], ["updated_at", "2022-08-31 00:09:53.387109"]]
+  ↳ db/seeds.rb:218
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:218
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:223
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Black and white hoodie"], ["percentage", 0.003], ["created_at", "2022-08-31 00:09:53.387727"], ["updated_at", "2022-08-31 00:09:53.387727"]]
+  ↳ db/seeds.rb:223
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:223
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:228
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Green Monkey with Yellow Eyes"], ["percentage", 0.002], ["created_at", "2022-08-31 00:09:53.388249"], ["updated_at", "2022-08-31 00:09:53.388249"]]
+  ↳ db/seeds.rb:228
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:228
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:233
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Shirtless Gold MonKey Fur"], ["percentage", 0.23], ["created_at", "2022-08-31 00:09:53.388767"], ["updated_at", "2022-08-31 00:09:53.388767"]]
+  ↳ db/seeds.rb:233
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:233
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:238
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Gold Monkey with grills"], ["percentage", 12.0], ["created_at", "2022-08-31 00:09:53.389308"], ["updated_at", "2022-08-31 00:09:53.389308"]]
+  ↳ db/seeds.rb:238
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:238
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:243
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Purple Yankies jersey"], ["percentage", 9.0], ["created_at", "2022-08-31 00:09:53.389783"], ["updated_at", "2022-08-31 00:09:53.389783"]]
+  ↳ db/seeds.rb:243
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:243
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:248
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Light Blue Monkey with Hallow"], ["percentage", 3.0], ["created_at", "2022-08-31 00:09:53.390225"], ["updated_at", "2022-08-31 00:09:53.390225"]]
+  ↳ db/seeds.rb:248
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:248
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:253
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Background"], ["trait_value", "Space Grey Blurred Buildings"], ["percentage", 40.0], ["created_at", "2022-08-31 00:09:53.390661"], ["updated_at", "2022-08-31 00:09:53.390661"]]
+  ↳ db/seeds.rb:253
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:253
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:258
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Central Art"], ["trait_value", "Robotic Skull"], ["percentage", 29.0], ["created_at", "2022-08-31 00:09:53.391119"], ["updated_at", "2022-08-31 00:09:53.391119"]]
+  ↳ db/seeds.rb:258
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:258
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:263
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Background"], ["trait_value", "Light Blue Sky with Clouds"], ["percentage", 70.0], ["created_at", "2022-08-31 00:09:53.391604"], ["updated_at", "2022-08-31 00:09:53.391604"]]
+  ↳ db/seeds.rb:263
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:263
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:268
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Central Art"], ["trait_value", "Leaning Robotic Space Building"], ["percentage", 10.0], ["created_at", "2022-08-31 00:09:53.392109"], ["updated_at", "2022-08-31 00:09:53.392109"]]
+  ↳ db/seeds.rb:268
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:268
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:273
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Background"], ["trait_value", "Futuristic Building with Pink Sky"], ["percentage", 0.2], ["created_at", "2022-08-31 00:09:53.392576"], ["updated_at", "2022-08-31 00:09:53.392576"]]
+  ↳ db/seeds.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:273
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:278
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Central Art"], ["trait_value", "Lost Human in Dyspotian World"], ["percentage", 12.0], ["created_at", "2022-08-31 00:09:53.393070"], ["updated_at", "2022-08-31 00:09:53.393070"]]
+  ↳ db/seeds.rb:278
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:278
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:283
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Thanos Armor with Infinity Gauntlet"], ["percentage", 12.0], ["created_at", "2022-08-31 00:09:53.393522"], ["updated_at", "2022-08-31 00:09:53.393522"]]
+  ↳ db/seeds.rb:283
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:283
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:288
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Mad Monkey with Thanos Helmet"], ["percentage", 32.0], ["created_at", "2022-08-31 00:09:53.394000"], ["updated_at", "2022-08-31 00:09:53.394000"]]
+  ↳ db/seeds.rb:288
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:288
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:293
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Red Checkered Shirt"], ["percentage", 30.0], ["created_at", "2022-08-31 00:09:53.394508"], ["updated_at", "2022-08-31 00:09:53.394508"]]
+  ↳ db/seeds.rb:293
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:293
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:298
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Wizard Monkehy with Dimond Earing"], ["percentage", 0.22], ["created_at", "2022-08-31 00:09:53.395060"], ["updated_at", "2022-08-31 00:09:53.395060"]]
+  ↳ db/seeds.rb:298
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:298
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:303
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Clothing"], ["trait_value", "Shirtless Grey Monkey moving hair"], ["percentage", 12.0], ["created_at", "2022-08-31 00:09:53.395641"], ["updated_at", "2022-08-31 00:09:53.395641"]]
+  ↳ db/seeds.rb:303
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:303
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:308
+  [1m[36mProperty Create (0.1ms)[0m  [1m[32mINSERT INTO "properties" ("trait", "trait_value", "percentage", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["trait", "Face"], ["trait_value", "Cowboy Hat Monkey"], ["percentage", 0.2], ["created_at", "2022-08-31 00:09:53.396064"], ["updated_at", "2022-08-31 00:09:53.396064"]]
+  ↳ db/seeds.rb:308
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:308
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "properties"[0m
+  ↳ db/seeds.rb:314
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "properties"."trait" FROM "properties"[0m
+  ↳ db/seeds.rb:315
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:316
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 308], ["updated_at", "2022-08-31 00:09:53.397477"], ["id", 371]]
+  ↳ db/seeds.rb:316
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:316
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:316
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 308], ["updated_at", "2022-08-31 00:09:53.398010"], ["id", 372]]
+  ↳ db/seeds.rb:316
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:316
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:317
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 309], ["updated_at", "2022-08-31 00:09:53.398456"], ["id", 373]]
+  ↳ db/seeds.rb:317
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:317
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:317
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 309], ["updated_at", "2022-08-31 00:09:53.398875"], ["id", 374]]
+  ↳ db/seeds.rb:317
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:317
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:318
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 310], ["updated_at", "2022-08-31 00:09:53.399323"], ["id", 375]]
+  ↳ db/seeds.rb:318
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:318
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:318
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 310], ["updated_at", "2022-08-31 00:09:53.399720"], ["id", 376]]
+  ↳ db/seeds.rb:318
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:318
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:319
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 311], ["updated_at", "2022-08-31 00:09:53.400171"], ["id", 377]]
+  ↳ db/seeds.rb:319
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:319
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:319
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 311], ["updated_at", "2022-08-31 00:09:53.400600"], ["id", 378]]
+  ↳ db/seeds.rb:319
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:319
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:320
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 312], ["updated_at", "2022-08-31 00:09:53.401161"], ["id", 379]]
+  ↳ db/seeds.rb:320
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:320
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:320
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 312], ["updated_at", "2022-08-31 00:09:53.402112"], ["id", 380]]
+  ↳ db/seeds.rb:320
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:320
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:321
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 313], ["updated_at", "2022-08-31 00:09:53.402697"], ["id", 381]]
+  ↳ db/seeds.rb:321
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:321
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:321
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 313], ["updated_at", "2022-08-31 00:09:53.403220"], ["id", 382]]
+  ↳ db/seeds.rb:321
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:321
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:322
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 314], ["updated_at", "2022-08-31 00:09:53.403747"], ["id", 383]]
+  ↳ db/seeds.rb:322
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:322
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:322
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 314], ["updated_at", "2022-08-31 00:09:53.404256"], ["id", 384]]
+  ↳ db/seeds.rb:322
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:322
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:323
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 315], ["updated_at", "2022-08-31 00:09:53.404765"], ["id", 385]]
+  ↳ db/seeds.rb:323
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:323
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:323
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 315], ["updated_at", "2022-08-31 00:09:53.405179"], ["id", 386]]
+  ↳ db/seeds.rb:323
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:323
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:324
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 316], ["updated_at", "2022-08-31 00:09:53.405629"], ["id", 387]]
+  ↳ db/seeds.rb:324
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:324
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:324
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 316], ["updated_at", "2022-08-31 00:09:53.406021"], ["id", 388]]
+  ↳ db/seeds.rb:324
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:324
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:325
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 317], ["updated_at", "2022-08-31 00:09:53.406480"], ["id", 389]]
+  ↳ db/seeds.rb:325
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:325
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:325
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 317], ["updated_at", "2022-08-31 00:09:53.406930"], ["id", 390]]
+  ↳ db/seeds.rb:325
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:325
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:326
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 318], ["updated_at", "2022-08-31 00:09:53.407508"], ["id", 391]]
+  ↳ db/seeds.rb:326
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:326
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:326
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 318], ["updated_at", "2022-08-31 00:09:53.407943"], ["id", 392]]
+  ↳ db/seeds.rb:326
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:326
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:327
+  [1m[36mProperty Update (0.1ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 319], ["updated_at", "2022-08-31 00:09:53.408391"], ["id", 393]]
+  ↳ db/seeds.rb:327
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:327
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:327
+  [1m[36mProperty Update (0.0ms)[0m  [1m[33mUPDATE "properties" SET "work_id" = $1, "updated_at" = $2 WHERE "properties"."id" = $3[0m  [["work_id", 319], ["updated_at", "2022-08-31 00:09:53.408987"], ["id", 394]]
+  ↳ db/seeds.rb:327
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:327
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "properties"."trait_value" FROM "properties" WHERE "properties"."work_id" = $1[0m  [["work_id", 308]]
+  ↳ db/seeds.rb:329
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 61]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 61]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 62]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 62]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 63]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 63]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 64]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 64]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 65]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 65]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 66]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 66]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 67]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 67]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 68]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 68]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 69]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 69]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:335
+  [1m[36mGenre::HABTM_Works Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres_works" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 70]]
+  ↳ db/seeds.rb:335
+  [1m[36mGenre Destroy (0.0ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 70]]
+  ↳ db/seeds.rb:335
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:335
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:336
+  [1m[36mGenre Create (0.2ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Futuristic"], ["created_at", "2022-08-31 00:09:53.418871"], ["updated_at", "2022-08-31 00:09:53.418871"], ["genre_picture", "future.png"]]
+  ↳ db/seeds.rb:336
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:336
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:340
+  [1m[36mGenre Create (0.1ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "3D Rendered art"], ["created_at", "2022-08-31 00:09:53.419605"], ["updated_at", "2022-08-31 00:09:53.419605"], ["genre_picture", "3D.png"]]
+  ↳ db/seeds.rb:340
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:340
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:345
+  [1m[36mGenre Create (0.1ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Anime"], ["created_at", "2022-08-31 00:09:53.420114"], ["updated_at", "2022-08-31 00:09:53.420114"], ["genre_picture", "anime.png"]]
+  ↳ db/seeds.rb:345
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:345
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:350
+  [1m[36mGenre Create (0.1ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pixelated"], ["created_at", "2022-08-31 00:09:53.420768"], ["updated_at", "2022-08-31 00:09:53.420768"], ["genre_picture", "pix.png"]]
+  ↳ db/seeds.rb:350
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:350
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:355
+  [1m[36mGenre Create (0.1ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Memes"], ["created_at", "2022-08-31 00:09:53.421408"], ["updated_at", "2022-08-31 00:09:53.421408"], ["genre_picture", "memes.gif"]]
+  ↳ db/seeds.rb:355
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:355
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:360
+  [1m[36mGenre Create (0.0ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Gifs"], ["created_at", "2022-08-31 00:09:53.421823"], ["updated_at", "2022-08-31 00:09:53.421823"], ["genre_picture", "gify.gif"]]
+  ↳ db/seeds.rb:360
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:360
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:365
+  [1m[36mGenre Create (0.0ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Photographs"], ["created_at", "2022-08-31 00:09:53.422227"], ["updated_at", "2022-08-31 00:09:53.422227"], ["genre_picture", "photo.png"]]
+  ↳ db/seeds.rb:365
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:365
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:370
+  [1m[36mGenre Create (0.0ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pop Culture"], ["created_at", "2022-08-31 00:09:53.422620"], ["updated_at", "2022-08-31 00:09:53.422620"], ["genre_picture", "pop.png"]]
+  ↳ db/seeds.rb:370
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:370
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:375
+  [1m[36mGenre Create (0.0ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sports"], ["created_at", "2022-08-31 00:09:53.423006"], ["updated_at", "2022-08-31 00:09:53.423006"], ["genre_picture", "sports.png"]]
+  ↳ db/seeds.rb:375
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:375
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:380
+  [1m[36mGenre Create (0.0ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at", "genre_picture") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Collectables"], ["created_at", "2022-08-31 00:09:53.423388"], ["updated_at", "2022-08-31 00:09:53.423388"], ["genre_picture", "collectables.png"]]
+  ↳ db/seeds.rb:380
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:380
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ db/seeds.rb:385
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:387
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 308], ["genre_id", 71]]
+  ↳ db/seeds.rb:387
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:387
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:387
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 308], ["genre_id", 72]]
+  ↳ db/seeds.rb:387
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:387
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:388
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 309], ["genre_id", 71]]
+  ↳ db/seeds.rb:388
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:388
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:388
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 309], ["genre_id", 72]]
+  ↳ db/seeds.rb:388
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:388
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:389
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 310], ["genre_id", 71]]
+  ↳ db/seeds.rb:389
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:389
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:389
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 310], ["genre_id", 72]]
+  ↳ db/seeds.rb:389
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:389
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:389
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 310], ["genre_id", 73]]
+  ↳ db/seeds.rb:389
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:389
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:390
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 311], ["genre_id", 72]]
+  ↳ db/seeds.rb:390
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:390
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:390
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 311], ["genre_id", 78]]
+  ↳ db/seeds.rb:390
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:390
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:391
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 312], ["genre_id", 72]]
+  ↳ db/seeds.rb:391
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:391
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:391
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 312], ["genre_id", 78]]
+  ↳ db/seeds.rb:391
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:391
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:392
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 313], ["genre_id", 72]]
+  ↳ db/seeds.rb:392
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:392
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:392
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 313], ["genre_id", 78]]
+  ↳ db/seeds.rb:392
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:392
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:392
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 313], ["genre_id", 79]]
+  ↳ db/seeds.rb:392
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:392
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:393
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 314], ["genre_id", 71]]
+  ↳ db/seeds.rb:393
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:393
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:393
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 314], ["genre_id", 72]]
+  ↳ db/seeds.rb:393
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:393
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:393
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 314], ["genre_id", 77]]
+  ↳ db/seeds.rb:393
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:393
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:394
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 315], ["genre_id", 71]]
+  ↳ db/seeds.rb:394
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:394
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:394
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 315], ["genre_id", 72]]
+  ↳ db/seeds.rb:394
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:394
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:394
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 315], ["genre_id", 77]]
+  ↳ db/seeds.rb:394
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:394
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:395
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 316], ["genre_id", 71]]
+  ↳ db/seeds.rb:395
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:395
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:395
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 316], ["genre_id", 72]]
+  ↳ db/seeds.rb:395
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:395
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:395
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 316], ["genre_id", 77]]
+  ↳ db/seeds.rb:395
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:395
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:396
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 317], ["genre_id", 76]]
+  ↳ db/seeds.rb:396
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:396
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:396
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 317], ["genre_id", 78]]
+  ↳ db/seeds.rb:396
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:396
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:397
+  [1m[36mWork::HABTM_Genres Create (0.0ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 318], ["genre_id", 76]]
+  ↳ db/seeds.rb:397
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:397
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:397
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 318], ["genre_id", 78]]
+  ↳ db/seeds.rb:397
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:397
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:398
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 319], ["genre_id", 76]]
+  ↳ db/seeds.rb:398
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:398
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:398
+  [1m[36mWork::HABTM_Genres Create (0.1ms)[0m  [1m[32mINSERT INTO "genres_works" ("work_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["work_id", 319], ["genre_id", 78]]
+  ↳ db/seeds.rb:398
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:398
+  [1m[36mBid Load (0.2ms)[0m  [1m[34mSELECT "bids".* FROM "bids"[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.1ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 31]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.1ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 32]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 33]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:403
+  [1m[36mBid Destroy (0.0ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 34]]
+  ↳ db/seeds.rb:403
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:403
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:404
+  [1m[36mBid Create (0.1ms)[0m  [1m[32mINSERT INTO "bids" ("currency", "blockchain", "created_at", "updated_at", "price") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["currency", "Eth"], ["blockchain", "Etherum"], ["created_at", "2022-08-31 00:09:53.448474"], ["updated_at", "2022-08-31 00:09:53.448474"], ["price", 12.0]]
+  ↳ db/seeds.rb:404
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:404
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:409
+  [1m[36mBid Create (0.1ms)[0m  [1m[32mINSERT INTO "bids" ("currency", "blockchain", "created_at", "updated_at", "price") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["currency", "Eth"], ["blockchain", "Etherum"], ["created_at", "2022-08-31 00:09:53.449051"], ["updated_at", "2022-08-31 00:09:53.449051"], ["price", 1.0]]
+  ↳ db/seeds.rb:409
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:409
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:415
+  [1m[36mBid Create (0.0ms)[0m  [1m[32mINSERT INTO "bids" ("currency", "blockchain", "created_at", "updated_at", "price") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["currency", "Eth"], ["blockchain", "Etherum"], ["created_at", "2022-08-31 00:09:53.449474"], ["updated_at", "2022-08-31 00:09:53.449474"], ["price", 2.0]]
+  ↳ db/seeds.rb:415
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:415
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:421
+  [1m[36mBid Create (0.1ms)[0m  [1m[32mINSERT INTO "bids" ("currency", "blockchain", "created_at", "updated_at", "price") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["currency", "Eth"], ["blockchain", "Etherum"], ["created_at", "2022-08-31 00:09:53.449912"], ["updated_at", "2022-08-31 00:09:53.449912"], ["price", 0.1]]
+  ↳ db/seeds.rb:421
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:421
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bids"[0m
+  ↳ db/seeds.rb:426
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:428
+  [1m[36mBid Update (0.1ms)[0m  [1m[33mUPDATE "bids" SET "updated_at" = $1, "user_id" = $2 WHERE "bids"."id" = $3[0m  [["updated_at", "2022-08-31 00:09:53.451219"], ["user_id", 86], ["id", 35]]
+  ↳ db/seeds.rb:428
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:428
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:428
+  [1m[36mBid Update (0.1ms)[0m  [1m[33mUPDATE "bids" SET "updated_at" = $1, "user_id" = $2 WHERE "bids"."id" = $3[0m  [["updated_at", "2022-08-31 00:09:53.451913"], ["user_id", 86], ["id", 36]]
+  ↳ db/seeds.rb:428
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:428
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:429
+  [1m[36mBid Update (0.1ms)[0m  [1m[33mUPDATE "bids" SET "updated_at" = $1, "user_id" = $2 WHERE "bids"."id" = $3[0m  [["updated_at", "2022-08-31 00:09:53.452470"], ["user_id", 87], ["id", 37]]
+  ↳ db/seeds.rb:429
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:429
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:429
+  [1m[36mBid Update (0.1ms)[0m  [1m[33mUPDATE "bids" SET "updated_at" = $1, "user_id" = $2 WHERE "bids"."id" = $3[0m  [["updated_at", "2022-08-31 00:09:53.452936"], ["user_id", 87], ["id", 38]]
+  ↳ db/seeds.rb:429
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:429
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:430
+  [1m[36mBid Update (0.1ms)[0m  [1m[33mUPDATE "bids" SET "updated_at" = $1, "work_id" = $2 WHERE "bids"."id" = $3[0m  [["updated_at", "2022-08-31 00:09:53.453885"], ["work_id", 311], ["id", 35]]
+  ↳ db/seeds.rb:430
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:430
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:430
+  [1m[36mBid Update (0.1ms)[0m  [1m[33mUPDATE "bids" SET "updated_at" = $1, "work_id" = $2 WHERE "bids"."id" = $3[0m  [["updated_at", "2022-08-31 00:09:53.454471"], ["work_id", 311], ["id", 36]]
+  ↳ db/seeds.rb:430
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:430
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:431
+  [1m[36mBid Update (0.0ms)[0m  [1m[33mUPDATE "bids" SET "updated_at" = $1, "work_id" = $2 WHERE "bids"."id" = $3[0m  [["updated_at", "2022-08-31 00:09:53.454974"], ["work_id", 315], ["id", 37]]
+  ↳ db/seeds.rb:431
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:431
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:431
+  [1m[36mBid Update (0.0ms)[0m  [1m[33mUPDATE "bids" SET "updated_at" = $1, "work_id" = $2 WHERE "bids"."id" = $3[0m  [["updated_at", "2022-08-31 00:09:53.455396"], ["work_id", 315], ["id", 38]]
+  ↳ db/seeds.rb:431
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:431
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2012592396158801520)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2012592396158801520)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Started GET "/genres/61" for 127.0.0.1 at 2022-08-31 10:10:29 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+Completed 404 Not Found in 11ms (ActiveRecord: 5.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Genre with 'id'=61):
+  
+app/controllers/genres_controller.rb:13:in `show'
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mWork Load (0.7ms)[0m  [1m[34mSELECT  "works".* FROM "works" ORDER BY "works"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT  "works".* FROM "works" ORDER BY "works"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2022-08-31 10:13:51 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 10:14:01 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (1.0ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 69ms (Views: 54.8ms | ActiveRecord: 4.5ms | Solr: 0.0ms)
+
+
+Started GET "/works" for 127.0.0.1 at 2022-08-31 10:14:24 +1000
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 10:14:30 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=ape&utf8=%E2%9C%93&search=" for 127.0.0.1 at 2022-08-31 10:14:46 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"ape", "utf8"=>"✓", "search"=>""}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%ape%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 10:20:04 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&search_by_name=ape" for 127.0.0.1 at 2022-08-31 10:20:08 +1000
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"ape"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 10:20:26 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=ape" for 127.0.0.1 at 2022-08-31 10:20:36 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"ape"}
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&search_by_name=ape" for 127.0.0.1 at 2022-08-31 10:20:43 +1000
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"ape"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 10:25:38 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 10:25:45 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&search_by_name=ape" for 127.0.0.1 at 2022-08-31 10:25:48 +1000
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"ape"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name like '%# {params[:search_by_name]}%')[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 33ms (Views: 22.3ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&search_by_name=monkey" for 127.0.0.1 at 2022-08-31 10:25:57 +1000
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"monkey"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name like '%# {params[:search_by_name]}%')[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+
+
+Started GET "/works" for 127.0.0.1 at 2022-08-31 10:26:01 +1000
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 46ms (Views: 41.3ms | ActiveRecord: 3.8ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 10:26:06 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&search_by_name=Infected" for 127.0.0.1 at 2022-08-31 10:26:13 +1000
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"Infected"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name like '%# {params[:search_by_name]}%')[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-31 10:27:52 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-31 10:27:55 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z3XMDZJDHRi2VZ+RaZ+tAYxBcRLX2S60AfFv1G2q52h6nWpcYMe8rMmTSlF9o0I4Kx2JWeq28ooSUF4x+xwPjw==", "email"=>"monkey@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "monkey@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:7
+Redirected to http://localhost:3000/
+Completed 302 Found in 298ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 10:27:55 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+
+
+Started GET "/works" for 127.0.0.1 at 2022-08-31 10:27:57 +1000
+Processing by WorksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 37ms (Views: 33.5ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+
+
+Started GET "/works/308" for 127.0.0.1 at 2022-08-31 10:27:59 +1000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"308"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mWork Load (0.2ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 308], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:57
+  Rendering works/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  ↳ app/views/works/show.html.erb:24
+  Rendered works/show.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 6.9ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 2)):
+    50:   </p>
+    51:   <strong> Genres:</strong>
+    52:   <p>
+    53:     <% @work.genres.each do |genre| %> 
+    54:    <%= link_to genre.name, genre_path(genre.id) %>
+    55:   <% end %>
+    56:   </p>
+  
+app/views/works/show.html.erb:53:in `_app_views_works_show_html_erb__1662027010442078469_242100'
+Started GET "/works/308" for 127.0.0.1 at 2022-08-31 10:28:47 +1000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"308"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mWork Load (0.2ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 308], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:57
+  Rendering works/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  ↳ app/views/works/show.html.erb:24
+  [1m[36mProperty Load (0.5ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."work_id" = $1[0m  [["work_id", 308]]
+  ↳ app/views/works/show.html.erb:60
+  [1m[36mBid Load (0.5ms)[0m  [1m[34mSELECT  "bids".* FROM "bids" WHERE "bids"."work_id" = $1 ORDER BY "bids"."id" DESC LIMIT $2[0m  [["work_id", 308], ["LIMIT", 5]]
+  ↳ app/views/works/show.html.erb:76
+  Rendered works/show.html.erb within layouts/application (20.9ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 4.5ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    83:   <% if @current_user.present? %>
+    84:       <%= form_with model: @bid, local: true  do |f| %>
+    85:       <%= f.label :price, "Add" %>
+    86:       <%= f.text_field :price %>
+    87:       <br>
+    88:       <%= f.label :currency %>
+    89:       <%= f.text_field :currency %>
+  
+app/views/works/show.html.erb:86:in `block in _app_views_works_show_html_erb__1662027010442078469_242620'
+app/views/works/show.html.erb:84:in `_app_views_works_show_html_erb__1662027010442078469_242620'
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mWork Load (0.7ms)[0m  [1m[34mSELECT  "works".* FROM "works" ORDER BY "works"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mWork Load (0.6ms)[0m  [1m[34mSELECT  "works".* FROM "works" ORDER BY "works"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mWork Load (0.2ms)[0m  [1m[34mSELECT  "works".* FROM "works" ORDER BY "works"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mWork Load (0.5ms)[0m  [1m[34mSELECT  "works".* FROM "works" ORDER BY "works"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/works/308" for 127.0.0.1 at 2022-08-31 10:53:07 +1000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"308"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mWork Load (0.5ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 308], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:57
+  Rendering works/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  ↳ app/views/works/show.html.erb:24
+  [1m[36mProperty Load (0.7ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."work_id" = $1[0m  [["work_id", 308]]
+  ↳ app/views/works/show.html.erb:60
+  [1m[36mBid Load (0.9ms)[0m  [1m[34mSELECT  "bids".* FROM "bids" WHERE "bids"."work_id" = $1 ORDER BY "bids"."id" DESC LIMIT $2[0m  [["work_id", 308], ["LIMIT", 5]]
+  ↳ app/views/works/show.html.erb:76
+  Rendered works/show.html.erb within layouts/application (16.6ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 18.5ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    83:   <% if @current_user.present? %>
+    84:       <%= form_with model: @bid, local: true  do |f| %>
+    85:       <%= f.label :price, "Add" %>
+    86:       <%= f.text_field :price %>
+    87:       <br>
+    88:       <%= f.label :currency %>
+    89:       <%= f.text_field :currency %>
+  
+app/views/works/show.html.erb:86:in `block in _app_views_works_show_html_erb___4024782532917638406_17360'
+app/views/works/show.html.erb:84:in `_app_views_works_show_html_erb___4024782532917638406_17360'
+Started GET "/" for 127.0.0.1 at 2022-08-31 10:53:11 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 162ms (Views: 159.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 10:53:20 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/works" for 127.0.0.1 at 2022-08-31 10:53:22 +1000
+Processing by WorksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.5ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 39ms (Views: 33.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2022-08-31 10:53:23 +1000
+Processing by GenresController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/genres/index.html.erb:5
+  Rendered genres/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 47ms (Views: 37.1ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/genres/76" for 127.0.0.1 at 2022-08-31 10:53:28 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms)
+
+
+  
+NameError (uninitialized constant GenresController::Genres_works):
+  
+app/controllers/genres_controller.rb:15:in `show'
+Started GET "/genres/71" for 127.0.0.1 at 2022-08-31 10:53:34 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+NameError (uninitialized constant GenresController::Genres_works):
+  
+app/controllers/genres_controller.rb:15:in `show'
+Started GET "/works/new" for 127.0.0.1 at 2022-08-31 10:53:37 +1000
+Processing by WorksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering works/new.html.erb within layouts/application
+  Rendered works/_form.html.erb (11.9ms)
+  Rendered works/new.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    1: <%= form_with model: @work, local: true do |f| %>
+    2:   <%= f.label :name %>
+    3:   <br>
+    4:   <%= f.text_field :name %>
+    5:   <br><br>
+    6:   
+    7:   <%= f.label :description %>
+  
+app/views/works/_form.html.erb:4:in `block in _app_views_works__form_html_erb___3571211647418426522_19560'
+app/views/works/_form.html.erb:1:in `_app_views_works__form_html_erb___3571211647418426522_19560'
+app/views/works/new.html.erb:3:in `_app_views_works_new_html_erb___1858658252444768287_19540'
+Started GET "/users" for 127.0.0.1 at 2022-08-31 10:53:41 +1000
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/86" for 127.0.0.1 at 2022-08-31 10:53:43 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"86"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mWork Load (0.2ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE "works"."user_id" = $1[0m  [["user_id", 86]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 24ms (Views: 19.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/works/308" for 127.0.0.1 at 2022-08-31 10:53:44 +1000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"308"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 308], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:57
+  Rendering works/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  ↳ app/views/works/show.html.erb:24
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."work_id" = $1[0m  [["work_id", 308]]
+  ↳ app/views/works/show.html.erb:60
+  [1m[36mBid Load (0.3ms)[0m  [1m[34mSELECT  "bids".* FROM "bids" WHERE "bids"."work_id" = $1 ORDER BY "bids"."id" DESC LIMIT $2[0m  [["work_id", 308], ["LIMIT", 5]]
+  ↳ app/views/works/show.html.erb:76
+  Rendered works/show.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    83:   <% if @current_user.present? %>
+    84:       <%= form_with model: @bid, local: true  do |f| %>
+    85:       <%= f.label :price, "Add" %>
+    86:       <%= f.text_field :price %>
+    87:       <br>
+    88:       <%= f.label :currency %>
+    89:       <%= f.text_field :currency %>
+  
+app/views/works/show.html.erb:86:in `block in _app_views_works_show_html_erb___4024782532917638406_20240'
+app/views/works/show.html.erb:84:in `_app_views_works_show_html_erb___4024782532917638406_20240'
+Started GET "/" for 127.0.0.1 at 2022-08-31 10:53:48 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 29ms (Views: 23.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/works/275" for 127.0.0.1 at 2022-08-31 10:54:48 +1000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"275"}
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 275], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:57
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Work with 'id'=275):
+  
+app/controllers/works_controller.rb:57:in `show'
+Started GET "/works?utf8=%E2%9C%93&search_by_name=monkey" for 127.0.0.1 at 2022-08-31 10:58:59 +1000
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_by_name"=>"monkey"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.6ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name like '%# {params[:search_by_name]}%')[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 17.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 10:59:02 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?q=&utf8=%E2%9C%93&search=monkey" for 127.0.0.1 at 2022-08-31 10:59:06 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"q"=>"", "utf8"=>"✓", "search"=>"monkey"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering search/index.html.erb within layouts/application
+  [1m[36mWork Load (0.5ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (name Like'%%')[0m
+  ↳ app/views/search/index.html.erb:5
+  Rendered search/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 36ms (Views: 31.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/works" for 127.0.0.1 at 2022-08-31 10:59:17 +1000
+Processing by WorksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/works" for 127.0.0.1 at 2022-08-31 10:59:18 +1000
+Processing by WorksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:4
+  Rendered works/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 40ms (Views: 35.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-08-31 10:59:20 +1000
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 36ms (Views: 32.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2022-08-31 10:59:21 +1000
+Processing by GenresController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/genres/index.html.erb:5
+  Rendered genres/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 39ms (Views: 35.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/genres/71" for 127.0.0.1 at 2022-08-31 10:59:23 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+NameError (uninitialized constant GenresController::Genres_works):
+  
+app/controllers/genres_controller.rb:15:in `show'
+Started GET "/genres/71" for 127.0.0.1 at 2022-08-31 11:01:02 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 13.9ms)
+
+
+  
+NameError (uninitialized constant GenresController::Genres):
+  
+app/controllers/genres_controller.rb:15:in `show'
+Started GET "/genres/71" for 127.0.0.1 at 2022-08-31 11:01:38 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 7.0ms)
+
+
+  
+NameError (uninitialized constant GenresController::Genres_works):
+  
+app/controllers/genres_controller.rb:15:in `show'
+Started GET "/genres/71" for 127.0.0.1 at 2022-08-31 11:02:18 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 10.1ms)
+
+
+  
+NoMethodError (undefined method `works' for #<Class:0x0000000119a072f0>):
+  
+app/controllers/genres_controller.rb:15:in `show'
+Started GET "/genres/71" for 127.0.0.1 at 2022-08-31 11:02:30 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.7ms)
+
+
+  
+NoMethodError (undefined method `works' for #<Class:0x0000000119a072f0>):
+  
+app/controllers/genres_controller.rb:15:in `show'
+Started GET "/genres/71" for 127.0.0.1 at 2022-08-31 11:03:03 +1000
+  
+SyntaxError (/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/controllers/genres_controller.rb:15: syntax error, unexpected instance variable
+    @genres = @genre.@work.find params[:work_id]
+                     ^~~~~
+):
+  
+app/controllers/genres_controller.rb:15: syntax error, unexpected instance variable
+Started GET "/genres/71" for 127.0.0.1 at 2022-08-31 11:15:59 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 17.1ms)
+
+
+  
+NameError (uninitialized constant GenresController::Genre_works):
+  
+app/controllers/genres_controller.rb:15:in `show'
+  [1m[36mWork Load (0.7ms)[0m  [1m[34mSELECT  "works".* FROM "works" ORDER BY "works"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT  "works".* FROM "works" ORDER BY "works"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started PUT "/__web_console/repl_sessions/9aacaff3b3ef698f87b5116cd8202a54" for 127.0.0.1 at 2022-08-31 11:40:36 +1000
+Started PUT "/__web_console/repl_sessions/9aacaff3b3ef698f87b5116cd8202a54" for 127.0.0.1 at 2022-08-31 11:40:39 +1000
+Started PUT "/__web_console/repl_sessions/9aacaff3b3ef698f87b5116cd8202a54" for 127.0.0.1 at 2022-08-31 11:40:46 +1000
+Started PUT "/__web_console/repl_sessions/9aacaff3b3ef698f87b5116cd8202a54" for 127.0.0.1 at 2022-08-31 11:40:47 +1000
+Started PUT "/__web_console/repl_sessions/9aacaff3b3ef698f87b5116cd8202a54" for 127.0.0.1 at 2022-08-31 11:40:51 +1000
+Started PUT "/__web_console/repl_sessions/9aacaff3b3ef698f87b5116cd8202a54" for 127.0.0.1 at 2022-08-31 11:40:53 +1000
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" ORDER BY "genres"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mWork Load (1.0ms)[0m  [1m[34mSELECT "works".* FROM "works" INNER JOIN "genres_works" ON "works"."id" = "genres_works"."work_id" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 71]]
+Started GET "/genres/71" for 127.0.0.1 at 2022-08-31 11:43:20 +1000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/mohamaddakdouk/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 7.4ms)
+
+
+  
+NameError (uninitialized constant GenresController::Genre_works):
+  
+app/controllers/genres_controller.rb:15:in `show'
+Started GET "/genres/71" for 127.0.0.1 at 2022-08-31 11:43:24 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+NameError (uninitialized constant GenresController::Genre_works):
+  
+app/controllers/genres_controller.rb:15:in `show'
+Started GET "/genres/71" for 127.0.0.1 at 2022-08-31 11:43:29 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+NameError (uninitialized constant GenresController::Genre_works):
+  
+app/controllers/genres_controller.rb:15:in `show'
+Started GET "/genres/71" for 127.0.0.1 at 2022-08-31 11:45:08 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+  Rendering genres/show.html.erb within layouts/application
+  [1m[36mWork Load (0.8ms)[0m  [1m[34mSELECT "works".* FROM "works" INNER JOIN "genres_works" ON "works"."id" = "genres_works"."work_id" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 71]]
+  ↳ app/views/genres/show.html.erb:3
+  Rendered genres/show.html.erb within layouts/application (127.6ms)
+Completed 200 OK in 166ms (Views: 135.5ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2022-08-31 11:45:13 +1000
+Processing by GenresController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/genres/index.html.erb:5
+  Rendered genres/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/genres/72" for 127.0.0.1 at 2022-08-31 11:45:14 +1000
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"72"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:13
+  Rendering genres/show.html.erb within layouts/application
+  [1m[36mWork Load (0.7ms)[0m  [1m[34mSELECT "works".* FROM "works" INNER JOIN "genres_works" ON "works"."id" = "genres_works"."work_id" WHERE "genres_works"."genre_id" = $1[0m  [["genre_id", 72]]
+  ↳ app/views/genres/show.html.erb:3
+  Rendered genres/show.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 34ms (Views: 30.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/works/308" for 127.0.0.1 at 2022-08-31 11:45:20 +1000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"308"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 308], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:57
+  Rendering works/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  ↳ app/views/works/show.html.erb:24
+  [1m[36mProperty Load (0.4ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."work_id" = $1[0m  [["work_id", 308]]
+  ↳ app/views/works/show.html.erb:60
+  [1m[36mBid Load (0.6ms)[0m  [1m[34mSELECT  "bids".* FROM "bids" WHERE "bids"."work_id" = $1 ORDER BY "bids"."id" DESC LIMIT $2[0m  [["work_id", 308], ["LIMIT", 5]]
+  ↳ app/views/works/show.html.erb:76
+  Rendered works/show.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 68ms (Views: 44.3ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/bids" for 127.0.0.1 at 2022-08-31 11:45:26 +1000
+Processing by BidsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FdUoFJuFf8IZLB9TmR8hzVS/TePAK5DpQjfjOcuMNg4IPY5FaQHedmbqypONI8708+O1qP1ETNdRltLcXTre6Q==", "bid"=>{"price"=>"1", "currency"=>"Sol", "work_id"=>"308", "user_id"=>"89"}, "commit"=>"Create Bid"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bids_controller.rb:11
+  [1m[36mBid Create (0.6ms)[0m  [1m[32mINSERT INTO "bids" ("currency", "created_at", "updated_at", "price", "work_id", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["currency", "Sol"], ["created_at", "2022-08-31 01:45:26.932380"], ["updated_at", "2022-08-31 01:45:26.932380"], ["price", 1.0], ["work_id", 308], ["user_id", 89]]
+  ↳ app/controllers/bids_controller.rb:11
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bids_controller.rb:11
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 308], ["LIMIT", 1]]
+  ↳ app/controllers/bids_controller.rb:14
+Redirected to http://localhost:3000/works/308
+Completed 302 Found in 9ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/works/308" for 127.0.0.1 at 2022-08-31 11:45:26 +1000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"308"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 308], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:57
+  Rendering works/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  ↳ app/views/works/show.html.erb:24
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."work_id" = $1[0m  [["work_id", 308]]
+  ↳ app/views/works/show.html.erb:60
+  [1m[36mBid Load (0.3ms)[0m  [1m[34mSELECT  "bids".* FROM "bids" WHERE "bids"."work_id" = $1 ORDER BY "bids"."id" DESC LIMIT $2[0m  [["work_id", 308], ["LIMIT", 5]]
+  ↳ app/views/works/show.html.erb:76
+  Rendered works/show.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 29ms (Views: 24.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-31 11:45:33 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.3ms)
+
+

@@ -11,7 +11,9 @@ class GenresController < ApplicationController
 
   def show
     @genre = Genre.find params[:id]
-    @work = Work.all
+   
+    # @work = Work.all
+    # @genres = Genre.works.find params[:work_id]
   end
 
   def edit

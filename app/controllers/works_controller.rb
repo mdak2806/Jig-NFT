@@ -47,7 +47,10 @@ class WorksController < ApplicationController
 
   def index
     # change to works 
-    @work = Work.all
+    @works = Work.all
+    if params[:search_by_name] && params[:search_by_name] != "" 
+      @works = @works.where("name like ?", "%# {params[:search_by_name]}%")
+    end
   end
 
   def show
