@@ -54,3 +54,5 @@ end
 gem 'pry-rails'
 
 
+
+gem "cloudinary", "~> 1.23"

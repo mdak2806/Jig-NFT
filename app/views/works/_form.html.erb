@@ -1,4 +1,4 @@
-<%= form_with model: @work, local: true do |f| %>
+<%= form_with model: @work, local: true, html: {multipart: true} do |f| %>
   <%= f.label :name %>
   <br>
   <%= f.text_field :name %>
@@ -46,7 +46,7 @@
 
   <%= f.label :picture, 'NFT URL' %>
   <br>
-  <%= f.text_field :picture %>
+  <%= f.file_field :picture %>
   <br><br>
   <%# <strong>Genre</strong> %>
   <%# <%= label_tag :genre, 'Genre' %> 

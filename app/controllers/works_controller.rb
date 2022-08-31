@@ -11,9 +11,16 @@ class WorksController < ApplicationController
  
 
   def create
-    @bid = Bid.new bid_params
+    @bid = Bid.new @bid_params
     @work = Work.new work_params
     @work.user_id = @current_user.id
+    
+    if params[:work][:picture].present?
+      # Upload to cloudinary
+      response = Cloudinary::Uploader.upload params[:work][:picture]
+      @work.picture = response["public_id"]
+    end
+   
     @work.save
 
     if @work.persisted?
@@ -46,11 +53,21 @@ class WorksController < ApplicationController
   #Read
 
   def index
-    # change to works 
-    @works = Work.all
-    if params[:search_by_name] && params[:search_by_name] != "" 
-      @works = @works.where("name like ?", "%# {params[:search_by_name]}%")
+  
+    search = "%" + params[:trait_value] + "%"
+    @trait_value = Property.where("trait_value ILIKE ? OR price ILIKE ? ", search, search)
+
+    if params[:trait_value]
+    @trait_value = params[:trait_value]
+    @works = @works.search_by(@trait_value)
+    end 
+   
+    if params[:trait].present? 
+      @works = @works.where("trait like ?", "%#{params[:trait]}%")
+    else
+      @works = Work.all
     end
+    
   end
 
   def show

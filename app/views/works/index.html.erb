@@ -1,5 +1,30 @@
 <h1>Index of All NFTs</h1>
 
+<div class="index-filter">
+  <%= form_with url: works_path, local: true do |f| %>
+     <%= f.label :trait, 'Traits' %> 
+     <%= f.select :trait , Property.pluck(:trait).uniq %> 
+    <%= f.submit %>
+ <% end %> 
+</div>
+
+<div>
+<%= form_with url: works_path, local: true, role:"search", method: :get do |f| %>
+  <%= f.text_field :trait_value, placeholder: 'Search Unquie Traits' %> 
+  <%= f.submit "Search" %>
+  <% end %>
+  </form>
+ </div>
+ 
+
+
+
+
+<%# <%= select_tag "Properties", options_for_select(@properties.trait, 'trait') %> %>
+
+</div> %>
+
+
 <ul>
 <% @works.each do |work| %>
   <li>
@@ -7,10 +32,12 @@
     <br>
      <%= work.artist %>
      <br>
-    <%= image_tag work.picture, alt:work.name, class:'NFT' %>
+    <%= cl_image_tag work.picture, alt:work.name, class:'NFT' %>
   </li>
 <% end %>
 </ul>
+
+
 
 
 <%# Add pictures here %>

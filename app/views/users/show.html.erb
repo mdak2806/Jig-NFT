@@ -5,7 +5,7 @@
 <% @user.works.each do |work| %>
 <li>
 <%= link_to work.name, work_path(work.id) %>
-<%= image_tag work.picture, alt:work.name, class: 'Sellers-NFT' %>
+<%= cl_image_tag work.picture, alt:work.name, class: 'Sellers-NFT' %>
 </li>
 <% end  %>
 </ul>

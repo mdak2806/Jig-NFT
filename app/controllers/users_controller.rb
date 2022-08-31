@@ -6,7 +6,11 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create user_params 
+    @user = User.create user_params
+    
+    # New addition to save user - come back and do this
+    # @user.user_id = @current_user.id
+    # @user.save 
 
     if @user.persisted?
     session[:user_id] = @user.id #login automatically
@@ -14,6 +18,13 @@ class UsersController < ApplicationController
     else
       render :new
     end
+   
+    if params[:user][:profile_picture].present?
+      # Upload to cloudinary
+      response = Cloudinary::Uploader.upload params[:user][:profile_picture]
+      @user.profile_picture = response["public_id"]
+    end
+
 
   end
 
