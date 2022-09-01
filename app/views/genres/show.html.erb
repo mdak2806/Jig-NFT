@@ -1,9 +1,12 @@
 <h2><%= @genre.name %></h2>
-<ul>
-<% @genre.works.each do |work| %>
-<li>
-<%= link_to work.name, work_path(work.id) %>
-<%= cl_image_tag work.picture, alt:work.name, class: 'Genre-NFT' %>
-</li>
-<% end  %>
-</ul>
+
+<div class="show-all">
+    <% @genre.works.each do |work| %>
+        <%= link_to work_path(work.id) do %>
+        <div class="show">
+        <%= work.name %>
+        <%= cl_image_tag work.picture, alt:work.name, class: 'work-collection' %>
+        </div>
+        <% end  %>
+    <% end  %>
+</div>

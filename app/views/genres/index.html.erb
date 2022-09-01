@@ -1,11 +1,15 @@
 <h1>Genres</h1>
 <p>Find a NFT based on Genre</p>
 
-<ul>
+<div class="all-genres">
 <% @genre.each do |genre| %>
-    <%= cl_image_tag genre.genre_picture, alt:genre.name, class:"GP" %>
-   <a> <%= link_to genre.name, genre_path(genre.id) %></a>
+    <%= link_to genre_path(genre.id) do %>
+    <div class="genres">
+    <%= cl_image_tag genre.genre_picture, alt:genre.name, class:"genre-pic" %>
+   <a><%= genre.name %></a>
+   </div>
     <br>
 <% end %>
-</ul>
+<% end %>
+</div>
 

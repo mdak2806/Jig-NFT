@@ -614,24 +614,24 @@ Bid.destroy_all
 b1 = Bid.create!(
  price: 12,
  currency: 'Eth',
- blockchain: 'Etherum'
+ blockchain: 'Ethereum'
  ) 
 b2 = Bid.create!(
  price: 1,
  currency: 'Eth',
- blockchain: 'Etherum'
+ blockchain: 'Ethereum'
  ) 
 
  b3 = Bid.create!(
 price: 2,
 currency: 'Eth',
-blockchain: 'Etherum'
+blockchain: 'Ethereum'
  ) 
 
  b4 = Bid.create!(
 price: 0.1,
 currency: 'Eth',
-blockchain: 'Etherum'
+blockchain: 'Ethereum'
  ) 
  puts "created #{Bid.count}' Bids"
 

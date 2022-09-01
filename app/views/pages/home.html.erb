@@ -1,17 +1,23 @@
+<body class="home">
+    
+</body>
 <h1>NFT Market Place</h1>
 
 <hr>
 <p>Find a diverse range of NFTs to Post and Sell..... </p>
 <p>Add more description</p>
 <p>Add a search bar here</p>
-
-<div >
-
-
-<%= form_with url: search_path, local: true, role:"search", method: :get do |f| %>
-    <%= f.text_field :search, placeholder: "Search..." %>
-    <%= f.submit "Search" %>
-<% end %>
-</form>
+<div class="pic">
+<%= cl_image_tag('background-new_ovo60v', class: "home-gif")%>
 </div>
+<div>
+    <%= form_with url: search_path, local: true, role:"search", method: :get do |f| %>
+        <%= f.text_field :search, placeholder: "Search..." %>
+        <%= f.submit "Search" %>
+    <% end %>
+</div>
+
+    
+</body>
+
 

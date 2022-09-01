@@ -2,11 +2,16 @@
 
 <p>Find an array of artist and user collections, follow there accounts and see there latest creations. </p>
 
-<ul>
+<div class="all-users">
 <% @user.each do |user| %>
-    <a><%= link_to user.name, user_path(user.id) %></a>
+    <%= link_to user_path(user.id) do%>
+    <div class="user-account">
+    <%= cl_image_tag user.profile_picture, alt:user.name, class:'user-pic' %>
+    <a><%= link_to user.name %></a>
+    </div>
     <br>
-    <%= cl_image_tag user.profile_picture, alt:user.name, class:'DP' %>
-<% end %>
-</ul>
+    <% end %>
+    <% end %>
+    
+</div>
 

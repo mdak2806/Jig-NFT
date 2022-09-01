@@ -1,15 +1,19 @@
-<div class="user">
+
 <h1><%= @user.name %></h1>
-<ul>
-<% @user.works.each do |work| %>
-<br>
-<%= cl_image_tag work.picture, alt:work.name, class: 'user-collection' %>
-<br>
-<a><%= link_to work.name, work_path(work.id) %></a>
-<br>
-<%= work.artist %>
-<br>
-<%= work.price %>  <%= work.currency %>
+
+<div class="show-all">
+    <% @user.works.each do |work| %>
+        <%= link_to work_path(work.id) do %>
+        <div class="show">
+        <%= cl_image_tag work.picture, alt:work.name, class: 'work-collection' %>
+        <br>
+        <a><%= link_to work.name, %></a>
+        <br>
+        <%= work.artist %>
+        <br>
+        <%= work.price %>  <%= work.currency %>
+      </div>
+    <% end  %>
+
 <% end  %>
-</ul>
 </div>

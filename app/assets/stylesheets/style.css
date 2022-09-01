@@ -1,10 +1,20 @@
 body{
-background-color: rgb(86, 110, 102);
+    background: linear-gradient(110deg, #afcbe7 0%,  #cfdff7 100% );
+    /* background-color: #cfdff7 ; */
+
 
 }
-.NFT{
-    width: 30vw;
-    height: 40vh;
+.pic{
+    text-align: center;
+}
+.home{
+    background-position: center center;
+    background-size: 100% 100%;
+    border: 3px solid red;
+}
+.home-gif{
+    margin: 0 auto;
+    border-radius: 50%;
 }
 
 /* Index works page explore */
@@ -35,6 +45,7 @@ background-color: rgb(86, 110, 102);
     /* width: 90%; */
     display: block;
     margin: 10px auto;
+    border-radius: 5%;
 
     /* border-radius: 50%; */
 }
@@ -45,13 +56,104 @@ background-color: rgb(86, 110, 102);
 }
 
 
+/* Genres Index */
+.all-genres{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center; 
 
+}
 
+.genres{
+    box-shadow: 2px 2px 7px 1px #eae3e0;
+    border-radius: 50%;
+    height: 600px;
+    width: 600px;
+    border-right: 30px;
+    border-left: 30px;
+    padding: 20px;
+    border: 3px solid rgb(237, 231, 231);
+    margin: 30px;
+    text-align: center;
+}
 
+.genre-pic{
+    height: 500px;
+    width: 500px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+.genres:hover{
+    transform: scale(1.1);
+}
 
+/* User Index */
+.all-users{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center; 
+}
+.user-account{
+    box-shadow: 2px 2px 7px 1px #eae3e0;
+    border-radius: 50%;
+    height: 600px;
+    width: 600px;
+    border-right: 30px;
+    border-left: 30px;
+    padding: 20px;
+    border: 3px solid rgb(237, 231, 231);
+    margin: 30px;
+    text-align: center;
+}
+.user-account:hover{
+    transform: scale(1.1);
+}
 
+.user-pic{
+    height: 500px;
+    width: 500px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+}
 
+/* User Show */
 
+.show{
+    box-shadow: 2px 2px 7px 1px #eae3e0;
+    border-radius: 5%;
+    height: 550px;
+    width: 450px;
+    border-right: 30px;
+    border-left: 30px;
+    padding: 20px;
+    border: 3px solid rgb(237, 231, 231);
+    margin: 30px;
+    text-align: center;
+}
+.show-all{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center;
+}
+
+.show:hover{
+    transform: scale(1.1); 
+}
+.work-collection{
+    height: 450px;
+    width: 350px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5%;
+
+}
+
+/* Genres Show pa */
 
 /* Single Work Show Page */
 /* Bid Table */
@@ -73,56 +175,65 @@ a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
 }
-
-.properties{
-    border: 2px solid red;
+.genre{
+    border: red;
 }
-.trait{
+
+.properties, .genre{
     border: 2px solid red;
+    display: flex;
+    justify-content: center;
+}
+.trait, .gen-item{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    border: 2px solid green;
+}
+
+.img-container{
+
 }
 .show-nft{
     height: 450px;
     width: 350px;
-    /* width: 90%; */
-    display: left;
     margin: 10px auto;
+    display: block;
+}
+.heading-center{
+    text-align: center;
+}
+
+.work-page{
+    /* display: grid; */
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 1fr 2fr; */
+    margin: 75px;
+    justify-content: center;
 
 }
 .left{
-    display: flex;
-    flex-direction: column;
-    flex: left;
+    border: 2px solid red;
+    width: 600px;
+   
 }
+.right{
+    border: 2px solid red;
+    width: 900px;
+}
+
+
 .work_info{
     text-align: center;
 }
 
 /* Users Index page picture */
-.DP{
-    width: 15vw;
-    height: 15vh;
-    border-radius: 50%;
-}
-.Sellers-NFT{
-    width: 30vw;
-    height: 40vh;
-}
+
 /* Genres Index page pictures */
-.GP{
-    width: 12vw;
-    height: 12vh;
-    border-radius: 50%;
-}
-.Genre-NFT{
-    border-radius: 50%;
-    width: 30vw;
-    height: 40vh;  
-}
+
 
 /* Users personal Collection of Art */
-.user-collection{
-    width: 30vw;
-    height: 40vh;
-}
 
 

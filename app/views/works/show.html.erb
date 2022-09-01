@@ -24,51 +24,76 @@
   |
   <a></a><%= link_to 'Delete', work_path(@work.id), method: 'delete' %></a>
   <% end %>
-  
-  <div class="work_info">
-      <p>
-    <h2 class="heading"><em><%= @work.name %></em></h2>
-    <h3>
-    by 
-    <h4><%= @work.artist%></h4>
-    <br>
-    <h4>Owner</h4>
-    <a><%= link_to @work.user.name, user_path(@work.user.id) %></a> 
-    </h3>
-        <h4>Description</h4>
-        <%= @work.description %>
-      </p>
-      <p>
-        <h4>Token id</h4>
-        <%= @work.token_id %>
-      </p>
-      <p>
-        <h4>Blockchain</h4>
-        <%= @work.blockchain %>
-      </p>
-      <p>
-        <h4>Pice</h4>
-        <%= @work.price %> <%= @work.currency %>
-      </p>
-  <table>
-  <br>
-   <tr>
+
+<div class="work-page">
+    <div class="left">
+      <%= cl_image_tag @work.picture, alt: @work.name, class: 'show-nft' %>
+    <h3 class="heading-center"> Genres</h3>   
+    <div class="genre">
+      <% @work.genres.each do |genre| %> 
+      <br>
+      <div class="gen-item">
+      <a><%= link_to genre.name, genre_path(genre.id) %> 
+      </div>
+      <% end %> 
+    </div>
+    <h3 class="heading-center">Properties</h3>
+    <div class="properties">
+      <br>
+      <% @work.properties.each do |property| %>
+        <div class="trait">
+            <%= property.trait %>
+            <br>
+            <%= property.trait_value %>
+            <br>
+            <strong>Rarity</strong>
+          <strong><%= property.percentage %>%</strong>
+        </div>
+         <br>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="work_info">
+      <h2 class="heading"><em><%= @work.name %></em></h2>
+      <h4><%= @work.artist%></h4>
+      <br>
+            <h4>Owner</h4>
+            <a><%= link_to @work.user.name, user_path(@work.user.id) %></a> 
+          <h4>Description</h4>
+          <%= @work.description %>
+        <p>
+          <h4>Token id</h4>
+          <%= @work.token_id %>
+        </p>
+        <p>
+          <h4>Blockchain</h4>
+          <%= @work.blockchain %>
+        </p>
+        <p>
+          <h4>Pice</h4>
+          <%= @work.price %> <%= @work.currency %>
+        </p>
+    <table>
+      <br>
+      <tr>
       <th>Bid</th>
       <th>Blockchain</th>
       <th>User</th>
       <th>Date</th>
-    </tr>
-    <tr>
-  <% @work.bids.last(5).each do |i| %>
+      </tr>
+      <tr>
+      <% @work.bids.last(5).each do |i| %>
       <td><%=" #{i.price}" %></td>
       <td><%=" #{i.blockchain}" %></td>
       <td><%="u-id #{i.user_id}" %></td>
       <td><%=" #{i.created_at.strftime '%d/%m/%Y'}" %></td>
-    </tr>
-    <% end %>
-    <tr>
-  <div class="form">
-   <% if @current_user.present? %>
+      </tr>
+      <% end %>
+      <tr>
+      <div class="form">
+      <% if @current_user.present? %>
       <%= form_with model: @bid, local: true  do |f| %>
       <td><%= f.text_field :price, string: "Add" %></td> 
       <br>
@@ -77,38 +102,10 @@
       <td><%= f.hidden_field :user_id, value: @current_user.id %></td>
        <td><%= f.hidden_field :created_at%></td>
        <td><%= f.submit %></td>
-    </tr>
+      </tr>
         <% end %>
-    <% end %>
+      <% end %>
     </table>
    </div>
- </div>
-
-<div class="left">
-<%= cl_image_tag @work.picture, alt: @work.name, class: 'show-nft' %>
-    
-<div class="genre">
-  <strong> Genres</strong>
-    <% @work.genres.each do |genre| %> 
-    <br>
-   <a><%= link_to genre.name, genre_path(genre.id) %> 
-  <% end %> 
+  </div>
 </div>
-
-<div class="properties">
-    <strong>Properties</strong>
-    <br>
-    <% @work.properties.each do |property| %>
-      <div class="trait">
-          <%= property.trait %>
-          <br>
-          <%= property.trait_value %>
-          <br>
-          <strong>Uniqueness</strong>
-         <strong><%= property.percentage %>%</strong>
-      </div>
-         <br>
-      <% end %>
-</div>
-</div>
-  
