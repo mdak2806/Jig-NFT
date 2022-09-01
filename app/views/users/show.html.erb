@@ -1,11 +1,15 @@
-<h1>Seller Collections</h1>
-
-<h2><%= @user.name %></h2>
+<div class="user">
+<h1><%= @user.name %></h1>
 <ul>
 <% @user.works.each do |work| %>
-<li>
-<%= link_to work.name, work_path(work.id) %>
-<%= cl_image_tag work.picture, alt:work.name, class: 'Sellers-NFT' %>
-</li>
+<br>
+<%= cl_image_tag work.picture, alt:work.name, class: 'user-collection' %>
+<br>
+<a><%= link_to work.name, work_path(work.id) %></a>
+<br>
+<%= work.artist %>
+<br>
+<%= work.price %>  <%= work.currency %>
 <% end  %>
 </ul>
+</div>

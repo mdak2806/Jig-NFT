@@ -4,7 +4,7 @@
 <div class="work-index">
 <%  @works.each do |work| %> 
 <li>
-    <%= link_to work.name, work_path(work.id) %>
+    <a><%= link_to work.name, work_path(work.id) %></a>
     <br>
      <%= work.artist %>
      <br>

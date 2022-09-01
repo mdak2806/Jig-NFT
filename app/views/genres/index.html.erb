@@ -3,13 +3,9 @@
 
 <ul>
 <% @genre.each do |genre| %>
-<li>
-    
-    <%= image_tag genre.genre_picture, alt:genre.name, class:'GP' %>
-    <%= link_to genre.name, genre_path(genre.id) %>
+    <%= cl_image_tag genre.genre_picture, alt:genre.name, class:"GP" %>
+   <a> <%= link_to genre.name, genre_path(genre.id) %></a>
     <br>
-</li>
-
 <% end %>
 </ul>
 

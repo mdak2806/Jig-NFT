@@ -1,24 +1,128 @@
 body{
-background-color: rgb(135, 189, 171);
+background-color: rgb(86, 110, 102);
 
 }
 .NFT{
     width: 30vw;
     height: 40vh;
 }
+
+/* Index works page explore */
+.NFT-cards{
+    box-shadow: 2px 2px 7px 1px #eae3e0;
+    border-radius: 5%;
+    height: 550px;
+    width: 400px;
+    border-right: 30px;
+    border-left: 30px;
+    padding: 20px;
+    border: 3px solid rgb(237, 231, 231);
+    margin: 30px;
+    text-align: center;
+}
+.all-nfts{
+   display: flex;
+   flex-wrap: wrap;
+   padding: 40px;
+   justify-content: center;
+   
+}
+
+.NFT-image{
+    /* max-height: 500px; */
+    height: 450px;
+    width: 350px;
+    /* width: 90%; */
+    display: block;
+    margin: 10px auto;
+
+    /* border-radius: 50%; */
+}
+.NFT-cards:hover{
+    transform: scale(1.1);
+    /* width: 22vw;
+    height: 35vh; */
+}
+
+
+
+
+
+
+
+
+
+
+/* Single Work Show Page */
+/* Bid Table */
+table{
+    border-collapse: collapse;
+    width: 30px;
+}
+td, th{
+    /* border: 1px solid #dddddd; */
+    text-align: left;
+    padding: 4px;
+}
+tr:nth-child(even){
+    /* background-color: #dddddd; */
+    opacity: 0.7;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.properties{
+    border: 2px solid red;
+}
+.trait{
+    border: 2px solid red;
+}
+.show-nft{
+    height: 450px;
+    width: 350px;
+    /* width: 90%; */
+    display: left;
+    margin: 10px auto;
+
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    flex: left;
+}
+.work_info{
+    text-align: center;
+}
+
+/* Users Index page picture */
 .DP{
     width: 15vw;
     height: 15vh;
+    border-radius: 50%;
 }
 .Sellers-NFT{
     width: 30vw;
     height: 40vh;
 }
+/* Genres Index page pictures */
 .GP{
     width: 12vw;
-    height: 12vh
+    height: 12vh;
+    border-radius: 50%;
 }
 .Genre-NFT{
+    border-radius: 50%;
     width: 30vw;
     height: 40vh;  
 }
+
+/* Users personal Collection of Art */
+.user-collection{
+    width: 30vw;
+    height: 40vh;
+}
+
+

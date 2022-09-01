@@ -1,15 +1,12 @@
-<h1>Users Index</h1>
+<h1>Collections</h1>
 
-<p>Find Users and there respective collections on Sale</p>
+<p>Find an array of artist and user collections, follow there accounts and see there latest creations. </p>
 
 <ul>
 <% @user.each do |user| %>
-<li>
-    <%= link_to user.name, user_path(user.id) %>
+    <a><%= link_to user.name, user_path(user.id) %></a>
     <br>
     <%= cl_image_tag user.profile_picture, alt:user.name, class:'DP' %>
-</li>
-
 <% end %>
 </ul>
 
