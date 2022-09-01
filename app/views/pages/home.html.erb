@@ -1,23 +1,18 @@
-<body class="home">
-    
-</body>
-<h1>NFT Market Place</h1>
 
-<hr>
-<p>Find a diverse range of NFTs to Post and Sell..... </p>
-<p>Add more description</p>
-<p>Add a search bar here</p>
-<div class="pic">
-<%= cl_image_tag('ni_nd5kac', class: "home-gif")%>
-</div>
+<h3 class="intro-p">Welcome to JIG NFT a secure global market place to create, collect, and transfer a diverse range of NFT art on all blockchain technologies </h3>
 <div>
+<div class="home-search">
     <%= form_with url: search_path, local: true, role:"search", method: :get do |f| %>
         <%= f.text_field :search, placeholder: "Search..." %>
         <%= f.submit "Search" %>
     <% end %>
 </div>
 
+<div class="pic">
+<%= cl_image_tag('ni_nd5kac', class: "home-gif")%>
+</div>
+</div>
     
-</body>
+
 
 

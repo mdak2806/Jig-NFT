@@ -1,3 +1,4 @@
+/* Application Layout */
 body{
     /* background: linear-gradient(110deg, #96d2de 0%,  #96d2de 100% ); */
     /* background-color: #cfdff7 ; */
@@ -7,9 +8,63 @@ body{
     background-image:  repeating-linear-gradient(to right, #b5dfe7, #b5dfe7 6px, rgba(150,210,222,1) 6px, rgba(150,210,222,1));
     
 }
+nav{
+    text-align: center;
+   
+}
+
+.page-header{
+    font-size: 35px;
+}
+.nav{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-size: 20px;
+}
+
+.nav.hover{
+    transform: scale(2.1);
+    
+}
+.login{
+    text-align: end;
+}
+/* Home page */
+.intro-p{
+    text-align: center;
+}
+.home-search{
+ text-align: center;
+}
 .pic{
     text-align: center;
 }
+.home-search{
+   justify-content: center; 
+}
+.home-search input[type=text] {
+    width: 300px;
+    height: 15px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(221, 235, 237);
+    border-radius: 4px;
+  }
+
+.home-search input[type=text]:focus {
+    background-color: #d9f2f8;
+  }
+.home-search input[type=submit]{
+    background-color: rgb(137, 187, 197); 
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 25px;
+} 
+
 .home{
     background-position: center center;
     background-size: 100% 100%;
@@ -24,6 +79,60 @@ body{
     border-radius: 50%;
     opacity: 0.7;
 }
+
+/* Froms */
+.form-create{
+    text-align: center;
+}
+
+input[type=text] {
+    width: 300px;
+    height: 15px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(221, 235, 237);
+    border-radius: 4px;
+  }
+
+input[type=submit]{
+    background-color: rgb(137, 187, 197); 
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 25px;
+    width: 200px;
+} 
+
+input[type=password]{
+    width: 300px;
+    height: 15px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(221, 235, 237);
+    border-radius: 4px;    
+}
+
+input[type=browse]{
+    background-color: rgb(137, 187, 197); 
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 25px;
+    width: 200px;
+
+}
+.new-work, .edit-work, .edit-account, .login-account, .sign-up-account{
+    text-align: center;
+}
+
 
 /* Index works page explore */
 .NFT-cards{
@@ -162,6 +271,17 @@ body{
 }
 
 /* Show Page Left hand side */
+.explore-nft{
+    text-align: center;
+    font-size: 25px;
+}
+.index-filter{
+    text-align: center;
+}
+.edit-delete{
+    text-align: center;
+    font-size: larger;
+}
 .properties, .genre{
     /* border: 2px solid red; */
     display: flex;
@@ -284,13 +404,13 @@ a, a:hover, a:focus, a:active {
 
 }
 
-.right{
+/* .right{
     /* border: 8px solid rgb(219, 227, 219);
     box-shadow: 2px 2px 7px 1px #eae3e0; */
-    border-radius: 10px;
+    /* border-radius: 10px;
     width: 700px;
     margin: 10px;
-}
+} */ 
 
 
 .work_info{

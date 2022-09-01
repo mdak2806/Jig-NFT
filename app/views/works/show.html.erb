@@ -18,12 +18,13 @@
    
    
   
-  
-  <% if @current_user.present? && @current_user.id == @work.user_id %>
-  <a><%= link_to 'Edit', edit_work_path(@work.id) %></a>
-  |
-  <a></a><%= link_to 'Delete', work_path(@work.id), method: 'delete' %></a>
-  <% end %>
+  <div class="edit-delete">
+      <% if @current_user.present? && @current_user.id == @work.user_id %>
+      <a><%= link_to 'Edit', edit_work_path(@work.id) %></a>
+      |
+      <a></a><%= link_to 'Delete', work_path(@work.id), method: 'delete' %></a>
+      <% end %>
+  </div>
 
 <div class="work-page">
     <div class="left">
