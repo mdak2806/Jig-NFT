@@ -1,11 +1,11 @@
 <h1>Explore NFTs</h1>
 
-<%# <div class="index-filter"> %>
-  <%# <%= form_with url: works_path, local: true do |f| %> 
-     <%# <%= f.label :trait, 'Traits' %>  
-     <%# <%= f.select :trait , Property.pluck(:trait).uniq %>  
-    <%# <%= f.submit %> 
- <%# <% end %>  
+<div class="index-filter">
+  <%= form_with url: works_path, local: true, role:"search", method: :get do |f| %>
+      <%= f.label :trait, 'Traits' %>  
+     <%= f.select :trait , Property.pluck(:trait).uniq %>  
+    <%= f.submit "search"%> 
+ <% end %>  
 </div>
 
 <div>

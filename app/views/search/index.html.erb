@@ -1,16 +1,18 @@
 <h1>Search Results</h1>
 <p>Find me in app/views/search/index.html.erb</p>
 
-<div class="work-index">
-<%  @works.each do |work| %> 
-<li>
-    <a><%= link_to work.name, work_path(work.id) %></a>
-    <br>
-     <%= work.artist %>
-     <br>
-    <%= image_tag work.picture, alt:work.name, class:'NFT' %>
-  </li>
-<% end %>
+<div class="show-all">
+  <%  @works.each do |work| %> 
+    <%= link_to work_path(work.id) do %>
+      <div class="show">
+        <%= work.name %>
+        <br>
+        <%= work.artist %>
+        <br>
+        <%= cl_image_tag work.picture, alt:work.name, class:'work-collection' %>
+      </div>
+    <% end %>
+  <% end %>
 </div>
 
 

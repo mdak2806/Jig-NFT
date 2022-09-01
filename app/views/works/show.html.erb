@@ -57,25 +57,39 @@
   <div class="right">
     <div class="work_info">
       <h2 class="heading"><em><%= @work.name %></em></h2>
-      <h4><%= @work.artist%></h4>
-      <br>
-            <h4>Owner</h4>
-            <a><%= link_to @work.user.name, user_path(@work.user.id) %></a> 
-          <h4>Description</h4>
-          <%= @work.description %>
-        <p>
-          <h4>Token id</h4>
-          <%= @work.token_id %>
-        </p>
-        <p>
-          <h4>Blockchain</h4>
-          <%= @work.blockchain %>
-        </p>
-        <p>
-          <h4>Pice</h4>
-          <%= @work.price %> <%= @work.currency %>
-        </p>
-    <table>
+
+        <div class="collector-info">
+          <%= link_to user_path(@work.user.id) do %>
+            <div class="owner"> 
+              <h4 class="info-h">Owner</h4>
+              <%= @work.user.name %> 
+            </div>
+          <% end %>
+          <div class="artist">
+            <h4 class="info-h">Creator</h4>
+            <%= @work.artist%>
+          </div>
+        </div>
+          <div class="show-des">
+            <br>
+            <%= @work.description %>
+          </div>
+          <br>
+          <div class="token">
+            <div class="price">
+            <h4>Price</h4>
+            <%= @work.price %> <%= @work.currency %>
+            </div>
+            <div class="block">
+            <h4>Blockchain</h4>
+            <%= @work.blockchain %>
+            </div>
+            <div class="token-id">
+            <h4>Token id</h4>
+            <%= @work.token_id %>
+            </div>
+        </div>
+    <table class="table">
       <br>
       <tr>
       <th>Bid</th>

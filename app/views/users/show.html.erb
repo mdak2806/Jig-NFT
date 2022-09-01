@@ -7,7 +7,7 @@
         <div class="show">
         <%= cl_image_tag work.picture, alt:work.name, class: 'work-collection' %>
         <br>
-        <a><%= link_to work.name, %></a>
+        <%= work.name %>
         <br>
         <%= work.artist %>
         <br>

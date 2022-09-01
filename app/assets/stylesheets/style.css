@@ -1,8 +1,11 @@
 body{
-    background: linear-gradient(110deg, #afcbe7 0%,  #cfdff7 100% );
+    /* background: linear-gradient(110deg, #96d2de 0%,  #96d2de 100% ); */
     /* background-color: #cfdff7 ; */
-
-
+    background-color: rgba(150,210,222,1);
+    opacity: 0.9;
+    background-size: 120px 120px;
+    background-image:  repeating-linear-gradient(to right, #b5dfe7, #b5dfe7 6px, rgba(150,210,222,1) 6px, rgba(150,210,222,1));
+    
 }
 .pic{
     text-align: center;
@@ -10,23 +13,28 @@ body{
 .home{
     background-position: center center;
     background-size: 100% 100%;
-    border: 3px solid red;
+    /* border: 3px solid red; */
+    background-color: rgba(150,210,222,1);
+    opacity: 0.9;
+    background-size: 120px 120px;
+    background-image:  repeating-linear-gradient(to right, #b5dfe7, #b5dfe7 6px, rgba(150,210,222,1) 6px, rgba(150,210,222,1));
 }
 .home-gif{
     margin: 0 auto;
     border-radius: 50%;
+    opacity: 0.7;
 }
 
 /* Index works page explore */
 .NFT-cards{
     box-shadow: 2px 2px 7px 1px #eae3e0;
     border-radius: 5%;
+    border: 3px solid rgb(237, 231, 231);
     height: 550px;
     width: 400px;
     border-right: 30px;
     border-left: 30px;
     padding: 20px;
-    border: 3px solid rgb(237, 231, 231);
     margin: 30px;
     text-align: center;
 }
@@ -153,14 +161,104 @@ body{
 
 }
 
-/* Genres Show pa */
-
-/* Single Work Show Page */
-/* Bid Table */
-table{
-    border-collapse: collapse;
-    width: 30px;
+/* Show Page Left hand side */
+.properties, .genre{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    border: 3px solid rgb(219, 227, 219);
+    box-shadow: 2px 2px 7px 1px #eae3e0;
+    border-radius: 10px;
 }
+.trait, .gen-item{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    border: 2px solid rgb(219, 227, 219);
+    background-color: 
+    #b6dfe7;
+}
+.trait:hover{
+    transform: scale(1.1); 
+}
+.gen-item:hover{
+    transform: scale(1.1); 
+}
+
+.left{
+    /* border: 8px solid rgb(219, 227, 219);
+    box-shadow: 2px 2px 7px 1px #eae3e0; */
+    border-radius: 10px;
+    margin: 10px;
+    width: 450px;
+}
+.show-nft{
+    height: 550px;
+    width: 450px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 8%;
+}
+.heading-center{
+    text-align: center;
+}
+
+/* Show right hand side  */
+.right{
+    border-radius: 10px;
+    margin: 10px;
+    width: 700px;
+
+}
+.collector-info, .token{
+    display: flex;
+    justify-content: center;
+    border: 3px solid rgb(219, 227, 219);
+    box-shadow: 2px 2px 7px 1px #eae3e0;
+    border-radius: 10px;
+}
+.artist, .owner, .price, .block, .token-id{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    border: 2px solid rgb(219, 227, 219);
+    background-color: 
+    #b6dfe7;
+    width: 100px;
+    position: relative;
+}
+.owner:hover{
+    transform: scale(1.1);
+}
+.show-des{
+    width: 658px;
+    /* justify-content: center; */
+    border: 3px solid rgb(219, 227, 219);
+    box-shadow: 2px 2px 7px 1px #eae3e0;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 15px;
+    position: relative;
+    left: -21px;
+    /* width: 700px; */
+
+}
+
+
+.table{
+    position: relative;
+    width: 700px;
+    justify-content: center;
+    border: 3px solid rgb(219, 227, 219);
+    box-shadow: 2px 2px 7px 1px #eae3e0;
+    border-radius: 10px;
+    border-collapse: collapse;
+    background-color: 
+    #b6dfe7;
+}
+
 td, th{
     /* border: 1px solid #dddddd; */
     text-align: left;
@@ -175,35 +273,6 @@ a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
 }
-.genre{
-    border: red;
-}
-
-.properties, .genre{
-    border: 2px solid red;
-    display: flex;
-    justify-content: center;
-}
-.trait, .gen-item{
-    display: inline-block;
-    padding: 10px;
-    border-radius: 20px;
-    margin: 10px;
-    border: 2px solid green;
-}
-
-.img-container{
-
-}
-.show-nft{
-    height: 450px;
-    width: 350px;
-    margin: 10px auto;
-    display: block;
-}
-.heading-center{
-    text-align: center;
-}
 
 .work-page{
     /* display: grid; */
@@ -214,14 +283,13 @@ a, a:hover, a:focus, a:active {
     justify-content: center;
 
 }
-.left{
-    border: 2px solid red;
-    width: 600px;
-   
-}
+
 .right{
-    border: 2px solid red;
-    width: 900px;
+    /* border: 8px solid rgb(219, 227, 219);
+    box-shadow: 2px 2px 7px 1px #eae3e0; */
+    border-radius: 10px;
+    width: 700px;
+    margin: 10px;
 }
 
 

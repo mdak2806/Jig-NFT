@@ -5,8 +5,8 @@
 <% @genre.each do |genre| %>
     <%= link_to genre_path(genre.id) do %>
     <div class="genres">
-    <%= cl_image_tag genre.genre_picture, alt:genre.name, class:"genre-pic" %>
-   <a><%= genre.name %></a>
+        <%= cl_image_tag genre.genre_picture, alt:genre.name, class:"genre-pic" %>
+        <h4><%= genre.name %></h4>
    </div>
     <br>
 <% end %>

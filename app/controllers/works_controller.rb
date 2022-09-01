@@ -56,20 +56,22 @@ class WorksController < ApplicationController
   
     # Add search bar to works page
     ###########################################################################
-    # search = "%" + params[:trait_value] + "%"
-    # @trait_value = Property.where("trait_value ILIKE ? OR price ILIKE ? ", search, search)
-
-    # if params[:trait_value]
-    # @trait_value = params[:trait_value]
-    # @works = @works.search_by(@trait_value)
-    # end 
-    ###########################################################################
+    # search = {"%" + params[:trait] + "%"}
+    # @trait_value = Property.where("trait ILIKE ? OR price ILIKE ? ", search, search)
    
-    if params[:trait].present? 
-      @works = @works.where("trait like ?", "%#{params[:trait]}%")
+    if params[:trait]
+      @trait = params[:trait]
+      @works = Work.search_by(@trait)
     else
       @works = Work.all
-    end
+    end 
+    ###########################################################################
+   
+    # if params[:trait].present? 
+    #   @works = @works.where("trait like ?", "%#{params[:trait]}%")
+    # else
+    #   @works = Work.all
+    # end
     
   end
 
