@@ -44,9 +44,27 @@ class UsersController < ApplicationController
   #3 Update
 
   def edit
+    @user = User.find params[:id]
+
+    if @user.id != @current_user.id
+      redirect_to login_path
+    end
   end
 
   def update
+    @user = User.find params[:id]
+
+    if @user.id != @current_user.id
+      redirect_to login_path
+      return
+    end
+
+    if @user.update user_params
+      redirect_to @user
+     else
+      render :edit
+    end
+
   end
 
   # 4. Destroy
