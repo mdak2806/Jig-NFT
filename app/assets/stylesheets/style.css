@@ -133,6 +133,9 @@ input[type=browse]{
     text-align: center;
 }
 
+.search{
+    text-align: center;
+}
 /* Flash message */
 
 .flash_bad{
