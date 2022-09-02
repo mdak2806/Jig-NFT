@@ -318,182 +318,222 @@ Property.destroy_all
 p1 = Property.create!(
     trait: 'Clothing',
     trait_value: 'Robotic Ice Suite',
-    percentage: 5 
+    percentage: 5,
+    rairty: 'High' 
 )
 p2 = Property.create!(
     trait: 'Face',
     trait_value: 'Robotic Toxic Mars Mask',
-    percentage: 0.1 
+    percentage: 0.1,
+    rairty: 'High' 
 )
 p3 = Property.create!(
     trait: 'Clothing',
     trait_value: 'Alien Space Eye Shirt',
-    percentage: 0.6 
+    percentage: 0.6,
+    rairty: 'High' 
 )
 p4 = Property.create!(
     trait: 'Face',
     trait_value: 'Mummy Mask with Laser beam',
-    percentage: 0.02
+    percentage: 0.02,
+    rairty: 'High' 
 )
 p5 = Property.create!(
     trait: 'Clothing',
     trait_value: 'Robotic fighter suite',
-    percentage: 10 
+    percentage: 10,
+    rairty: 'Low' 
 )
 p6 = Property.create!(
     trait: 'Face',
     trait_value: 'Mummy Mash with Tokyo Sign',
-    percentage: 0.9
+    percentage: 0.9,
+    rairty: 'High' 
 )
 p7 = Property.create!(
     trait: 'Clothing',
     trait_value: 'Black and white hoodie',
-    percentage:  0.003
+    percentage:  0.003,
+    rairty: 'Low' 
+
 )
 p8 = Property.create!(
     trait: 'Face',
     trait_value: 'Green Monkey with Yellow Eyes',
-    percentage:  0.002
+    percentage:  0.002,
+    rairty: 'Medium' 
+
 )
 p9 = Property.create!(
     trait: 'Clothing',
     trait_value: 'Shirtless Gold MonKey Fur',
-    percentage: 0.23
+    percentage: 0.23,
+    rairty: 'Medium' 
 )
 p10 = Property.create!(
     trait: 'Face',
     trait_value: 'Gold Monkey with grills',
-    percentage: 12 
+    percentage: 12,
+    rairty: 'Medium' 
 )
 p11 = Property.create!(
     trait: 'Clothing',
     trait_value: 'Purple Yankies jersey',
-    percentage: 9
+    percentage: 9,
+    rairty: 'Medium' 
 )
 p12 = Property.create!(
     trait: 'Face',
     trait_value: 'Light Blue Monkey with Hallow',
-    percentage: 3 
+    percentage: 3,
+    rairty: 'Medium' 
 )
 p13 = Property.create!(
     trait: 'Background',
     trait_value: 'Space Grey Blurred Buildings',
-    percentage:  40
+    percentage:  40,
+    rairty: 'Medium' 
 )
 p14 = Property.create!(
     trait: 'Central Art',
     trait_value: 'Robotic Skull',
-    percentage: 29 
+    percentage: 29, 
+    rairty: 'Medium' 
+    
 )
 p15 = Property.create!(
     trait: 'Background',
     trait_value: 'Light Blue Sky with Clouds',
-    percentage:  70
+    percentage:  70,
+    rairty: 'Medium' 
 )
 p16 = Property.create!(
     trait: 'Central Art',
     trait_value: 'Leaning Robotic Space Building',
-    percentage:  10
+    percentage:  10,
+    rairty: 'Medium' 
 )
 p17 = Property.create!(
     trait: 'Background',
     trait_value: 'Futuristic Building with Pink Sky',
-    percentage: 0.2 
+    percentage: 0.2, 
+    rairty: 'Low' 
 )
 p18 = Property.create!(
     trait: 'Central Art',
     trait_value: 'Lost Human in Dyspotian World',
-    percentage: 12  
+    percentage: 12,
+    rairty: 'Low' 
 )
 p19 = Property.create!(
     trait: 'Clothing',
     trait_value: 'Thanos Armor with Infinity Gauntlet',
-    percentage: 12
+    percentage: 12,
+    rairty: 'Low' 
 )
 p20 = Property.create!(
     trait: 'Face',
     trait_value: 'Mad Monkey with Thanos Helmet',
-    percentage: 32 
+    percentage: 32,
+    rairty: 'Low' 
 )
 p21 = Property.create!(
     trait: 'Clothing',
     trait_value: 'Red Checkered Shirt',
-    percentage: 30
+    percentage: 30,
+    rairty: 'Low' 
 )
 p22 = Property.create!(
     trait: 'Face',
     trait_value: 'Wizard Monkehy with Dimond Earing',
-    percentage: 0.22 
+    percentage: 0.22,
+    rairty: 'Low' 
 )
 p23 = Property.create!(
     trait: 'Clothing',
     trait_value: 'Shirtless Grey Monkey moving hair',
-    percentage: 12 
+    percentage: 12,
+    rairty: 'Low' 
+
 )
 p24 = Property.create!(
     trait: 'Face',
     trait_value: 'Cowboy Hat Monkey',
-    percentage: 0.2
+    percentage: 0.2,
+    rairty: 'Low' 
 )
 p25 = Property.create!(
     trait: 'Body',
     trait_value: 'Space telephone',
-    percentage: 0.2
+    percentage: 0.2,
+    rairty: 'Low' 
 )
 p26 = Property.create!(
     trait: 'Body',
     trait_value: 'Rainbow drinks',
-    percentage: 0.2
+    percentage: 0.2,
+    rairty: 'Low' 
 )
 p27 = Property.create!(
     trait: 'Body',
     trait_value: 'Solar System',
-    percentage: 0.2
+    percentage: 0.2,
+    rairty: 'High' 
 )
 p28 = Property.create!(
     trait: 'Background',
     trait_value: 'Changing colors rainbow gif',
-    percentage: 0.4
+    percentage: 0.4,
+    rairty: 'High' 
 )
 p29 = Property.create!(
     trait: 'Background',
     trait_value: 'Changing colors rainbow gif',
-    percentage: 0.4
+    percentage: 0.4,
+    rairty: 'High' 
 )
 p30 = Property.create!(
     trait: 'Background',
     trait_value: 'Changing colors rainbow gif',
-    percentage: 0.4
+    percentage: 0.4,
+    rairty: 'High' 
 )
 p31 = Property.create!(
     trait: 'Background',
     trait_value: 'Changing colors rainbow gif',
-    percentage: 0.4
+    percentage: 0.4,
+    rairty: 'High' 
 )
 p32 = Property.create!(
     trait: 'Background',
     trait_value: 'Changing colors rainbow gif',
-    percentage: 0.4
+    percentage: 0.4,
+    rairty: 'High' 
 )
 p33 = Property.create!(
     trait: 'Background',
     trait_value: 'Changing colors rainbow gif',
-    percentage: 0.4
+    percentage: 0.4,
+    rairty: 'High' 
 )
 p34 = Property.create!(
     trait: 'Clothes',
     trait_value: 'Bright orange jacket',
-    percentage: 0.4
+    percentage: 0.4,
+    rairty: 'High' 
 )
 p35 = Property.create!(
     trait: 'Clothes',
     trait_value: 'Cloud lava red shirt',
-    percentage: 0.4
+    percentage: 0.4,
+    rairty: 'High' 
 )
 p36 = Property.create!(
     trait: 'Clothes',
     trait_value: 'Gold Ape King Armor',
-    percentage: 0.4
+    percentage: 0.4,
+    rairty: 'High' 
 )
 
 

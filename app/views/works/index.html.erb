@@ -2,8 +2,8 @@
 
 <div class="index-filter">
   <%= form_with url: works_path, local: true, role:"search", method: :get do |f| %>
-      <%= f.label :trait, 'Traits' %>  
-     <%= f.select :trait , Property.pluck(:trait).uniq %>  
+      <%= f.label :rairty, 'Traits' %>  
+     <%= f.select :rairty , Property.pluck(:rairty).uniq %>  
     <%= f.submit "search"%> 
  <% end %>  
 </div>

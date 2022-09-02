@@ -5,7 +5,7 @@ class Work < ApplicationRecord
     has_many :bids
 
     def self.search_by(search_term)
-       Work.joins(:properties).where("trait ILIKE :search_term", search_term: "%#{search_term.downcase}")
+       Work.joins(:properties).where("rairty ILIKE :search_term", search_term: "%#{search_term.downcase}")
       end
 
     def self.search_currency_by(search_term)

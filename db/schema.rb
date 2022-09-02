@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_29_112012) do
+ActiveRecord::Schema.define(version: 2022_09_02_042100) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2022_08_29_112012) do
 
   create_table "generes", force: :cascade do |t|
     t.integer "genre_id"
-end
+  end
 
   create_table "genres", force: :cascade do |t|
     t.string "name"
@@ -48,6 +48,7 @@ end
     t.integer "work_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "rairty"
   end
 
   create_table "users", force: :cascade do |t|

@@ -36,12 +36,14 @@ class WorksController < ApplicationController
         trait: params[:trait],
         trait_value: params[:trait_value],
         percentage: params[:percentage],
+        rairty: params[:rairty],
         work_id: @work.id
       )
       @property1 = Property.create!(
         trait: params[:trait1],
         trait_value: params[:trait_value1],
         percentage: params[:percentage1],
+        rairty: params[:rairty],
         work_id: @work.id
       )
 
@@ -66,8 +68,8 @@ class WorksController < ApplicationController
     # end
 
    
-    if params[:trait]
-      @trait = params[:trait]
+    if params[:rairty]
+      @trait = params[:rairty]
       @works = Work.search_by(@trait)
     elsif params[:blockchain]
       @currency = params[:blockchain]
