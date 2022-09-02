@@ -22,7 +22,8 @@
       <% if @current_user.present? && @current_user.id == @work.user_id %>
       <a><%= link_to 'Edit', edit_work_path(@work.id) %></a>
       |
-      <a></a><%= link_to 'Delete', work_path(@work.id), method: 'delete' %></a>
+      <a></a><%= link_to 'Delete', work_path(@work.id), method: 'delete', :data => { :confirm => 'Are you sure you want to Delete this NFT?'} %>
+      </a>
       <% end %>
   </div>
 

@@ -70,6 +70,8 @@ class UsersController < ApplicationController
   # 4. Destroy
 
   def destroy
+    User.destroy params[:id]
+    redirect_to sign_up_path
   end
 
 private

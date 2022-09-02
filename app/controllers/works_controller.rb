@@ -113,6 +113,8 @@ class WorksController < ApplicationController
   # Destroy
 
   def destroy
+    Work.destroy params[:id]
+    redirect_to works_path
   end
 
   private
