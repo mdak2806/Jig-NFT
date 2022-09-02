@@ -11,6 +11,13 @@ class BidsController < ApplicationController
     @new_bid = Bid.new bid_params
     # CHECK THE BID AGAINST THE CURRENT THRESHOLD TO WIN
     #IF THE CURRENT BID IS LESS THEN, WE POST THE BID AND DATE, HIGHLIGHT THE BID IS TOO LOW
+    if @new_bid.currency.nil? 
+        flash[:bid_message] = 'Unfortunately the bid requires a valid price and currency'
+        redirect_to work_path(params[:bid][:work_id])
+      return
+    end
+
+
     if @new_bid.currency != @new_bid.work.currency
       flash[:currency_message] = "Invalid Currency please use #{@new_bid.work.currency}"
       redirect_to work_path(params[:bid][:work_id])
