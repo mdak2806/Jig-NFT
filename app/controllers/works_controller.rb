@@ -27,8 +27,9 @@ class WorksController < ApplicationController
       # Associate the genre with the work created
       # @genre = Genre.find params[:genre][:ids]
       # @work.genres << Genre.find params[:genre_ids]
-
+      if @work.genres.present?
       @work.genres << Genre.find(params[:genre_ids])
+      end
 
       @property = Property.create!(
 

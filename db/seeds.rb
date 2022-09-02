@@ -303,7 +303,7 @@ u4 = User.create!(
 
 puts "Done! Created #{ User.count } User:"
 puts User.pluck( :name).join( ', ' )
-u1.works << w1 << w2 << w3 << w17 << w18
+u1.works << w1 << w2 << w3 << w17 << w18 << w16
 u2.works << w4 << w5 << w6 << w22 << w23 << w24
 u3.works << w7 << w8 << w9 << w21 << w20 << w19 << w18
 u4.works << w10 << w11 << w12 << w15 << w14 << w13

@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2022_08_29_112012) do
 
   create_table "generes", force: :cascade do |t|
     t.integer "genre_id"
-  end
+end
 
   create_table "genres", force: :cascade do |t|
     t.string "name"

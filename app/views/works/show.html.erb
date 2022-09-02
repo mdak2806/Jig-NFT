@@ -101,8 +101,8 @@
       <tr>
       <% @work.bids.last(5).each do |i| %>
       <td><%=" #{i.price}" %></td>
-      <td><%=" #{i.blockchain}" %></td>
-      <td><%="u-id #{i.user_id}" %></td>
+      <td><%=" #{i.currency}" %></td>
+      <td><%=" #{i.user.name}" %></td>
       <td><%=" #{i.created_at.strftime '%d/%m/%Y'}" %></td>
       </tr>
       <% end %>
@@ -115,7 +115,7 @@
       <td class="bid-form"><%= f.text_field :currency %></td>
       <br>
        <td class="bid-sub"><%= f.submit %></td>
-      <td><%= f.hidden_field :user_id, value: @current_user.id %></td>
+      <td><%= f.hidden_field :work_id, value: @work.id %></td>
        <td><%= f.hidden_field :created_at%></td>
       
       </tr>
