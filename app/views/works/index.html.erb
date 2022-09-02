@@ -8,6 +8,22 @@
  <% end %>  
 </div>
 
+<div class="index-filter">
+  <%= form_with url: works_path, local: true, role:"search", method: :get do |f| %>
+      <%= f.label :blockchain, 'Blockchain' %>  
+     <%= f.select :blockchain , Work.pluck(:blockchain).uniq %>  
+    <%= f.submit "search"%> 
+ <% end %>  
+</div>
+
+<%# <div class="index-filter">
+  <%= form_with url: works_path, local: true, role:"search", method: :get do |f| %>
+      <%# <%= f.label :price, 'Price' %>  
+     <%# <%= f.select :price , ['High', 'Medium', 'Low']%>   
+    <%# <%= f.submit "search"%>  
+ <%# <% end %>   
+<%# </div> %> 
+
 <div>
 <%# <%= form_with url: works_path, local: true, role:"search", method: :get do |f| %> 
   <%# <%= f.text_field :trait_value, placeholder: 'Search Unquie Traits' %>  

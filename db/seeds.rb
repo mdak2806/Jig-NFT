@@ -124,9 +124,9 @@ w11 = Work.create!(
     description: 'Collection of Gifapes reflecting pop culture in the 21st Century',
     artist: 'Gifapes',
     token_id: 2442,    
-    blockchain: 'Ethereum',
+    blockchain: 'Bitcoin',
     price: 6,
-    currency: 'Eth',
+    currency: 'Bit',
     picture: 'GifAp2_wtr7ua'
 )
 
@@ -135,9 +135,9 @@ w12 = Work.create!(
     description:'Collection of Gifapes reflecting pop culture in the 21st Century',
     artist: 'Gifapes',
     token_id: 2442,
-    blockchain: 'Ethereum',
+    blockchain: 'Bitcoin',
     price: 3,
-    currency: 'Eth',
+    currency: 'Bit',
     picture: 'gifApe3_qjwcnx'
 )
 
@@ -166,9 +166,9 @@ w15 = Work.create!(
     description:'Weird modern monkey bartender',
     artist: 'Soulda Club',
     token_id: 2334,
-    blockchain: 'Ethereum',
+    blockchain: 'Bitcoin',
     price: 3,
-    currency: 'Eth',
+    currency: 'Bit',
     picture: 'sould3_qg3ley'
 )
 w16 = Work.create!(
@@ -176,9 +176,9 @@ w16 = Work.create!(
     description:'Modern gif on popular anime',
     artist: 'alperluz',
     token_id: 3223,
-    blockchain: 'Ethereum',
+    blockchain: 'ApeCoin',
     price: 3,
-    currency: 'Eth',
+    currency: 'Ape',
     picture: 'anime1_eg7qk2'
 )
 w17 = Work.create!(
@@ -186,9 +186,9 @@ w17 = Work.create!(
     description:'Modern gif on popular anime',
     artist: 'alperluz',
     token_id: 3243,
-    blockchain: 'Ethereum',
+    blockchain: 'ApeCoin',
     price: 3,
-    currency: 'Eth',
+    currency: 'Ape',
     picture: 'anime2_mv2voj'
 )
 w18 = Work.create!(
@@ -196,9 +196,9 @@ w18 = Work.create!(
     description:'Modern gif on popular anime',
     artist: 'alperluz',
     token_id: 3423,
-    blockchain: 'Ethereum',
+    blockchain: 'Dogecoin',
     price: 3,
-    currency: 'Eth',
+    currency: 'Doge',
     picture: 'anime3_d6mzjl'
 )
 w19 = Work.create!(
@@ -206,9 +206,9 @@ w19 = Work.create!(
     description:'Modern gif on popular anime',
     artist: 'alperluz',
     token_id: 3213,
-    blockchain: 'Ethereum',
+    blockchain: 'Dogecoin',
     price: 3,
-    currency: 'Eth',
+    currency: 'Doge',
     picture: 'anime5_x4dukl'
 )
 w20 = Work.create!(

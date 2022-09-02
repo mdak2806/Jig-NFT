@@ -133,6 +133,31 @@ input[type=browse]{
     text-align: center;
 }
 
+/* Flash message */
+
+.flash_bad{
+    border-radius: 5%;
+    background-color: 
+    #b67272;
+    width: 400px;
+    margin:0 auto;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.flash_win{
+    border-radius: 5%;
+    background-color: 
+    #81bb89;
+    width: 400px;
+    margin:0 auto;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+
 /* Heading and Fonts Collections */
 .user-col, .user-p, h1, h2{
     text-align: center;

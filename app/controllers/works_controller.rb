@@ -59,10 +59,19 @@ class WorksController < ApplicationController
     ###########################################################################
     # search = {"%" + params[:trait] + "%"}
     # @trait_value = Property.where("trait ILIKE ? OR price ILIKE ? ", search, search)
+    # @works = Work.find params[:price]
+    # if params[:price] => 50 
+    #   params[:high] = params[:price]
+    #   @work = Work.search_price_by(:)
+    # end
+
    
     if params[:trait]
       @trait = params[:trait]
       @works = Work.search_by(@trait)
+    elsif params[:blockchain]
+      @currency = params[:blockchain]
+      @works = Work.search_currency_by(@currency)
     else
       @works = Work.all
     end 
