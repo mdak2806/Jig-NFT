@@ -1,5 +1,6 @@
+<%# This is the show page for each individual Work with its added features %>
 
-
+<%# Below is the flash messages for each bid depending on error or win situation %>
     <div class="flash_message">
         <div class="flash_bad">
           <% if flash[:bid_message].present? %>
@@ -17,7 +18,7 @@
       </div>
    
    
-  
+  <%# This is the edit and delete links to each work - similarly a warning message is presented if a user tries to delete a work %>
   <div class="edit-delete">
       <% if @current_user.present? && @current_user.id == @work.user_id %>
       <a><%= link_to 'Edit', edit_work_path(@work.id) %></a>
@@ -27,6 +28,9 @@
       <% end %>
   </div>
 
+  <%# Work page information split between left and right showing different features of each work%>
+
+  <%# Left side presents information including genre, properties and image %>
 <div class="work-page">
     <div class="left">
       <%= cl_image_tag @work.picture, alt: @work.name, class: 'show-nft' %>
@@ -56,6 +60,7 @@
     </div>
   </div>
 
+<%#Right hand side presents owner, artist, description and bid function  %>
   <div class="right">
     <div class="work_info">
       <h2 class="heading"><em><%= @work.name %></em></h2>
@@ -91,6 +96,8 @@
             <%= @work.token_id %>
             </div>
         </div>
+
+
     <table class="table">
       <br>
       <tr>
@@ -100,14 +107,16 @@
       <th>Date</th>
       </tr>
       <tr>
-      <% @work.bids.last(5).each do |i| %>
+      <%# filters through and extracts the information of the last 5 bids to present on the website %>
+       <% @work.bids.last(5).each do |i| %>
       <td><%=" #{i.price}" %></td>
       <td><%=" #{i.currency}" %></td>
-      <td><%=" #{i.user.name}" %></td>
+      <%# <td><%=" #{i.user.name}" %></td> 
       <td><%=" #{i.created_at.strftime '%d/%m/%Y'}" %></td>
       </tr>
       <% end %>
       <tr>
+      <%# Form on the show page to allow register users only to make bids %>
       <div class="form">
       <% if @current_user.present? %>
       <%= form_with model: @bid, local: true  do |f| %>

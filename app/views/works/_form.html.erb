@@ -1,4 +1,6 @@
+<%# The below is the form to create or edit a existing Work %>
 <div class="form-create">
+<%# Updates the relevant fields using the below command %>
 <%= form_with model: @work, local: true, html: {multipart: true} do |f| %>
       <%= f.label :name %>
       <br>
@@ -34,18 +36,19 @@
       <br>
       <%= f.text_field :currency %>
       <br><br>
-      <%# <%= f.label :user_id %>
-      <%# <br> %>
-      <%# <%= f.text_field :user_id %> 
-      <br><br>
+
+  
       <%= f.label :property_id %>
       <br>
       <%= f.text_field :property_id %>
       <br><br>
+      
       <%= f.label :picture, 'NFT URL' %>
       <br>
       <%= f.file_field :picture %>
       <br><br>
+      <%# As Genre is not assoicate with the Work model the data needed to be extracted individuall and place as check boxes %>
+      <%# This needs to be saved in the works_controller unlike the rest of the form %>
       <strong>Genre</strong>
       <br>
         <% Genre.all.each do |genre| %>
@@ -53,6 +56,7 @@
             <%= genre.name %>
         <% end %>
       <br><br>
+      <%# Properties for highlighted below although will not be saved directly this will need to be saved in Wroks_controller %>
       <strong>Property</strong>
           <br>
           <%= label_tag :trait %>
@@ -71,6 +75,7 @@
           <br>
           <%= text_field_tag :rairty %>
        <br><br>
+       <%# Property placed again so more then one value can be saved although ideally this should be done in JS instead of hard coding %>
       <strong>Property</strong>
           <br>
           <%= label_tag :trait1 %>

@@ -1,7 +1,8 @@
 <h1>Search Results</h1>
-
+<%# This page presents the findings of search results @search is the variable that is assoicated with terms used %>
 <h4 class="search"> Showing search results for "<%= @search %>"</h4>
 
+<%# Based on the search term used, depending on the work the term matches the following information for each work is presented below including name, image, and artist%>
 <div class="show-all">
   <%  @works.each do |work| %> 
     <%= link_to work_path(work.id) do %>

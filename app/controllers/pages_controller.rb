@@ -3,7 +3,7 @@ class PagesController < ApplicationController
 
   end
   def index
-    # @works = Work.find params[:search]
+  # below used to extract the search term input on home page and save it as a global variable to be used to in the search controller
     if params[:search]
       @search_term = params[:search]
       @works = @works.search_by(@search_term)

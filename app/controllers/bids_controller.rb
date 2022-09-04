@@ -1,5 +1,8 @@
 class BidsController < ApplicationController
+  # Ensures only logged in users can make bids
   before_action :check_if_logged_in, except: [:index, :show]
+
+  # 1. Create a new Bid and associated work ID
   def new
     @bid = Bid.new
     @work = Work.find params[:id]
@@ -7,41 +10,45 @@ class BidsController < ApplicationController
   end
 
   def create
-  #  raise 'hell'
+
+    # Save new bid in a global variable to be used
     @new_bid = Bid.new bid_params
-    # CHECK THE BID AGAINST THE CURRENT THRESHOLD TO WIN
-    #IF THE CURRENT BID IS LESS THEN, WE POST THE BID AND DATE, HIGHLIGHT THE BID IS TOO LOW
+    
+    # Below are variou if statements to check that users input a valid currency and a valid price. If this is not satisfied a specific error message is presented and users are returned to the Work Show page. 
+    
+    # Bid is not nil or a zero value
     if @new_bid.price.nil? || @new_bid.price.zero?  
       flash[:bid_message] = 'Unfortunately the bid requires a valid price greater than Zero'
       redirect_to work_path(params[:bid][:work_id])
       return
     end
     
+    # currency is not nill
     if @new_bid.currency.nil? 
         flash[:bid_message] = 'Unfortunately the bid requires a valid price and currency'
         redirect_to work_path(params[:bid][:work_id])
       return
     end
 
-
+    # currency match check
     if @new_bid.currency != @new_bid.work.currency
       flash[:currency_message] = "Invalid Currency please use #{@new_bid.work.currency}"
       redirect_to work_path(params[:bid][:work_id])
       return
     end
     
-   
-
-    @new_bid.user_id = @current_user.id
-    @new_bid.save
     
-
+    # CHECK THE BID AGAINST THE CURRENT THRESHOLD TO WIN
+    #IF THE CURRENT BID IS LESS THEN, WE POST THE BID AND DATE, HIGHLIGHT THE BID IS TOO LOW
 
     if  @new_bid.price >= @new_bid.work.price*1.1
       #transfer ownship
+      @new_bid.user_id = @current_user.id
+      @new_bid.save
       puts "The bid happened"
      
       flash[:win_message] = "Congrautions #{@current_user.name} you are now the new owner of #{@new_bid.work.name}!"
+      
       
     else                     
       #comment bid fail 
@@ -50,23 +57,11 @@ class BidsController < ApplicationController
     end
     #ELSE IF BID IS HIGHER THEN CURRENT THRESHOLD THEN TRANSFER OF OWNERSHIP
 
+    # @new_bid.save
     #TRANSFER OWNERSHIP
 
     redirect_to work_path(params[:bid][:work_id])
-    # @bids = Bid.new bids_params
-    # @bids.user_id = @current_user.id
-    # @bids.save
-    # # @work = Work.find(params[:id])
-    # # @bid = @work.bids.new bid_params
 
-    # # respond_to do |format|
-      # if @bids.persisted?
-      #   redirect_to works_path
-      #   format.html {redirect_to @work, notice: 'Bid was suceesfully submitted'}
-      # else 
-      #   render :new
-      # end
-    
   end
 
 

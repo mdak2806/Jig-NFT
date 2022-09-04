@@ -1,16 +1,16 @@
 class WorksController < ApplicationController
-  
+  #Creates an exception to only allow certain users logged in to have control of create, new, edit and delete functions 
   before_action :check_if_logged_in, except: [:index, :show]
+
   # Create
   def new
-
+    # Form to create new Work, defined genre also
     @work = Work.new
     @genre = Genre.all
   end
 
- 
-
   def create
+    # Allows users to create bids on show page and also work
     @bid = Bid.new @bid_params
     @work = Work.new work_params
     @work.user_id = @current_user.id
@@ -23,6 +23,7 @@ class WorksController < ApplicationController
    
     @work.save
 
+    # If work is created with the above form, the below variable genres and properties are also saved as new with the same assoications
     if @work.persisted?
       # Associate the genre with the work created
       # @genre = Genre.find params[:genre][:ids]
@@ -30,7 +31,8 @@ class WorksController < ApplicationController
       if @work.genres.present?
       @work.genres << Genre.find(params[:genre_ids])
       end
-
+      
+      # New property variable is created using the input from the form
       @property = Property.create!(
 
         trait: params[:trait],
@@ -53,21 +55,12 @@ class WorksController < ApplicationController
     end
 
   end #create
+  
   #Read
 
   def index
   
-    # Add search bar to works page
-    ###########################################################################
-    # search = {"%" + params[:trait] + "%"}
-    # @trait_value = Property.where("trait ILIKE ? OR price ILIKE ? ", search, search)
-    # @works = Work.find params[:price]
-    # if params[:price] => 50 
-    #   params[:high] = params[:price]
-    #   @work = Work.search_price_by(:)
-    # end
-
-   
+    # Below is a if and else statement that checks if the filter with the params :rairty or :blockchain are being used. If so the index page is filter to show Work with these specific params
     if params[:rairty]
       @trait = params[:rairty]
       @works = Work.search_by(@trait)
@@ -77,16 +70,9 @@ class WorksController < ApplicationController
     else
       @works = Work.all
     end 
-    ###########################################################################
-   
-    # if params[:trait].present? 
-    #   @works = @works.where("trait like ?", "%#{params[:trait]}%")
-    # else
-    #   @works = Work.all
-    # end
-    
   end
 
+  # Show page for each index, specific variables defined used for each Work including genre, properties, bid etc. 
   def show
     @work = Work.find params[:id]
     @property = Property.all
@@ -96,6 +82,8 @@ class WorksController < ApplicationController
   end
 
   # Update
+
+  # Edit and update pages uses the work and ensures only the current user with the same user ID can edit and make changed
 
   def edit
     @work = Work.find params[:id]

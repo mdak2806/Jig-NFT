@@ -2,10 +2,15 @@
 
 <p class="user-p">Find an array of artist and user collections, follow there accounts and see there latest creations. </p>
 
+<%# Below shows all users currently registered on the site %>
+
 <div class="all-users">
 <% @user.each do |user| %>
+<%# link to linked by the entire div instead of single word directs the user to user page %>
     <%= link_to user_path(user.id) do%>
     <div class="user-account">
+    
+<%# Adding a image of each user %>
     <%= cl_image_tag user.profile_picture, alt:user.name, class:'user-pic' %>
     <a><%= link_to user.name %></a>
     </div>

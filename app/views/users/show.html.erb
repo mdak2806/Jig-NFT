@@ -1,6 +1,7 @@
-
+<%# Specific user name presented at the top of the page %>
 <h1><%= @user.name %></h1>
 
+<%# Loops through all users work individually and extracts specific information regarding each Wrok including Image, name of art, artist and price %>
 <div class="show-all">
     <% @user.works.each do |work| %>
         <%= link_to work_path(work.id) do %>

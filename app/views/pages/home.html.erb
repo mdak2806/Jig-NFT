@@ -1,6 +1,7 @@
-
+<%# Home page with little intro %>
 <h3 class="intro-p">Welcome to JIG NFT a secure global market place to create, collect, and transfer a diverse range of NFT art on all blockchain technologies </h3>
 <div>
+<%# search bar is below which is used to extract the input and assoicate it with the params :search to be used in the pages and search controller %>
 <div class="home-search">
     <%= form_with url: search_path, local: true, role:"search", method: :get do |f| %>
         <%= f.text_field :search, placeholder: "Search..." %>

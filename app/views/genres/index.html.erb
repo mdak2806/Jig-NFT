@@ -1,6 +1,7 @@
 <h1>Genres</h1>
 <p class="user-p">Find a NFT based on your personal style through our long array of Genres</p>
 
+<%# Below shows the index page of all genres, through which is linked the show page of each individual genre %>
 <div class="all-genres">
 <% @genre.each do |genre| %>
     <%= link_to genre_path(genre.id) do %>

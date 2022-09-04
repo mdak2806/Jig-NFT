@@ -1,28 +1,11 @@
 class GenresController < ApplicationController
-  def new
-  end
-
-  def create
-  end
-
   def index
-    @genre = Genre.all
-    
+    # Shows all Genres
+    @genre = Genre.all 
   end
 
   def show
+    # Shows each specific genere and the assoicated work with it
     @genre = Genre.find params[:id]
-   
-    # @work = Work.all
-    # @genres = Genre.works.find params[:work_id]
-  end
-
-  def edit
-  end
-
-  def update
-  end
-
-  def destroy
   end
 end

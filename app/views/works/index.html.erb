@@ -1,5 +1,7 @@
+<%# Below is the index page for Work showing all the current work %>
 <h1 class="explore-nft">Explore all NFT art offered on JIG</h1>
 
+<%# Below is a filter used on the index page, allowing users to filter out high, medium or low value traits - This method plucks the params raity of each property and presents it as a filter %>
 <div class="index-filter">
   <%= form_with url: works_path, local: true, role:"search", method: :get do |f| %>
       <%= f.label :rairty, 'Traits' %>  
@@ -8,6 +10,7 @@
  <% end %>  
 </div>
 
+<%# Below is a filter used on the index page, allowing users to filter out different blockchains. This method plucks out the different blockchains and adds it as a filter. Removing irrelevant works%>
 <div class="index-filter">
   <%= form_with url: works_path, local: true, role:"search", method: :get do |f| %>
       <%= f.label :blockchain, 'Blockchain' %>  
@@ -16,27 +19,8 @@
  <% end %>  
 </div>
 
-<%# <div class="index-filter">
-  <%= form_with url: works_path, local: true, role:"search", method: :get do |f| %>
-      <%# <%= f.label :price, 'Price' %>  
-     <%# <%= f.select :price , ['High', 'Medium', 'Low']%>   
-    <%# <%= f.submit "search"%>  
- <%# <% end %>   
-<%# </div> %> 
-
-<div>
-<%# <%= form_with url: works_path, local: true, role:"search", method: :get do |f| %> 
-  <%# <%= f.text_field :trait_value, placeholder: 'Search Unquie Traits' %>  
-  <%# <%= f.submit "Search" %> 
-  <%# <% end %> 
-  <%# </form> %>
- </div>
- 
-
-
-
-
-<%# <%= select_tag "Properties", options_for_select(@properties.trait, 'trait') %> 
+<%#  Loop around work to present all the work, and individually presenting name, artist and image %>
+<%# link to saved to div to allow easy access to the the specific work show page %>
 <div class="all-nfts">
 <% @works.each do |work| %>
   <%= link_to work_path(work.id) do %>
@@ -49,7 +33,3 @@
 <% end %>
 </div>
 
-
-
-
-<%# Add pictures here %>
