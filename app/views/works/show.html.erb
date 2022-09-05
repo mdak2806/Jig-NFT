@@ -111,7 +111,7 @@
        <% @work.bids.last(5).each do |i| %>
       <td><%=" #{i.price}" %></td>
       <td><%=" #{i.currency}" %></td>
-      <%# <td><%=" #{i.user.name}" %></td> 
+      <td><%=" #{i.user.name}"%></td> 
       <td><%=" #{i.created_at.strftime '%d/%m/%Y'}" %></td>
       </tr>
       <% end %>

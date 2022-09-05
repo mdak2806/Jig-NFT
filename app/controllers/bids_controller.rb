@@ -14,6 +14,7 @@ class BidsController < ApplicationController
     # Save new bid in a global variable to be used
     @new_bid = Bid.new bid_params
     
+    
     # Below are variou if statements to check that users input a valid currency and a valid price. If this is not satisfied a specific error message is presented and users are returned to the Work Show page. 
     
     # Bid is not nil or a zero value
@@ -37,14 +38,16 @@ class BidsController < ApplicationController
       return
     end
     
-    
+    @new_bid.user_id = @current_user.id
+   
     # CHECK THE BID AGAINST THE CURRENT THRESHOLD TO WIN
     #IF THE CURRENT BID IS LESS THEN, WE POST THE BID AND DATE, HIGHLIGHT THE BID IS TOO LOW
 
     if  @new_bid.price >= @new_bid.work.price*1.1
       #transfer ownship
-      @new_bid.user_id = @current_user.id
-      @new_bid.save
+      
+      @new_bid.work.user_id = @current_user.id
+      @new_bid.work.save
       puts "The bid happened"
      
       flash[:win_message] = "Congrautions #{@current_user.name} you are now the new owner of #{@new_bid.work.name}!"
@@ -57,7 +60,7 @@ class BidsController < ApplicationController
     end
     #ELSE IF BID IS HIGHER THEN CURRENT THRESHOLD THEN TRANSFER OF OWNERSHIP
 
-    # @new_bid.save
+    @new_bid.save
     #TRANSFER OWNERSHIP
 
     redirect_to work_path(params[:bid][:work_id])
