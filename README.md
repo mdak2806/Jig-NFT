@@ -8,13 +8,13 @@ As part of the Software Engineering Immersive program, as General Assembly Proje
 ## Jig NFT
 Jig NFT is a NFT trading platform designed and created by me. The site is dynamic by allowing individuals to Sign-up to the service giving them full access to creating their own NFT's, and similarly buying and selling other users NFT's. 
 
-![Jig NFT Home Page Interface](/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/assets/images/Explore Page.jpg)
+![Jig NFT Home Page Interface](https://raw.githubusercontent.com/mdak2806/Jig-NFT/main/app/assets/images/Explore%20Page.jpg)
 
 ## Wire-Frame and page associations
 
 Below is an image highlighting the high-level associations between the different pages on the Jig NFT Website.
 
-![Jig NFT Associations](/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/assets/images/iScreen Shoter - 2022-09-04 23:46:19.276.jpg)
+![Jig NFT Associations](https://raw.githubusercontent.com/mdak2806/Jig-NFT/main/app/assets/images/iScreen%20Shoter%20-%202022-09-04%2023%3A46%3A19.276.jpg)
 
 **User** The User model sits at the very beginning, it has a one-to-many association with Bids, as Users can submit multiple bids whilst each bid is assigned to one specific user. 
 
