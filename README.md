@@ -8,13 +8,13 @@ As part of the Software Engineering Immersive program, as General Assembly Proje
 ## Jig NFT
 Jig NFT is a NFT trading platform designed and created by me. The site is dynamic by allowing individuals to Sign-up to the service giving them full access to creating their own NFT's, and similarly buying and selling other users NFT's. 
 
-![Jig NFT Home Page Interface](/Explore Page.jpg)
+![Jig NFT Home Page Interface](/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/assets/images/Explore Page.jpg)
 
 ## Wire-Frame and page associations
 
 Below is an image highlighting the high-level associations between the different pages on the Jig NFT Website.
 
-![Jig NFT Associations](/iScreen Shoter - 2022-09-04 23:46:19.276.jpg)
+![Jig NFT Associations](/Users/mohamaddakdouk/sei/week5/Project1-NFT-Blockchain/app/assets/images/iScreen Shoter - 2022-09-04 23:46:19.276.jpg)
 
 **User** The User model sits at the very beginning, it has a one-to-many association with Bids, as Users can submit multiple bids whilst each bid is assigned to one specific user. 
 
@@ -47,6 +47,16 @@ Through this page, you can directly redirect to a specific genre by clicking on 
 Below is a bidding functionality which only allows registered users to make bids on the currently offered NFT. Depending on the price registered a win or lose message is presented. 
 
 Furthermore, if a win situation does occur the transfer of NFT ownership occurs, which is then saved onto the system. 
+
+## Technologies Used ##
+
+Ruby on rails was the main tool used to create this application. The following technologies where also used:
+
+1. Ruby on Rails 5.2
+2. CSS 
+3. HTML & ERB
+4. Heroku
+5. Cloudinary
 
 
 ## Project Status
